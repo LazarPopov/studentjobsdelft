@@ -121,7 +121,7 @@ descriptionHtml: "<p><strong>Are you tired of endless study sessions and sitting
     orgName: "Pepperminds",
   
     descriptionHtml:
-     "<p><strong>Earn €150 per shift</strong> as part of Pepperminds’ door-to-door team in Groningen. We mix the <em>personal touch in a digital era</em> with energy, coaching, and paid training so you can grow fast and earn even faster.</p><ul><li><strong> Dutch is required</strong>, and you can even receive DUO… if you work enough hours of course 😉</li><li><strong>The better you are, the more you earn!</strong> You start as a rookie, grow into a promoter, and can become a captain — with performance bonuses reaching up to <strong>€500 a day!</strong></li><li><strong>Learn real sales</strong> — your colleagues are students from all kinds of backgrounds, and together you’ll master the most versatile skill out there: sales!</li><li><strong>Challenge yourself</strong> — every day is different, full of teamwork, laughter, and growth.</li><li><strong>After work culture</strong> — we even have our own bar where the team celebrates wins and unwinds together!</li></ul><p>Ready to test your limits, make friends, and earn like a pro? <strong>Join the crew and start this week!</strong></p>",    baseSalaryMin: 12,
+     "<p><strong>Earn €150 per shift</strong> as part of Pepperminds’ door-to-door team in Groningen. We mix the <em>personal touch in a digital era</em> with energy, coaching, and paid training so you can grow fast and earn even faster.</p><ul><li><strong> Dutch is not required</strong>, and you can even receive DUO… if you work enough hours of course 😉</li><li><strong>The better you are, the more you earn!</strong> You start as a rookie, grow into a promoter, and can become a captain — with performance bonuses reaching up to <strong>€500 a day!</strong></li><li><strong>Learn real sales</strong> — your colleagues are students from all kinds of backgrounds, and together you’ll master the most versatile skill out there: sales!</li><li><strong>Challenge yourself</strong> — every day is different, full of teamwork, laughter, and growth.</li><li><strong>After work culture</strong> — we even have our own bar where the team celebrates wins and unwinds together!</li></ul><p>Ready to test your limits, make friends, and earn like a pro? <strong>Join the crew and start this week!</strong></p>",    baseSalaryMin: 12,
     employmentType: "PART_TIME",
     baseSalaryMax: 20,
     DUO: true,
@@ -129,12 +129,12 @@ descriptionHtml: "<p><strong>Are you tired of endless study sessions and sitting
     payUnit: "HOUR",
     addressLocality: "Groningen",
     area: "Various districts",
-    englishFriendly: false,
+    englishFriendly: true,
     workHours: "10–20 h/week",
     datePosted: new Date().toISOString().slice(0, 10),
     validThrough: "2025-12-31",
     categories: ["sales", "fieldwork"],
-    featured: false,
+    featured: true,
     // unknown numeric commission -> use text fallback
     perSaleAmountText: "150 еuros per shift",
     logoUrl: "/logos/pepperminds.jpeg",
@@ -232,7 +232,7 @@ externalUrl: "https://www.uber.com/signup/drive/deliver/?invite_code=a6cpc37",
     datePosted: new Date().toISOString().slice(0, 10),
     validThrough: "2025-12-31",
     categories: ["sales"],
-    featured: true,
+    featured: false,
     // amounts for short description
     perSaleAmount: 200,                            // €200 per successful handover
     logoUrl: "/logos/rentswap.png",
