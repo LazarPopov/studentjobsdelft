@@ -2,7 +2,7 @@
 import { supabase } from "./supabase";
 
 const LOGO_BUCKET = "employer-logos";
-const CV_BUCKET = "job_applications";
+const CV_BUCKET = "job-applications";
 
 const LOGO_ALLOWED_TYPES = ["image/jpeg", "image/jpg", "image/png", "image/webp"];
 const LOGO_MAX_FILE_SIZE = 2 * 1024 * 1024; // 2MB
