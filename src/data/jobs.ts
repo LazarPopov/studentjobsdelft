@@ -45,6 +45,9 @@ export type JobRecord = {
   perSaleAmountText?: string;
   logoUrl?: string;
   logoAlt?: string;
+  heroImageUrl?: string; // example: "/blog/some-image.jpg" or "/jobs/pepperminds.jpg"
+  heroImageAlt?: string;
+  brandColor?: string; // example: "#E11D48" (remove it and the site uses default styling)
 };
 
 // ---- helpers to build shortDescrition from descriptionHtml + amounts ----
@@ -139,7 +142,7 @@ descriptionHtml: "<p><strong>Are you tired of endless study sessions and sitting
     perSaleAmountText: "150 еuros per shift",
     logoUrl: "/logos/pepperminds.jpeg",
     logoAlt: "Pepperminds logo",
-    externalUrl: "https://www.pepperminds.nl/makeithappen/?mkt=LZ&utm_source=viavia&utm_medium=crewapp&utm_campaign=makeithappen",
+    // externalUrl: "https://www.pepperminds.nl/makeithappen/?mkt=LZ&utm_source=viavia&utm_medium=crewapp&utm_campaign=makeithappen",
   },
   {
 slug: "uber-eats-courier-Amsterdam",
@@ -463,6 +466,36 @@ const NEW_JOBS: RawJob[] = [
     externalUrl:
       "https://www.jobbird.com/nl/vacature/23005421-flexibele-bijbaan-callcenter-medewerker-als-enqueteur-in-Amsterdam",
   },
+  // src/data/jobs.ts (add this one job object to your jobs array)
+  // {
+  //   slug: "test-job-application-amsterdam",
+  //   title: "Test Job Application",
+  //   orgName: "StudentJobsAmsterdam Test",
+  //   descriptionHtml:
+  //     "<p>This is a test job to verify the apply form and Supabase insert.</p><ul><li>Fill the form below</li><li>Submit</li><li>Check Supabase table <strong>job_applications</strong></li></ul></p>",
+  //   baseSalaryMin: 12,
+  //   baseSalaryMax: 18,
+  //   currency: "EUR",
+  //   payUnit: "HOUR",
+  //   addressLocality: "Amsterdam",
+  //   employmentType: "PART_TIME",
+  //   area: "Test area",
+  //   englishFriendly: true,
+  //   workHours: "8–16 h/week",
+  //   datePosted: new Date().toISOString().slice(0, 10),
+  //   validThrough: "2026-12-31",
+  //   categories: ["events"],
+  //   featured: false,
+  //   logoUrl: "/logos/pepperminds.jpeg",
+  //   logoAlt: "Test logo",
+  //   // IMPORTANT: leave externalUrl undefined so your list page links to /jobs/[slug]
+  //   // externalUrl: "https://example.com",
+  //   // optional styling
+  //   // brandColor: "#E11D48",
+  //   // heroImageUrl: "/blog/erasmus-experience-in-amsterdam-netherlands-by-chloe-834a8299ded61706deeddf619a213f68.jpg",
+  //   // heroImageAlt: "Test hero image",
+  // },
+
 ];
 
 RAW_JOBS.push(...NEW_JOBS);

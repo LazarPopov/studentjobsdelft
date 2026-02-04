@@ -1,129 +1,100 @@
-// src/app/jobs/page.tsx
+// src/app/jobs/[slug]/page.tsx
 import Image from "next/image";
 import Link from "next/link";
-import { listJobs } from "@/data/jobs";
+import { notFound } from "next/navigation";
+import JobApplyForm from "@/components/JobApplyForm";
+import { getJobBySlug, listJobs } from "@/data/jobs";
 
-// SEO for the index page (unchanged)
-export const metadata = {
-  title: "Jobs in Amsterdam | Student Jobs Amsterdam",
-  description: "All current student jobs in Amsterdam.",
-  alternates: { canonical: "https://studentjobsamsterdam.nl/jobs" },
-};
-
-// --- NEW: minimal JSON-LD for the listing page to help Google understand it’s a jobs list ---
-function ItemListJsonLd({
-  items,
-  baseUrl,
-}: {
-  items: { slug: string; title: string; externalUrl?: string }[];
-  baseUrl: string;
-}) {
-  const elementList = items.map((j, i) => ({
-    "@type": "ListItem",
-    position: i + 1,
-    name: j.title,
-    url: j.externalUrl ? j.externalUrl : `${baseUrl}/jobs/${j.slug}`,
-  }));
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "ItemList",
-    itemListElement: elementList,
-  };
-  return (
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-    />
-  );
+export async function generateStaticParams() {
+  return listJobs().map((j) => ({ slug: j.slug }));
 }
 
-// Link wrapper: keeps your current behaviour but adds safe rel attrs for externals
-function RowLink({
-  job,
-  className,
-  children,
-}: {
-  job: { slug: string; externalUrl?: string };
-  className?: string;
-  children: React.ReactNode;
-}) {
-  return job.externalUrl ? (
-    <a
-      href={job.externalUrl}
-      target="_blank"
-      rel="nofollow external noopener noreferrer"
-      className={className}
-    >
-      {children}
-    </a>
-  ) : (
-    <Link href={`/jobs/${job.slug}`} className={className}>
-      {children}
-    </Link>
-  );
-}
+export default function JobPage({ params }: { params: { slug: string } }) {
+  const job = getJobBySlug(params.slug);
+  if (!job) notFound();
 
-export default function JobsIndex() {
-  const jobs = listJobs();
-  const baseUrl = "https://studentjobsAmsterdam.nl";
+  const cityPrefill =
+    (job.addressLocality ? String(job.addressLocality) : "amsterdam").toLowerCase();
 
   return (
     <section className="px-6 py-10">
-      {/* JSON-LD for the listing page (does not affect UI) */}
-      <ItemListJsonLd
-        items={jobs.map((j) => ({ slug: j.slug, title: j.title, externalUrl: j.externalUrl }))}
-        baseUrl={baseUrl}
-      />
-
       <div className="mx-auto max-w-5xl">
-        <h1 className="text-3xl md:text-4xl font-semibold">All Jobs in Amsterdam</h1>
+        <div className="text-sm text-slate-600">
+          <Link href="/jobs" className="hover:underline">
+            Jobs
+          </Link>
+          <span className="mx-2">/</span>
+          <span>{job.orgName}</span>
+        </div>
 
-        <div className="mt-6 grid gap-4 md:grid-cols-2">
-          {jobs.map((j) => (
-            <RowLink key={j.slug} job={j} className="card hover:shadow-md transition">
-              {/* Header: logo + title/org */}
-              <div className="flex items-start gap-3">
-                <div className="relative h-10 w-10 rounded-lg bg-white border border-slate-200 overflow-hidden shrink-0">
-                  {j.logoUrl ? (
-                    <Image
-                      src={j.logoUrl}
-                      alt={j.logoAlt || `${j.orgName} logo`}
-                      fill
-                      sizes="40px"
-                      className="object-contain"
-                    />
-                  ) : (
-                    <div className="h-full w-full flex items-center justify-center text-xs text-slate-500">
-                      {j.orgName?.[0] ?? "•"}
-                    </div>
-                  )}
-                </div>
-                <div>
-                  <div className="text-lg font-semibold">{j.title}</div>
-                  <div className="text-slate-700">{j.orgName}</div>
-                </div>
+        <div className="mt-4 card overflow-hidden">
+          <div className="p-6">
+            <div className="flex items-start gap-4">
+              <div className="relative h-12 w-12 rounded-xl bg-white border border-slate-200 overflow-hidden shrink-0">
+                {job.logoUrl ? (
+                  <Image
+                    src={job.logoUrl}
+                    alt={job.logoAlt || `${job.orgName} logo`}
+                    fill
+                    sizes="48px"
+                    className="object-contain"
+                  />
+                ) : (
+                  <div className="h-full w-full flex items-center justify-center text-sm text-slate-500">
+                    {job.orgName?.[0] ?? "•"}
+                  </div>
+                )}
               </div>
 
-              {/* Short description (includes per gig/sale) */}
-              {j.shortDescrition && (
-                <p className="mt-3 text-sm text-slate-700">{j.shortDescrition}</p>
-              )}
+              <div className="min-w-0">
+                <h1 className="text-2xl md:text-3xl font-semibold">{job.title}</h1>
+                <div className="text-slate-700">{job.orgName}</div>
 
-              {/* Meta row */}
-              <div className="mt-3 text-sm text-slate-700">
-                {j.baseSalaryMin
-                  ? `€${j.baseSalaryMin}${
-                      j.baseSalaryMax ? `–€${j.baseSalaryMax}` : ""
-                    }/${j.payUnit?.toLowerCase()}`
-                  : "Pay: N/A"}
-                {" • "}
-                {j.workHours ?? "Hours: N/A"}
-                {j.area ? ` • ${j.area}` : ""}
-                {" • "}
-                {j.englishFriendly ? "English-friendly" : "Dutch required"}
+                <div className="mt-3 text-sm text-slate-700">
+                  {job.baseSalaryMin
+                    ? `€${job.baseSalaryMin}${job.baseSalaryMax ? `–€${job.baseSalaryMax}` : ""}/${job.payUnit?.toLowerCase()}`
+                    : "Pay: N/A"}
+                  {" • "}
+                  {job.workHours ?? "Hours: N/A"}
+                  {job.area ? ` • ${job.area}` : ""}
+                  {" • "}
+                  {job.englishFriendly ? "English-friendly" : "Dutch required"}
+                </div>
+
+                <div className="mt-2 text-sm text-slate-600">
+                  City: <span className="font-mono">{cityPrefill}</span>
+                </div>
               </div>
-            </RowLink>
-          ))}
+            </div>
+
+            <div className="mt-6 prose max-w-none">
+              <div dangerouslySetInnerHTML={{ __html: job.descriptionHtml || "" }} />
+            </div>
+
+            {job.externalUrl ? (
+              <div className="mt-6">
+                <a
+                  href={job.externalUrl}
+                  target="_blank"
+                  rel="nofollow external noopener noreferrer"
+                  className="inline-flex items-center justify-center rounded-xl px-4 py-2 text-white bg-slate-900 hover:bg-slate-800"
+                >
+                  Open employer link
+                </a>
+                <p className="mt-2 text-xs text-slate-500">
+                  You can also apply below if you prefer.
+                </p>
+              </div>
+            ) : null}
+
+          <JobApplyForm
+            jobSlug={job.slug}
+            jobTitle={job.title}
+            orgName={job.orgName}
+            city={(job.addressLocality || "amsterdam").toLowerCase()}
+            redirectTo={`/thank-you?job=${encodeURIComponent(job.slug)}`}
+          />
+          </div>
         </div>
       </div>
     </section>
