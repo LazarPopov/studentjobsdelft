@@ -116,8 +116,50 @@ descriptionHtml: "<p><strong>Are you tired of endless study sessions and sitting
   perSaleAmountText: "14 euros per hour",
   logoUrl: "/logos/thuisbezorgd.png",
   logoAlt: "Thuisbezorgd.nl logo",
-  externalUrl: "http://short.takeaway.com/nl355999758"
+  // externalUrl: "http://short.takeaway.com/nl355999758"
 },
+{
+  slug: "ib-tutor",
+  title: "IB Tutor (Online)",
+  orgName: "AcademiaAI",
+
+  descriptionHtml:
+    "<p><strong>Earn well per hour</strong> while working flexibly as an IB tutor with Acady. You can start with as little as <strong>1 hour per week</strong>, or scale up and earn a substantial monthly income.</p>" +
+    "<p>At Acady, you tutor only within your <strong>area of expertise</strong>. For example, an IB graduate who scored a 6 or 7 in Math AA HL and is studying or has completed a related university degree can tutor DP Math, but not DP Biology. This ensures <strong>high-quality lessons</strong>, which our students truly value.</p>" +
+    "<ul>" +
+    "<li><strong>Flexible schedule</strong> – choose your own availability</li>" +
+    "<li><strong>High hourly pay</strong></li>" +
+    "<li><strong>Teach subjects you are confident in</strong></li>" +
+    "<li><strong>Online and home tutoring options</strong></li>" +
+    "<li><strong>Fast hiring process</strong> – short online interview (~15 minutes)</li>" +
+    "</ul>" +
+    "<p><strong>We hire IB graduate tutors throughout the year.</strong> Once accepted, you can start tutoring quickly.</p>" +
+    "<p><strong>Interested? Apply now and start tutoring with Acady!</strong></p>" +
+    "<p><strong>City of residence</strong></p>" +
+    "<p><strong>Country of residence</strong></p>" +
+    "<p><strong>Did you graduate from IB?</strong></p>" +
+    "<p><strong>Have you graduated from the International Baccalaureate Diploma Programme (IB DP)?</strong></p>" +
+    "<p><strong>Current and completed university studies</strong></p>",
+
+  baseSalaryMin: 20,
+  baseSalaryMax: 40,
+  employmentType: "PART_TIME",
+  DUO: true,
+  currency: "EUR",
+  payUnit: "HOUR",
+  addressLocality: "Amsterdam",
+  area: "Online tutoring",
+  englishFriendly: true,
+  workHours: "1–20 h/week",
+  datePosted: new Date().toISOString().slice(0, 10),
+  validThrough: "2026-12-31",
+  categories: ["tutoring"],
+  featured: true,
+  perSaleAmountText: "High hourly pay depending on subject and experience",
+  // logoUrl: "/logos/acady.png",
+  // logoAlt: "Acady logo",
+},
+
     {
     slug: "pepperminds-door-to-door-sales-Amsterdam",
     title: "Door-to-Door Sales",
@@ -163,7 +205,7 @@ workHours: "Flexible — you choose",
 datePosted: new Date().toISOString().slice(0, 10),
 validThrough: "2026-12-31",
 categories: ["delivery"],
-featured: true,
+featured: false,
 perSaleAmountText: "€750 sign-up reward after 50 trips (within 90 days; terms apply)",
 logoUrl: "/logos/uber.png",
 logoAlt: "Uber logo",
@@ -193,7 +235,7 @@ externalUrl: "https://www.uber.com/signup/drive/deliver/?invite_code=a6cpc37",
     // logo
     logoUrl: "/logos/domakin.png",
     logoAlt: "Domakin logo",
-    externalUrl: "https://www.domakin.nl/careers"
+    // externalUrl: "https://www.domakin.nl/careers"
   },
   {
     slug: "domakin-room-finder-Amsterdam",
@@ -217,7 +259,7 @@ externalUrl: "https://www.uber.com/signup/drive/deliver/?invite_code=a6cpc37",
     perSaleAmount: 200,                            // €200 per successful listing/placement
     logoUrl: "/logos/domakin.png",
     logoAlt: "Domakin logo",
-    externalUrl: "https://www.domakin.nl/careers",
+    // externalUrl: "https://www.domakin.nl/careers",
   },
   {
     slug: "rentswap-room-finder-Amsterdam",
