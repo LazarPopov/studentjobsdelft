@@ -181,8 +181,8 @@ export default function Page() {
       <section className="relative min-h-[620px] md:min-h-[560px] lg:min-h-[600px]">
         {/* Banner image */}
         <Image
-          src="/Amsterdam.jpg"
-          alt="Amsterdam skyline near the Erasmus Bridge"
+          src="/amsterdam.jpg"
+          alt="Amsterdam buildings"
           fill
           priority
           sizes="100vw"
@@ -237,8 +237,8 @@ export default function Page() {
           {/* Keep hero image behind content */}
           <div className="pointer-events-none absolute inset-0 -z-10">
             <Image
-              src="/Amsterdam.jpg"
-              alt="Amsterdam skyline near the Erasmus Bridge"
+              src="/amsterdam.jpg"
+              alt="Amsterdam buildings"
               fill
               priority
               sizes="100vw"
