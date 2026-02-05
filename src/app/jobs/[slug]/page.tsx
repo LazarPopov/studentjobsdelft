@@ -1,102 +1,223 @@
-// src/app/jobs/[slug]/page.tsx
-import Image from "next/image";
-import Link from "next/link";
-import { notFound } from "next/navigation";
-import JobApplyForm from "@/components/JobApplyForm";
-import { getJobBySlug, listJobs } from "@/data/jobs";
+// src/components/JobApplyForm.tsx
+"use client";
 
-export async function generateStaticParams() {
-  return listJobs().map((j) => ({ slug: j.slug }));
-}
+import { useState } from "react";
+import { useRouter } from "next/navigation";
 
-export default function JobPage({ params }: { params: { slug: string } }) {
-  const job = getJobBySlug(params.slug);
-  if (!job) notFound();
+type JobApplyFormProps = {
+  jobSlug: string;
+  jobTitle?: string;
+  orgName?: string;
+  city: string; // hidden, only sent
+  redirectTo?: string;
+};
 
-  const cityPrefill =
-    (job.addressLocality ? String(job.addressLocality) : "amsterdam").toLowerCase();
+export default function JobApplyForm({
+  jobSlug,
+  jobTitle,
+  orgName,
+  city,
+  redirectTo,
+}: JobApplyFormProps) {
+  const router = useRouter();
+
+  const [firstName, setFirstName] = useState("");
+  const [familyName, setFamilyName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [message, setMessage] = useState("");
+  const [cvFile, setCvFile] = useState<File | null>(null);
+
+  const [consentThisAd, setConsentThisAd] = useState(false);
+  const [consentSimilarAds, setConsentSimilarAds] = useState(false);
+
+  const [loading, setLoading] = useState(false);
+  const [ok, setOk] = useState<string | null>(null);
+  const [err, setErr] = useState<string | null>(null);
+
+  async function onSubmit(e: React.FormEvent) {
+    e.preventDefault();
+    setOk(null);
+    setErr(null);
+
+    if (!consentThisAd) {
+      setErr("Please give consent to process your application for this job.");
+      return;
+    }
+
+    setLoading(true);
+    try {
+      const form = new FormData();
+      form.append("jobSlug", jobSlug);
+      if (jobTitle) form.append("jobTitle", jobTitle);
+      if (orgName) form.append("orgName", orgName);
+      form.append("city", (city || "amsterdam").toLowerCase());
+
+      form.append("firstName", firstName);
+      form.append("familyName", familyName);
+      form.append("email", email);
+      if (phone) form.append("phone", phone);
+      if (message) form.append("message", message);
+
+      form.append("consentThisAd", String(consentThisAd));
+      form.append("consentSimilarAds", String(consentSimilarAds));
+
+      if (cvFile) form.append("cv", cvFile, cvFile.name);
+
+      const res = await fetch("/api/job-apply", { method: "POST", body: form });
+      const data = (await res.json().catch(() => null)) as any;
+
+      if (!res.ok) {
+        setErr(data?.error || "Something went wrong. Please try again.");
+        return;
+      }
+
+      setOk("Application received.");
+      setFirstName("");
+      setFamilyName("");
+      setEmail("");
+      setPhone("");
+      setMessage("");
+      setCvFile(null);
+      setConsentThisAd(false);
+      setConsentSimilarAds(false);
+
+      if (redirectTo) router.push(redirectTo);
+    } catch {
+      setErr("Network error. Please try again.");
+    } finally {
+      setLoading(false);
+    }
+  }
 
   return (
-    <section className="px-6 py-10">
-      <div className="mx-auto max-w-5xl">
-        <div className="text-sm text-slate-600">
-          <Link href="/jobs" className="hover:underline">
-            Jobs
-          </Link>
-          <span className="mx-2">/</span>
-          <span>{job.orgName}</span>
+    <section className="mt-8 card p-5 max-w-full overflow-hidden">
+      <h2 className="text-xl font-semibold">Apply</h2>
+      <p className="mt-1 text-sm text-slate-700">
+        Your application will be saved with the job and city automatically.
+      </p>
+
+      <form onSubmit={onSubmit} className="mt-4 grid gap-3 max-w-full">
+        {/* On mobile: 1 column. On md+: 2 columns. Also prevent overflow */}
+        <div className="grid gap-3 grid-cols-1 md:grid-cols-2 min-w-0">
+          <label className="grid gap-1 min-w-0">
+            <span className="text-sm font-medium">First name</span>
+            <input
+              value={firstName}
+              onChange={(e) => setFirstName(e.target.value)}
+              required
+              className="w-full min-w-0 rounded-xl border border-slate-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-slate-900"
+              placeholder="First name"
+              autoComplete="given-name"
+            />
+          </label>
+
+          <label className="grid gap-1 min-w-0">
+            <span className="text-sm font-medium">Family name</span>
+            <input
+              value={familyName}
+              onChange={(e) => setFamilyName(e.target.value)}
+              required
+              className="w-full min-w-0 rounded-xl border border-slate-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-slate-900"
+              placeholder="Family name"
+              autoComplete="family-name"
+            />
+          </label>
         </div>
 
-        <div className="mt-4 card overflow-hidden">
-          <div className="p-6">
-            <div className="flex items-start gap-4">
-              <div className="relative h-12 w-12 rounded-xl bg-white border border-slate-200 overflow-hidden shrink-0">
-                {job.logoUrl ? (
-                  <Image
-                    src={job.logoUrl}
-                    alt={job.logoAlt || `${job.orgName} logo`}
-                    fill
-                    sizes="48px"
-                    className="object-contain"
-                  />
-                ) : (
-                  <div className="h-full w-full flex items-center justify-center text-sm text-slate-500">
-                    {job.orgName?.[0] ?? "•"}
-                  </div>
-                )}
-              </div>
+        <div className="grid gap-3 grid-cols-1 md:grid-cols-2 min-w-0">
+          <label className="grid gap-1 min-w-0">
+            <span className="text-sm font-medium">Email</span>
+            <input
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
+              type="email"
+              className="w-full min-w-0 rounded-xl border border-slate-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-slate-900"
+              placeholder="you@email.com"
+              autoComplete="email"
+              inputMode="email"
+            />
+          </label>
 
-              <div className="min-w-0">
-                <h1 className="text-2xl md:text-3xl font-semibold">{job.title}</h1>
-                <div className="text-slate-700">{job.orgName}</div>
+          <label className="grid gap-1 min-w-0">
+            <span className="text-sm font-medium">Phone (optional)</span>
+            <input
+              value={phone}
+              onChange={(e) => setPhone(e.target.value)}
+              className="w-full min-w-0 rounded-xl border border-slate-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-slate-900"
+              placeholder="+31 6..."
+              autoComplete="tel"
+              inputMode="tel"
+            />
+          </label>
+        </div>
 
-                <div className="mt-3 text-sm text-slate-700">
-                  {job.baseSalaryMin
-                    ? `€${job.baseSalaryMin}${job.baseSalaryMax ? `–€${job.baseSalaryMax}` : ""}/${job.payUnit?.toLowerCase()}`
-                    : "Pay: N/A"}
-                  {" • "}
-                  {job.workHours ?? "Hours: N/A"}
-                  {job.area ? ` • ${job.area}` : ""}
-                  {" • "}
-                  {job.englishFriendly ? "English-friendly" : "Dutch required"}
-                </div>
-
-                <div className="mt-2 text-sm text-slate-600">
-                  City: <span className="font-mono">{cityPrefill}</span>
-                </div>
-              </div>
-            </div>
-
-            <div className="mt-6 prose max-w-none">
-              <div dangerouslySetInnerHTML={{ __html: job.descriptionHtml || "" }} />
-            </div>
-
-            {job.externalUrl ? (
-              <div className="mt-6">
-                <a
-                  href={job.externalUrl}
-                  target="_blank"
-                  rel="nofollow external noopener noreferrer"
-                  className="inline-flex items-center justify-center rounded-xl px-4 py-2 text-white bg-slate-900 hover:bg-slate-800"
-                >
-                  Open employer link
-                </a>
-                <p className="mt-2 text-xs text-slate-500">
-                  You can also apply below if you prefer.
-                </p>
-              </div>
-            ) : null}
-
-          <JobApplyForm
-            jobSlug={job.slug}
-            jobTitle={job.title}
-            orgName={job.orgName}
-            city={(job.addressLocality || "amsterdam").toLowerCase()}
-            redirectTo={`/thank-you?job=${encodeURIComponent(job.slug)}`}
+        <label className="grid gap-1 min-w-0">
+          <span className="text-sm font-medium">Message (optional)</span>
+          <textarea
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
+            rows={5}
+            className="w-full min-w-0 rounded-xl border border-slate-300 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-slate-900"
+            placeholder="Availability, experience, languages, etc."
           />
-          </div>
+        </label>
+
+        <label className="grid gap-1 min-w-0">
+          <span className="text-sm font-medium">CV (optional)</span>
+          <input
+            type="file"
+            accept=".pdf,.doc,.docx"
+            onChange={(e) => setCvFile(e.target.files?.[0] || null)}
+            className="w-full min-w-0 rounded-xl border border-slate-300 px-3 py-2 bg-white"
+          />
+          <span className="text-xs text-slate-500">PDF, DOC, DOCX</span>
+        </label>
+
+        <div className="grid gap-2 min-w-0">
+          <label className="flex items-start gap-2 text-sm text-slate-700 min-w-0">
+            <input
+              type="checkbox"
+              checked={consentThisAd}
+              onChange={(e) => setConsentThisAd(e.target.checked)}
+              className="mt-1 shrink-0"
+            />
+            <span className="min-w-0">
+              I consent to processing my details for this job application and sharing them with the employer.
+            </span>
+          </label>
+
+          <label className="flex items-start gap-2 text-sm text-slate-700 min-w-0">
+            <input
+              type="checkbox"
+              checked={consentSimilarAds}
+              onChange={(e) => setConsentSimilarAds(e.target.checked)}
+              className="mt-1 shrink-0"
+            />
+            <span className="min-w-0">I consent to being contacted about similar job ads.</span>
+          </label>
         </div>
-      </div>
+
+        {err && (
+          <div className="rounded-xl border border-red-200 bg-red-50 p-3 text-sm text-red-800">
+            {err}
+          </div>
+        )}
+        {ok && (
+          <div className="rounded-xl border border-emerald-200 bg-emerald-50 p-3 text-sm text-emerald-900">
+            {ok}
+          </div>
+        )}
+
+        <button
+          type="submit"
+          disabled={loading}
+          className="w-full inline-flex items-center justify-center rounded-xl px-4 py-3 text-white bg-slate-900 hover:bg-slate-800 disabled:opacity-60"
+        >
+          {loading ? "Sending..." : "Send application"}
+        </button>
+      </form>
     </section>
   );
 }
