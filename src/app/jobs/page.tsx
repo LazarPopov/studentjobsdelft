@@ -4,9 +4,9 @@ import Link from "next/link";
 import { listJobs, listFeaturedJobs } from "@/data/jobs";
 
 export const metadata = {
-  title: "Jobs in Maastricht | Student Jobs Maastricht",
-  description: "All current student jobs in Maastricht.",
-  alternates: { canonical: "https://studentjobsmaastricht.nl/jobs" },
+  title: "Jobs in Delft | Student Jobs Delft",
+  description: "All current student jobs in Delft.",
+  alternates: { canonical: "https://studentjobsdelft.nl/jobs" },
 };
 
 type Search = { q?: string | string[]; category?: string | string[]; english?: string | string[] };
@@ -37,7 +37,7 @@ function JobsItemListJsonLd({
 }: {
   items: { slug: string; title: string }[];
 }) {
-  const baseUrl = "https://studentjobsmaastricht.nl";
+  const baseUrl = "https://studentjobsdelft.nl";
   const elementList = items.map((j, i) => ({
     "@type": "ListItem",
     position: i + 1,
@@ -89,7 +89,7 @@ export default function JobsIndex({ searchParams }: { searchParams: Search }) {
 
         {/* Top bar with Return and (optional) Clear filters */}
         <div className="flex items-center justify-between">
-          <h1 className="text-3xl md:text-4xl font-semibold">All Jobs in Maastricht</h1>
+          <h1 className="text-3xl md:text-4xl font-semibold">All Jobs in Delft</h1>
           <div className="flex gap-2">
             <Link href="/" className="btn btn-ghost">
               ← Return

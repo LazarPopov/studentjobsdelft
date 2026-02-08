@@ -1,7 +1,7 @@
-# replace_Amsterdam_to_Maastricht.ps1
+# replace_Maastricht_to_Delft.ps1
 # Replaces:
-#   Amsterdam -> Maastricht
-#   amsterdam -> maastricht
+#   Maastricht -> Delft
+#   maastricht -> delft
 # In:
 #   1) file contents (text files only)
 #   2) file names
@@ -20,8 +20,8 @@ $thisScriptPath = $PSCommandPath
 
 function Apply-Replacements([string]$s) {
     if ($null -eq $s) { return $s }
-    $s = $s.Replace("Amsterdam", "Maastricht")
-    $s = $s.Replace("amsterdam", "maastricht")
+    $s = $s.Replace("Maastricht", "Delft")
+    $s = $s.Replace("maastricht", "delft")
     return $s
 }
 

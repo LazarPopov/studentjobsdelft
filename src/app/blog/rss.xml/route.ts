@@ -1,26 +1,26 @@
 // src/app/blog/rss.xml/route.ts
 import { NextResponse } from "next/server";
 
-const site = "https://studentjobsmaastricht.nl";
+const site = "https://studentjobsdelft.nl";
 
 const posts = [
   {
-    slug: "english-speaking-student-jobs-maastricht",
-    title: "English-Speaking Student Jobs in Maastricht (2026)",
+    slug: "english-speaking-student-jobs-delft",
+    title: "English-Speaking Student Jobs in Delft (2026)",
     description:
-      "Find English-friendly student jobs in Maastricht: best sectors, quick-apply tips, and where to look.",
+      "Find English-friendly student jobs in Delft: best sectors, quick-apply tips, and where to look.",
     date: "2026-10-02",
   },
   {
-    slug: "student-jobs-maastricht-complete-guide-2026",
-    title: "Student Jobs in Maastricht — Complete Guide (2026)",
+    slug: "student-jobs-delft-complete-guide-2026",
+    title: "Student Jobs in Delft — Complete Guide (2026)",
     description:
-      "Permits, contracts, pay, neighborhoods, and step-by-step tactics to land a student job fast in Maastricht.",
+      "Permits, contracts, pay, neighborhoods, and step-by-step tactics to land a student job fast in Delft.",
     date: "2026-10-02",
   },
   {
-    slug: "best-paying-student-jobs-maastricht-2026",
-    title: "Best-Paying Student Jobs in Maastricht (2026)",
+    slug: "best-paying-student-jobs-delft-2026",
+    title: "Best-Paying Student Jobs in Delft (2026)",
     description:
       "Top-paying categories, shift allowances, and certifications (BHV, VCA, HACCP, forklift) to boost your hourly rate.",
     date: "2026-10-02",
@@ -57,9 +57,9 @@ export async function GET() {
     })
     .join("");
 
-  const channelTitle = "Student Jobs Maastricht Blog";
+  const channelTitle = "Student Jobs Delft Blog";
   const channelDescription =
-    "Maastricht student job guides: English-friendly jobs, pay, contracts, visas, and where to apply.";
+    "Delft student job guides: English-friendly jobs, pay, contracts, visas, and where to apply.";
 
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0"

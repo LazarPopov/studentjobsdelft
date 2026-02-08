@@ -12,7 +12,7 @@ export async function POST(req: Request) {
   const payload = {
     name: String(form.get("name") || ""),
     email: String(form.get("email") || ""),
-    city: String(form.get("city") || "Maastricht"),
+    city: String(form.get("city") || "Delft"),
     submittedAt: new Date().toISOString(),
   };
 

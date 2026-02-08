@@ -13,9 +13,9 @@ export default function SiteFooter() {
       <div className="mx-auto max-w-6xl px-4 sm:px-6 py-8 sm:py-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
         {/* Brand */}
         <div>
-          <div className="text-lg sm:text-xl font-semibold">Student Jobs Maastricht</div>
+          <div className="text-lg sm:text-xl font-semibold">Student Jobs Delft</div>
           <p className="mt-2 text-sm text-slate-600 leading-relaxed">
-            Student jobs, bijbaan tips, and city guides for Maastricht. Find English friendly roles, compare pay, and apply
+            Student jobs, bijbaan tips, and city guides for Delft. Find English friendly roles, compare pay, and apply
             fast.
           </p>
           <p className="mt-3 text-xs text-slate-500">
@@ -24,7 +24,7 @@ export default function SiteFooter() {
         </div>
 
         {/* Explore */}
-        <nav aria-label="Explore Student Jobs Maastricht">
+        <nav aria-label="Explore Student Jobs Delft">
           <div className="font-semibold">Explore</div>
           <ul className="mt-3 space-y-2 text-sm">
             <li>
@@ -65,18 +65,18 @@ export default function SiteFooter() {
           <div className="font-semibold">Popular reads</div>
           <ul className="mt-3 space-y-2 text-sm">
             <li>
-              <Link href="/blog/english-speaking-student-jobs-maastricht" className="underline underline-offset-2">
-                English Speaking Student Jobs in Maastricht
+              <Link href="/blog/english-speaking-student-jobs-delft" className="underline underline-offset-2">
+                English Speaking Student Jobs in Delft
               </Link>
             </li>
             <li>
-              <Link href="/blog/best-paying-student-jobs-maastricht-2026" className="underline underline-offset-2">
-                Best Paying Student Jobs in Maastricht (2026)
+              <Link href="/blog/best-paying-student-jobs-delft-2026" className="underline underline-offset-2">
+                Best Paying Student Jobs in Delft (2026)
               </Link>
             </li>
             <li>
-              <Link href="/blog/student-jobs-maastricht-complete-guide-2026" className="underline underline-offset-2">
-                Student Jobs Maastricht Complete Guide (2026)
+              <Link href="/blog/student-jobs-delft-complete-guide-2026" className="underline underline-offset-2">
+                Student Jobs Delft Complete Guide (2026)
               </Link>
             </li>
           </ul>
@@ -115,11 +115,11 @@ export default function SiteFooter() {
             </li>
                         <li>
               <a
-                href="https://www.studentjobsmaastricht.nl/"
+                href="https://www.studentjobsdelft.nl/"
                 className="underline underline-offset-2"
                 rel="noopener"
               >
-                Student Jobs Maastricht
+                Student Jobs Delft
               </a>
             </li>
           </ul>
@@ -133,7 +133,7 @@ export default function SiteFooter() {
       {/* Bottom bar */}
       <div className="bg-white border-t">
         <div className="mx-auto max-w-6xl px-4 sm:px-6 py-4 flex flex-col md:flex-row items-start md:items-center justify-between gap-3 text-xs text-slate-500">
-          <div>© {year} Student Jobs Maastricht. All rights reserved.</div>
+          <div>© {year} Student Jobs Delft. All rights reserved.</div>
           <div className="flex flex-wrap items-center gap-4">
             <Link href="/privacy" className="underline underline-offset-2">
               Privacy

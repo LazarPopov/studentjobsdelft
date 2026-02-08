@@ -2,7 +2,7 @@
 import { listJobs } from "@/data/jobs";
 
 export default function sitemap() {
-  const base = "https://studentjobsmaastricht.nl";
+  const base = "https://studentjobsdelft.nl";
   const now = new Date();
 
   const staticUrls = [
@@ -38,9 +38,9 @@ export default function sitemap() {
   }));
 
   const blog = [
-    "english-speaking-student-jobs-Maastricht",
-    "student-jobs-Maastricht-complete-guide-2026",
-    "best-paying-student-jobs-Maastricht-2026",
+    "english-speaking-student-jobs-Delft",
+    "student-jobs-Delft-complete-guide-2026",
+    "best-paying-student-jobs-Delft-2026",
   ].map((slug) => ({
     url: `${base}/blog/${slug}`,
     changefreq: "monthly",

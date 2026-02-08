@@ -1,4 +1,4 @@
-// src/app/page.tsx (Next.js App Router) — Maastricht homepage (SEO-ready, rank-and-rent)
+// src/app/page.tsx (Next.js App Router) — Delft homepage (SEO-ready, rank-and-rent)
 import type { Metadata } from "next";
 import Link from "next/link";
 import { listFeaturedJobs } from "@/data/jobs";
@@ -40,24 +40,24 @@ function JobCardLink({
 }
 
 export const metadata: Metadata = {
-  title: "Student Jobs in Maastricht (2026) | Part-Time & English-Friendly Work",
+  title: "Student Jobs in Delft (2026) | Part-Time & English-Friendly Work",
   description:
-    "Find student jobs in Maastricht: hospitality, logistics, retail, tutoring and more. English-friendly roles, flexible hours, updated daily.",
-  alternates: { canonical: "https://studentjobsmaastricht.nl/" },
+    "Find student jobs in Delft: hospitality, logistics, retail, tutoring and more. English-friendly roles, flexible hours, updated daily.",
+  alternates: { canonical: "https://studentjobsdelft.nl/" },
   openGraph: {
-    title: "Student Jobs in Maastricht (2026)",
+    title: "Student Jobs in Delft (2026)",
     description:
-      "Part-time & English-friendly work for students in Maastricht. Updated daily.",
-    url: "https://studentjobsmaastricht.nl/",
-    siteName: "Student Jobs Maastricht",
+      "Part-time & English-friendly work for students in Delft. Updated daily.",
+    url: "https://studentjobsdelft.nl/",
+    siteName: "Student Jobs Delft",
     type: "website",
     locale: "en_NL",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Student Jobs in Maastricht (2026)",
+    title: "Student Jobs in Delft (2026)",
     description:
-      "Part-time & English-friendly work for students in Maastricht. Updated daily.",
+      "Part-time & English-friendly work for students in Delft. Updated daily.",
   },
 };
 
@@ -75,27 +75,27 @@ export default function Page() {
 
   const blogPosts = [
     {
-      slug: "studenten-bijbaan-maastricht",
+      slug: "studenten-bijbaan-delft",
       title:
-        "Studenten bijbaan Maastricht (2026) – Goed betaald, Engelstalig & weekend",
+        "Studenten bijbaan Delft (2026) – Goed betaald, Engelstalig & weekend",
       excerpt:
-        "De ultieme gids voor een studenten bijbaan in Maastricht: avond/weekend, Engelstalig, zonder ervaring. Uurloon-tabellen, contractvormen, wijken en snelle filters.",
+        "De ultieme gids voor een studenten bijbaan in Delft: avond/weekend, Engelstalig, zonder ervaring. Uurloon-tabellen, contractvormen, wijken en snelle filters.",
     },
     {
-      slug: "student-jobs-maastricht-complete-guide-2026",
-      title: "Student Jobs in Maastricht — Complete Guide (2026)",
+      slug: "student-jobs-delft-complete-guide-2026",
+      title: "Student Jobs in Delft — Complete Guide (2026)",
       excerpt:
         "Permits, contracts, pay, neighborhoods, and tactics to land a job fast.",
     },
     {
-      slug: "english-speaking-student-jobs-maastricht",
-      title: "English-Speaking Student Jobs in Maastricht (2026)",
+      slug: "english-speaking-student-jobs-delft",
+      title: "English-Speaking Student Jobs in Delft (2026)",
       excerpt:
         "Where to find roles that don’t require Dutch, with quick-apply tips.",
     },
     {
-      slug: "best-paying-student-jobs-maastricht-2026",
-      title: "Best-Paying Student Jobs in Maastricht (2026)",
+      slug: "best-paying-student-jobs-delft-2026",
+      title: "Best-Paying Student Jobs in Delft (2026)",
       excerpt:
         "Shift bonuses, industries, and certifications that increase pay.",
     },
@@ -103,7 +103,7 @@ export default function Page() {
 
   const faqs = [
     {
-      q: "Can non-EU students work in Maastricht?",
+      q: "Can non-EU students work in Delft?",
       a: "Yes, but typically up to 16 hours/week during the academic year (or full-time in summer) with the correct permit. Always confirm the latest rules with your employer.",
     },
     {
@@ -125,12 +125,12 @@ export default function Page() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "WebSite",
-            name: "Student Jobs Maastricht",
-            url: "https://studentjobsmaastricht.nl/",
+            name: "Student Jobs Delft",
+            url: "https://studentjobsdelft.nl/",
             potentialAction: {
               "@type": "SearchAction",
               target:
-                "https://studentjobsmaastricht.nl/jobs?q={search_term_string}",
+                "https://studentjobsdelft.nl/jobs?q={search_term_string}",
               "query-input": "required name=search_term_string",
             },
           }),
@@ -143,15 +143,15 @@ export default function Page() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Organization",
-            name: "Student Jobs Maastricht",
-            url: "https://studentjobsmaastricht.nl/",
+            name: "Student Jobs Delft",
+            url: "https://studentjobsdelft.nl/",
             sameAs: [],
             areaServed: {
               "@type": "City",
-              name: "Maastricht",
+              name: "Delft",
               address: {
                 "@type": "PostalAddress",
-                addressLocality: "Maastricht",
+                addressLocality: "Delft",
                 addressCountry: "NL",
               },
             },
@@ -170,7 +170,7 @@ export default function Page() {
               position: index + 1,
               url: job.externalUrl
                 ? job.externalUrl
-                : `https://studentjobsmaastricht.nl/jobs/${job.slug}`,
+                : `https://studentjobsdelft.nl/jobs/${job.slug}`,
               name: job.title,
             })),
           }),
@@ -181,8 +181,8 @@ export default function Page() {
       <section className="relative min-h-[620px] md:min-h-[560px] lg:min-h-[600px]">
         {/* Banner image */}
         <Image
-          src="/maastricht.jpg"
-          alt="Maastricht buildings"
+          src="/delft.jpg"
+          alt="Delft buildings"
           fill
           priority
           sizes="100vw"
@@ -198,7 +198,7 @@ export default function Page() {
             <div className="flex items-start justify-between gap-4">
               <div>
                 <h1 className="text-3xl md:text-5xl font-semibold text-white">
-                  Student Jobs in Maastricht (2026)
+                  Student Jobs in Delft (2026)
                 </h1>
                 <p className="mt-3 text-base md:text-xl text-white/90 max-w-2xl">
                   Part-time & English-friendly roles. Flexible hours. Updated daily.
@@ -237,8 +237,8 @@ export default function Page() {
           {/* Keep hero image behind content */}
           <div className="pointer-events-none absolute inset-0 -z-10">
             <Image
-              src="/maastricht.jpg"
-              alt="Maastricht buildings"
+              src="/delft.jpg"
+              alt="Delft buildings"
               fill
               priority
               sizes="100vw"
@@ -322,7 +322,7 @@ export default function Page() {
         <div className="mx-auto max-w-6xl grid gap-8 md:grid-cols-2">
           <div>
             <h2 className="text-2xl md:text-3xl font-semibold">
-              Why Maastricht works for students
+              Why Delft works for students
             </h2>
             <ul className="mt-4 space-y-3 text-gray-700">
               <li>• Strong demand in hospitality around the city center.</li>
@@ -371,7 +371,7 @@ export default function Page() {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
               <h2 className="text-2xl md:text-3xl font-semibold">
-                Are you a business? Hire students in Maastricht
+                Are you a business? Hire students in Delft
               </h2>
               <ul className="mt-4 space-y-2 text-gray-700">
                 <li>• City-specific audience of active student job-seekers</li>
@@ -393,7 +393,7 @@ export default function Page() {
               <h3 className="font-semibold">What you get</h3>
               <p className="mt-2 text-gray-700">
                 Featured placement on the homepage, priority in relevant
-                categories, and targeted candidates via our Maastricht-only list.
+                categories, and targeted candidates via our Delft-only list.
                 We review every role before it goes live.
               </p>
             </div>
@@ -427,7 +427,7 @@ export default function Page() {
       <section className="px-6 py-12">
         <div className="mx-auto max-w-3xl rounded-2xl border p-6 md:p-10">
           <h2 className="text-2xl md:text-3xl font-semibold">
-            Get weekly student jobs in your inbox (Maastricht)
+            Get weekly student jobs in your inbox (Delft)
           </h2>
           <p className="mt-2 text-gray-700">
             One email per week. No spam. Unsubscribe anytime.
@@ -450,7 +450,7 @@ export default function Page() {
               className="border rounded-xl px-4 py-3"
               required
             />
-            <input type="hidden" name="city" value="Maastricht" />
+            <input type="hidden" name="city" value="Delft" />
             <button
               className="rounded-xl px-4 py-3 border bg-black text-white"
               type="submit"
@@ -519,7 +519,7 @@ export default function Page() {
             <div>
               <h2 className="text-lg md:text-xl font-semibold">Our partners</h2>
               <p className="text-sm text-gray-700 mt-1">
-                We collaborate with SEO, community, and hiring partners in Maastricht.
+                We collaborate with SEO, community, and hiring partners in Delft.
               </p>
             </div>
             <Link

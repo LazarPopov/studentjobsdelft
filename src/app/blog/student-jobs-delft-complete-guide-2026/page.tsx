@@ -1,38 +1,38 @@
-// src/app/guides/student-jobs-maastricht-complete-guide-2026/page.tsx
+// src/app/guides/student-jobs-delft-complete-guide-2026/page.tsx
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
-const BASE_URL = "https://studentjobsmaastricht.nl";
+const BASE_URL = "https://studentjobsdelft.nl";
 
 const PUBLISH_DATE = "2026-10-02";
 const MODIFIED_DATE = "2026-02-07";
 
-const CANONICAL = `${BASE_URL}/blog/student-jobs-maastricht-complete-guide-2026`;
+const CANONICAL = `${BASE_URL}/blog/student-jobs-delft-complete-guide-2026`;
 
 // Use the local image you mentioned (in /public/blog/)
-const HERO_IMAGE_PATH = "/blog/maastricht-bridge.jpg";
+const HERO_IMAGE_PATH = "/blog/delft-bridge.jpg";
 const OG_IMAGE_URL = `${BASE_URL}${HERO_IMAGE_PATH}`;
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
   title:
-    "Student Jobs in Maastricht (2026) | Complete Guide: English Friendly, Pay, Contracts, Visas",
+    "Student Jobs in Delft (2026) | Complete Guide: English Friendly, Pay, Contracts, Visas",
   description:
-    "Complete guide to student jobs in Maastricht for 2026. English friendly roles, pay ranges, contracts, permits, neighborhoods, CV templates, and where to apply fast.",
+    "Complete guide to student jobs in Delft for 2026. English friendly roles, pay ranges, contracts, permits, neighborhoods, CV templates, and where to apply fast.",
   keywords: [
-    "student jobs Maastricht",
-    "student jobs in Maastricht",
-    "English speaking student jobs Maastricht",
-    "part time jobs Maastricht students",
+    "student jobs Delft",
+    "student jobs in Delft",
+    "English speaking student jobs Delft",
+    "part time jobs Delft students",
     "student visa work Netherlands",
-    "Maastricht student wage",
+    "Delft student wage",
     "work permit student Netherlands",
-    "weekend jobs Maastricht students",
-    "evening jobs Maastricht students",
-    "tutoring jobs Maastricht",
-    "hospitality jobs Maastricht students",
-    "warehouse jobs Maastricht students",
+    "weekend jobs Delft students",
+    "evening jobs Delft students",
+    "tutoring jobs Delft",
+    "hospitality jobs Delft students",
+    "warehouse jobs Delft students",
   ],
   alternates: { canonical: CANONICAL },
   robots: {
@@ -47,13 +47,13 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Student Jobs in Maastricht (2026): Complete Guide",
+    title: "Student Jobs in Delft (2026): Complete Guide",
     description:
-      "Permits, contracts, pay ranges, neighborhoods, and step by step tactics to land a student job in Maastricht fast.",
+      "Permits, contracts, pay ranges, neighborhoods, and step by step tactics to land a student job in Delft fast.",
     url: CANONICAL,
     type: "article",
     locale: "en_NL",
-    siteName: "Student Jobs Maastricht",
+    siteName: "Student Jobs Delft",
     publishedTime: PUBLISH_DATE,
     modifiedTime: MODIFIED_DATE,
     images: [
@@ -61,15 +61,15 @@ export const metadata: Metadata = {
         url: OG_IMAGE_URL,
         width: 1200,
         height: 630,
-        alt: "Maastricht bridge and canals",
+        alt: "Delft bridge and canals",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Student Jobs in Maastricht (2026): Complete Guide",
+    title: "Student Jobs in Delft (2026): Complete Guide",
     description:
-      "English friendly roles, pay ranges, contracts, permits, and where to apply fast in Maastricht.",
+      "English friendly roles, pay ranges, contracts, permits, and where to apply fast in Delft.",
     images: [OG_IMAGE_URL],
   },
 };
@@ -81,11 +81,11 @@ export default function GuideComplete() {
         {/* HEADER */}
         <header className="max-w-3xl">
           <h1 className="text-3xl md:text-5xl font-semibold leading-tight">
-            Student Jobs in Maastricht: complete guide (2026)
+            Student Jobs in Delft: complete guide (2026)
           </h1>
 
           <p className="mt-3 text-sm text-slate-600">
-            By <span className="font-medium">Student Jobs Maastricht</span> • Updated{" "}
+            By <span className="font-medium">Student Jobs Delft</span> • Updated{" "}
             {new Date(MODIFIED_DATE).toLocaleDateString("en-NL", {
               year: "numeric",
               month: "long",
@@ -96,7 +96,7 @@ export default function GuideComplete() {
           <figure className="mt-5 overflow-hidden rounded-2xl border bg-white">
             <Image
               src={HERO_IMAGE_PATH}
-              alt="Maastricht bridge and canals"
+              alt="Delft bridge and canals"
               width={1280}
               height={720}
               priority
@@ -105,31 +105,31 @@ export default function GuideComplete() {
             <figcaption className="px-4 py-3 text-xs text-slate-600">
               Photo credit:{" "}
               <a
-                href="https://www.maastrichtprivateboat.com"
+                href="https://www.delftprivateboat.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="underline"
               >
-                maastrichtprivateboat.com
+                delftprivateboat.com
               </a>
             </figcaption>
           </figure>
 
           {/* Quick CTAs */}
           <div className="mt-6 flex flex-wrap gap-2">
-            <Link href="/jobs?city=Maastricht" className="rounded-full border px-3 py-1 text-sm underline">
-              All Maastricht jobs
+            <Link href="/jobs?city=Delft" className="rounded-full border px-3 py-1 text-sm underline">
+              All Delft jobs
             </Link>
-            <Link href="/jobs?city=Maastricht&english=true" className="rounded-full border px-3 py-1 text-sm underline">
+            <Link href="/jobs?city=Delft&english=true" className="rounded-full border px-3 py-1 text-sm underline">
               English friendly
             </Link>
-            <Link href="/jobs?city=Maastricht&weekend=true" className="rounded-full border px-3 py-1 text-sm underline">
+            <Link href="/jobs?city=Delft&weekend=true" className="rounded-full border px-3 py-1 text-sm underline">
               Weekend shifts
             </Link>
-            <Link href="/jobs?city=Maastricht&evening=true" className="rounded-full border px-3 py-1 text-sm underline">
+            <Link href="/jobs?city=Delft&evening=true" className="rounded-full border px-3 py-1 text-sm underline">
               Evening shifts
             </Link>
-            <Link href="/part-time-jobs-maastricht-students" className="rounded-full border px-3 py-1 text-sm underline">
+            <Link href="/part-time-jobs-delft-students" className="rounded-full border px-3 py-1 text-sm underline">
               Part time jobs page
             </Link>
           </div>
@@ -178,7 +178,7 @@ export default function GuideComplete() {
             "
           >
             <p>
-              This guide is built for one goal: help you get a student job in Maastricht fast, legally, and with a schedule
+              This guide is built for one goal: help you get a student job in Delft fast, legally, and with a schedule
               that still lets you pass your classes. Use the quick start checklist, then apply using the filters.
             </p>
 
@@ -203,8 +203,8 @@ export default function GuideComplete() {
                 Prepare <strong>ID, BSN or appointment proof, IBAN</strong>. Keep residence documents ready if relevant.
               </li>
               <li>
-                Save time: <Link href="/jobs?city=Maastricht">browse Maastricht jobs</Link> or{" "}
-                <Link href="/jobs?city=Maastricht&english=true">English friendly only</Link>.
+                Save time: <Link href="/jobs?city=Delft">browse Delft jobs</Link> or{" "}
+                <Link href="/jobs?city=Delft&english=true">English friendly only</Link>.
               </li>
             </ul>
 
@@ -232,7 +232,7 @@ export default function GuideComplete() {
 
             <h2 id="neighborhoods">Neighborhoods and commute tips</h2>
             <p>
-              Maastricht is big and travel time kills your energy. Prioritize roles within a realistic commute.
+              Delft is big and travel time kills your energy. Prioritize roles within a realistic commute.
             </p>
             <ul>
               <li><strong>Centrum</strong>: hospitality, retail, tourist traffic, events venues.</li>
@@ -243,7 +243,7 @@ export default function GuideComplete() {
               <li><strong>Sloterdijk and Westpoort</strong>: logistics and warehouses, often with evening or night premiums.</li>
             </ul>
 
-            <h2 id="categories">Best student job categories in Maastricht</h2>
+            <h2 id="categories">Best student job categories in Delft</h2>
             <ul>
               <li>
                 <strong>Hospitality and events</strong>: flexible shifts, fast onboarding, tips possible.
@@ -261,13 +261,13 @@ export default function GuideComplete() {
 
             <h2 id="where-to-look">Where to find jobs fast</h2>
             <ul>
-              <li><Link href="/jobs?city=Maastricht">Student Jobs Maastricht: all jobs</Link></li>
+              <li><Link href="/jobs?city=Delft">Student Jobs Delft: all jobs</Link></li>
               <li>
                 Use filters:{" "}
-                <Link href="/jobs?city=Maastricht&english=true">English friendly</Link>,{" "}
-                <Link href="/jobs?city=Maastricht&evening=true">evening</Link>,{" "}
-                <Link href="/jobs?city=Maastricht&weekend=true">weekend</Link>,{" "}
-                <Link href="/jobs?city=Maastricht&noExperience=true">no experience</Link>.
+                <Link href="/jobs?city=Delft&english=true">English friendly</Link>,{" "}
+                <Link href="/jobs?city=Delft&evening=true">evening</Link>,{" "}
+                <Link href="/jobs?city=Delft&weekend=true">weekend</Link>,{" "}
+                <Link href="/jobs?city=Delft&noExperience=true">no experience</Link>.
               </li>
               <li><Link href="/categories">Browse by category</Link></li>
               <li><Link href="/employers">Employer: feature your job</Link></li>
@@ -276,7 +276,7 @@ export default function GuideComplete() {
             <h2 id="cv-templates">CV and message templates</h2>
             <p>Copy and paste this into an application form or message:</p>
             <blockquote>
-              Hi! I’m a student in Maastricht and I’m available on weekdays after 16:00 and on weekends. I can start
+              Hi! I’m a student in Delft and I’m available on weekdays after 16:00 and on weekends. I can start
               immediately and I’m reliable with evening and weekend shifts. CV attached. Thank you!
             </blockquote>
             <p>
@@ -301,15 +301,15 @@ export default function GuideComplete() {
             <div className="rounded-2xl border p-5 bg-white">
               <div className="font-semibold text-lg">Ready to apply?</div>
               <p className="mt-1">
-                Start here: <Link href="/jobs?city=Maastricht">Maastricht jobs</Link>,{" "}
-                <Link href="/jobs?city=Maastricht&english=true">English friendly</Link>, or{" "}
+                Start here: <Link href="/jobs?city=Delft">Delft jobs</Link>,{" "}
+                <Link href="/jobs?city=Delft&english=true">English friendly</Link>, or{" "}
                 <Link href="/categories">categories</Link>.
               </p>
             </div>
 
             <h2 id="faq">FAQ</h2>
 
-            <h3>Is Dutch required for student jobs in Maastricht?</h3>
+            <h3>Is Dutch required for student jobs in Delft?</h3>
             <p>
               Not always. Many hospitality, delivery, logistics, events, and support roles are English friendly. Basic Dutch helps for retail.
             </p>
@@ -319,7 +319,7 @@ export default function GuideComplete() {
               Many students aim for 8 to 20 hours per week. If you are non EU, check if you have additional limits or permit rules.
             </p>
 
-            <h3>What is a good starting wage in Maastricht?</h3>
+            <h3>What is a good starting wage in Delft?</h3>
             <p>
               Often €13 to €17 per hour for many student roles. Tutoring can be higher, and allowances can boost your effective hourly rate.
             </p>
@@ -333,24 +333,24 @@ export default function GuideComplete() {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Article",
-              headline: "Student Jobs in Maastricht (2026): Complete Guide",
+              headline: "Student Jobs in Delft (2026): Complete Guide",
               description:
-                "Permits, contracts, pay ranges, neighborhoods, and step by step tactics to land a student job in Maastricht fast.",
+                "Permits, contracts, pay ranges, neighborhoods, and step by step tactics to land a student job in Delft fast.",
               image: [OG_IMAGE_URL],
               datePublished: PUBLISH_DATE,
               dateModified: MODIFIED_DATE,
               author: {
                 "@type": "Organization",
-                name: "Student Jobs Maastricht",
+                name: "Student Jobs Delft",
                 url: `${BASE_URL}/`,
               },
               publisher: {
                 "@type": "Organization",
-                name: "Student Jobs Maastricht",
+                name: "Student Jobs Delft",
                 url: `${BASE_URL}/`,
               },
               mainEntityOfPage: { "@type": "WebPage", "@id": CANONICAL },
-              about: [{ "@type": "Place", name: "Maastricht" }],
+              about: [{ "@type": "Place", name: "Delft" }],
             }),
           }}
         />
@@ -363,7 +363,7 @@ export default function GuideComplete() {
               "@type": "BreadcrumbList",
               itemListElement: [
                 { "@type": "ListItem", position: 1, name: "Blog", item: `${BASE_URL}/blog` },
-                { "@type": "ListItem", position: 2, name: "Student Jobs in Maastricht (2026)", item: CANONICAL },
+                { "@type": "ListItem", position: 2, name: "Student Jobs in Delft (2026)", item: CANONICAL },
               ],
             }),
           }}
@@ -379,7 +379,7 @@ export default function GuideComplete() {
               mainEntity: [
                 {
                   "@type": "Question",
-                  name: "Is Dutch required for student jobs in Maastricht?",
+                  name: "Is Dutch required for student jobs in Delft?",
                   acceptedAnswer: {
                     "@type": "Answer",
                     text:
@@ -397,7 +397,7 @@ export default function GuideComplete() {
                 },
                 {
                   "@type": "Question",
-                  name: "What is a good starting wage in Maastricht?",
+                  name: "What is a good starting wage in Delft?",
                   acceptedAnswer: {
                     "@type": "Answer",
                     text:
@@ -415,7 +415,7 @@ export default function GuideComplete() {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "HowTo",
-              name: "How to get a student job in Maastricht fast",
+              name: "How to get a student job in Delft fast",
               image: [OG_IMAGE_URL],
               totalTime: "PT2H",
               supply: [

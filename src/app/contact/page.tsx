@@ -2,10 +2,10 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact | Student Jobs Maastricht",
+  title: "Contact | Student Jobs Delft",
   description:
     "Questions about listings or partnerships? Send us a message and we'll get back to you.",
-  alternates: { canonical: "https://studentjobsMaastricht.nl/contact" },
+  alternates: { canonical: "https://studentjobsDelft.nl/contact" },
 };
 
 export default function ContactPage() {

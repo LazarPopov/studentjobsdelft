@@ -5,7 +5,7 @@ CREATE TABLE IF NOT EXISTS employer_job_submissions (
   id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
   created_at TIMESTAMPTZ DEFAULT NOW() NOT NULL,
 
-  region TEXT DEFAULT 'Maastricht' NOT NULL,
+  region TEXT DEFAULT 'Delft' NOT NULL,
   
   -- Company & Contact Info
   company TEXT NOT NULL,

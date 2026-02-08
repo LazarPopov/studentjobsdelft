@@ -56,7 +56,7 @@ export default function JobApplyForm({
       form.append("jobSlug", jobSlug);
       if (jobTitle) form.append("jobTitle", jobTitle);
       if (orgName) form.append("orgName", orgName);
-      form.append("city", (city || "maastricht").toLowerCase());
+      form.append("city", (city || "delft").toLowerCase());
 
       form.append("firstName", firstName);
       form.append("familyName", familyName);

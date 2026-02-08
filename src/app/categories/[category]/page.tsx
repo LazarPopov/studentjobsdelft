@@ -20,9 +20,9 @@ export async function generateMetadata({ params }: { params: { category: string 
   const key = params.category;
   const label = CATEGORY_LABELS[key] ?? key;
   return {
-    title: `${label} Jobs in Maastricht | Student Jobs Maastricht`,
-    description: `Browse ${label.toLowerCase()} jobs in Maastricht.`,
-    alternates: { canonical: `https://studentjobsmaastricht.nl/categories/${key}` },
+    title: `${label} Jobs in Delft | Student Jobs Delft`,
+    description: `Browse ${label.toLowerCase()} jobs in Delft.`,
+    alternates: { canonical: `https://studentjobsdelft.nl/categories/${key}` },
   };
 }
 
@@ -32,7 +32,7 @@ export function generateStaticParams() {
 
 // NEW: ItemList JSON-LD so Google understands this is a jobs list page
 function JobsItemListJsonLd({ items }: { items: { slug: string; title: string }[] }) {
-  const baseUrl = "https://studentjobsmaastricht.nl";
+  const baseUrl = "https://studentjobsdelft.nl";
   const elementList = items.map((j, i) => ({
     "@type": "ListItem",
     position: i + 1,
@@ -92,7 +92,7 @@ export default function CategoryPage({ params }: { params: { category: string } 
           / <span>Categories</span> / <span>{label}</span>
         </nav>
 
-        <h1 className="mt-3 text-3xl md:text-4xl font-semibold">{label} Jobs in Maastricht</h1>
+        <h1 className="mt-3 text-3xl md:text-4xl font-semibold">{label} Jobs in Delft</h1>
 
         {jobs.length === 0 ? (
           <p className="mt-6 text-slate-700">No jobs in this category yet. Check back soon.</p>
