@@ -138,7 +138,7 @@ export default function SiteFooter() {
 
         <li>
           <a
-            href="https://www.studentjobsenchede.nl/"
+            href="https://www.studentjobsenschede.nl/"
             className="underline underline-offset-2"
             rel="noopener"
           >
@@ -152,7 +152,7 @@ export default function SiteFooter() {
             className="underline underline-offset-2"
             rel="noopener"
           >
-            Student Job Maastricht
+            Student Jobs Maastricht
           </a>
         </li>
       </ul>
