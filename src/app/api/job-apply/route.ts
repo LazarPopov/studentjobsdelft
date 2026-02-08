@@ -20,7 +20,7 @@ export async function POST(req: Request) {
     const job_slug = String(form.get("jobSlug") || "").trim();
     const job_title = String(form.get("jobTitle") || "").trim() || undefined;
     const org_name = String(form.get("orgName") || "").trim() || undefined;
-    const city = String(form.get("city") || "amsterdam").trim().toLowerCase();
+    const city = String(form.get("city") || "maastricht").trim().toLowerCase();
 
     const first_name = String(form.get("firstName") || "").trim();
     const last_name = String(form.get("familyName") || "").trim();

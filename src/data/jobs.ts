@@ -1,5 +1,5 @@
 // src/data/jobs.ts
-// Central job data + helpers (Amsterdam). Auto-builds `shortDescrition` to include per-gig/per-sale amount + a concise text from `descriptionHtml`.
+// Central job data + helpers (Maastricht). Auto-builds `shortDescrition` to include per-gig/per-sale amount + a concise text from `descriptionHtml`.
 // Also adds a place for a per-listing logo (logoUrl/logoAlt).
 
 // src/data/jobs.ts — add an external URL for outbound clicks
@@ -22,7 +22,7 @@ export type JobRecord = {
   baseSalaryMax?: number;
   currency?: "EUR";
   payUnit?: "HOUR" | "MONTH";
-  addressLocality: "Amsterdam";
+  addressLocality: "Maastricht";
   addressRegion?: string;
   postalCode?: string;
   streetAddress?: string;
@@ -96,7 +96,7 @@ type RawJob = Omit<JobRecord, "shortDescrition">;
 
 const RAW_JOBS: RawJob[] = [
   {
-  slug: "domakin-agent-amsterdam",
+  slug: "domakin-agent-maastricht",
   title: "Domakin Student Agent",
   orgName: "Domakin",
   descriptionHtml:
@@ -129,7 +129,7 @@ const RAW_JOBS: RawJob[] = [
     "<p><strong>Do work that matters.</strong> Every viewing and every verified room can be the difference between a student having a home, or being stuck for months.</p>",
   employmentType: "PART_TIME",
   currency: "EUR",
-  addressLocality: "Amsterdam",
+  addressLocality: "Maastricht",
   area: "All around the Netherlands",
   englishFriendly: true,
   workHours: "6 to 20 h/week, flexible",
@@ -141,7 +141,7 @@ const RAW_JOBS: RawJob[] = [
   // Commission style fields (clearer than hourly for this role)
   perGigAmount: 30,
   perGigAmountText: "€20 to €40 per remote viewing (avg. up to 30 min on site)",
-  perSaleAmount: 200,
+  perSaleAmount: 300,
   perSaleAmountText: "€200 per room listing or match, up to €300 for a successful takeover",
 
   logoUrl: "/logos/domakin.png",
@@ -177,7 +177,7 @@ const RAW_JOBS: RawJob[] = [
   DUO: true,
   currency: "EUR",
   payUnit: "HOUR",
-  addressLocality: "Amsterdam",
+  addressLocality: "Maastricht",
   area: "Online tutoring",
   englishFriendly: true,
   workHours: "1–20 h/week",
@@ -190,25 +190,25 @@ const RAW_JOBS: RawJob[] = [
   logoAlt: "AcademiaAI logo",
 },
     {
-    slug: "pepperminds-door-to-door-sales-amsterdam",
+    slug: "pepperminds-door-to-door-sales-maastricht",
     title: "Door-to-Door Sales",
     orgName: "Pepperminds",
   
     descriptionHtml:
-     "<p><strong>Earn €150 per shift</strong> as part of Pepperminds’ door-to-door team in Amsterdam. We mix the <em>personal touch in a digital era</em> with energy, coaching, and paid training so you can grow fast and earn even faster.</p><ul><li><strong> Dutch is not required</strong>, and you can even receive DUO… if you work enough hours of course 😉</li><li><strong>The better you are, the more you earn!</strong> You start as a rookie, grow into a promoter, and can become a captain — with performance bonuses reaching up to <strong>€500 a day!</strong></li><li><strong>Learn real sales</strong> — your colleagues are students from all kinds of backgrounds, and together you’ll master the most versatile skill out there: sales!</li><li><strong>Challenge yourself</strong> — every day is different, full of teamwork, laughter, and growth.</li><li><strong>After work culture</strong> — we even have our own bar where the team celebrates wins and unwinds together!</li></ul><p>Ready to test your limits, make friends, and earn like a pro? <strong>Join the crew and start this week!</strong></p>",    baseSalaryMin: 12,
+     "<p><strong>DUTCH REUQIRED! Earn €150 per shift</strong> as part of Pepperminds’ door-to-door team in Maastricht. We mix the <em>personal touch in a digital era</em> with energy, coaching, and paid training so you can grow fast and earn even faster.</p><ul><li><strong> Dutch is not required</strong>, and you can even receive DUO… if you work enough hours of course 😉</li><li><strong>The better you are, the more you earn!</strong> You start as a rookie, grow into a promoter, and can become a captain — with performance bonuses reaching up to <strong>€500 a day!</strong></li><li><strong>Learn real sales</strong> — your colleagues are students from all kinds of backgrounds, and together you’ll master the most versatile skill out there: sales!</li><li><strong>Challenge yourself</strong> — every day is different, full of teamwork, laughter, and growth.</li><li><strong>After work culture</strong> — we even have our own bar where the team celebrates wins and unwinds together!</li></ul><p>Ready to test your limits, make friends, and earn like a pro? <strong>Join the crew and start this week!</strong></p>",    baseSalaryMin: 12,
     employmentType: "PART_TIME",
     baseSalaryMax: 20,
     DUO: true,
     currency: "EUR",
     payUnit: "HOUR",
-    addressLocality: "Amsterdam",
+    addressLocality: "Maastricht",
     area: "Various districts",
     englishFriendly: false,
     workHours: "10–20 h/week",
     datePosted: new Date().toISOString().slice(0, 10),
     validThrough: "2026-12-31",
     categories: ["sales", "fieldwork"],
-    featured: true,
+    featured: false,
     // unknown numeric commission -> use text fallback
     perSaleAmountText: "150 еuros per shift",
     logoUrl: "/logos/pepperminds.jpeg",
@@ -226,7 +226,7 @@ descriptionHtml: "<p><strong>Are you tired of endless study sessions and sitting
   DUO: true,
   currency: "EUR",
   payUnit: "HOUR",
-  addressLocality: "Amsterdam",
+  addressLocality: "Maastricht",
   area: "Citywide / Multiple cities",
   englishFriendly: true,
   workHours: "Flexible shifts, 6–30 h/week",
@@ -241,19 +241,19 @@ descriptionHtml: "<p><strong>Are you tired of endless study sessions and sitting
 },
 
   {
-slug: "uber-eats-courier-amsterdam",
+slug: "uber-eats-courier-maastricht",
 title: "Uber Eats Courier",
 orgName: "Uber",
 descriptionHtml:
-"<p><strong>Earn on your own schedule</strong> delivering with the Uber app in Amsterdam. Be your own boss, choose when you work, and track your earnings in real time.</p><p><strong>Limited-time promo:</strong> <strong>Receive an extra €750</strong> after you sign up and complete <strong>50 trips within 90 days</strong>. *Eligibility applies; see additional terms on Uber’s site.</p><ul><li><strong>Flexible hours</strong> — ride when it suits you (great alongside studies or another job).</li><li><strong>Fast onboarding</strong> — easy sign-up and start delivering once you’re approved.</li><li><strong>Real-time earnings</strong> — see trip totals live and cash out with available payout options.</li><li><strong>Multiple modes</strong> — deliver by bike, scooter, or car (requirements vary by city).</li><li><strong>Refer & earn</strong> — invite friends to drive or deliver and earn once they complete trips.</li></ul><p><strong>Join today</strong> and start delivering in Amsterdam — the city’s always moving.</p>",
+"<p><strong>Earn on your own schedule</strong> delivering with the Uber app in Maastricht. Be your own boss, choose when you work, and track your earnings in real time.</p><p><strong>Limited-time promo:</strong> <strong>Receive an extra €750</strong> after you sign up and complete <strong>50 trips within 90 days</strong>. *Eligibility applies; see additional terms on Uber’s site.</p><ul><li><strong>Flexible hours</strong> — ride when it suits you (great alongside studies or another job).</li><li><strong>Fast onboarding</strong> — easy sign-up and start delivering once you’re approved.</li><li><strong>Real-time earnings</strong> — see trip totals live and cash out with available payout options.</li><li><strong>Multiple modes</strong> — deliver by bike, scooter, or car (requirements vary by city).</li><li><strong>Refer & earn</strong> — invite friends to drive or deliver and earn once they complete trips.</li></ul><p><strong>Join today</strong> and start delivering in Maastricht — the city’s always moving.</p>",
 baseSalaryMin: 12,
 employmentType: "PART_TIME",
 baseSalaryMax: 25,
 DUO: true,
 currency: "EUR",
 payUnit: "HOUR",
-addressLocality: "Amsterdam",
-area: "Amsterdam & nearby districts",
+addressLocality: "Maastricht",
+area: "Maastricht & nearby districts",
 englishFriendly: true,
 workHours: "Flexible — you choose",
 datePosted: new Date().toISOString().slice(0, 10),
@@ -271,8 +271,8 @@ logoAlt: "Uber logo",
 
 const NEW_JOBS: RawJob[] = [
   {
-    slug: "picnic-delivery-driver-Amsterdam",
-    title: "Picnic Delivery Driver (Amsterdam area)",
+    slug: "picnic-delivery-driver-Maastricht",
+    title: "Picnic Delivery Driver (Maastricht area)",
     orgName: "Picnic",
     descriptionHtml:
       "<p>Deliver groceries from a Picnic hub, tips on top, weekly pay, and flexible scheduling.</p>",
@@ -281,7 +281,7 @@ const NEW_JOBS: RawJob[] = [
     baseSalaryMax: 15.96,
     currency: "EUR",
     payUnit: "HOUR",
-    addressLocality: "Amsterdam",
+    addressLocality: "Maastricht",
     workHours: "16 to 40 h/week",
     datePosted: new Date().toISOString().slice(0, 10),
     validThrough: "2026-12-31",
@@ -290,13 +290,13 @@ const NEW_JOBS: RawJob[] = [
   },
 
   {
-    slug: "albert-heijn-medewerker-allround-Amsterdam",
+    slug: "albert-heijn-medewerker-allround-Maastricht",
     title: "Albert Heijn Medewerker Allround (Store shifts)",
     orgName: "Albert Heijn",
     descriptionHtml:
       "<p>Allround supermarket role: shelves, self scan area, produce, and service. Varied store shifts and lots of teamwork.</p>",
     employmentType: "PART_TIME",
-    addressLocality: "Amsterdam",
+    addressLocality: "Maastricht",
     workHours: "Flexible store shifts",
     datePosted: new Date().toISOString().slice(0, 10),
     validThrough: "2026-12-31",
@@ -304,13 +304,13 @@ const NEW_JOBS: RawJob[] = [
     externalUrl: "https://werk.ah.nl/vacature/12051/medewerker-allround-5",
   },
   {
-    slug: "albert-heijn-stock-associate-Amsterdam",
-    title: "Albert Heijn Stock Associate (Amsterdam)",
+    slug: "albert-heijn-stock-associate-Maastricht",
+    title: "Albert Heijn Stock Associate (Maastricht)",
     orgName: "Albert Heijn",
     descriptionHtml:
       "<p>Stock and shelf replenishment in store. Flexible hours and a classic student friendly retail job.</p>",
     employmentType: "PART_TIME",
-    addressLocality: "Amsterdam",
+    addressLocality: "Maastricht",
     workHours: "Flexible",
     datePosted: new Date().toISOString().slice(0, 10),
     validThrough: "2026-12-31",
@@ -318,55 +318,55 @@ const NEW_JOBS: RawJob[] = [
     externalUrl: "https://werk.ah.nl/en/vacancy/38370/stock-associate-60",
   },
   {
-    slug: "primark-verkoopmedewerker-damrak-Amsterdam",
-    title: "Primark Verkoopmedewerker (Amsterdam Damrak)",
+    slug: "primark-verkoopmedewerker-damrak-Maastricht",
+    title: "Primark Verkoopmedewerker (Maastricht Damrak)",
     orgName: "Primark",
     descriptionHtml:
-      "<p>Retail assistant role in the Amsterdam store, customer help, stock, and keeping the shop floor tidy. Part time roles listed on Primark careers.</p>",
+      "<p>Retail assistant role in the Maastricht store, customer help, stock, and keeping the shop floor tidy. Part time roles listed on Primark careers.</p>",
     employmentType: "PART_TIME",
-    addressLocality: "Amsterdam",
+    addressLocality: "Maastricht",
     workHours: "Part time",
     datePosted: new Date().toISOString().slice(0, 10),
     validThrough: "2026-12-31",
     categories: ["retail"],
-    externalUrl: "https://careers.primark.com/en/location/amsterdam-jobs/8171/2750405-2749879-2759794/4",
+    externalUrl: "https://careers.primark.com/en/location/maastricht-jobs/8171/2750405-2749879-2759794/4",
   },
   {
-    slug: "decathlon-verkoopmedewerker-Amsterdam",
-    title: "Decathlon Verkoopmedewerker (Amsterdam)",
+    slug: "decathlon-verkoopmedewerker-Maastricht",
+    title: "Decathlon Verkoopmedewerker (Maastricht)",
     orgName: "Decathlon",
     descriptionHtml:
-      "<p>Help customers with sport advice, keep shelves stocked, support inventory and freight flow. Retail job in Amsterdam.</p>",
+      "<p>Help customers with sport advice, keep shelves stocked, support inventory and freight flow. Retail job in Maastricht.</p>",
     employmentType: "PART_TIME",
-    addressLocality: "Amsterdam",
+    addressLocality: "Maastricht",
     workHours: "Store shifts, typically evenings and weekends",
     datePosted: new Date().toISOString().slice(0, 10),
     validThrough: "2026-12-31",
     categories: ["retail"],
-    externalUrl: "https://www.werkenbijdecathlon.nl/vacatures/verkoopmedewerker-amsterdam-5654553",
+    externalUrl: "https://www.werkenbijdecathlon.nl/vacatures/verkoopmedewerker-maastricht-5654553",
   },
   {
-    slug: "coffeecompany-barista-amsterdam-oost-Amsterdam",
-    title: "Barista Coffeecompany Amsterdam Oost",
+    slug: "coffeecompany-barista-maastricht-oost-Maastricht",
+    title: "Barista Coffeecompany Maastricht Oost",
     orgName: "Coffeecompany (via Albron)",
     descriptionHtml:
       "<p>Flexible barista job that pairs well with studying. Learn coffee skills and work in a fast paced team.</p>",
     employmentType: "PART_TIME",
-    addressLocality: "Amsterdam",
+    addressLocality: "Maastricht",
     workHours: "Flexible",
     datePosted: new Date().toISOString().slice(0, 10),
     validThrough: "2026-12-31",
     categories: ["hospitality"],
-    externalUrl: "https://www.werkenbijalbron.nl/vacatures/barista-coffeecompany-amsterdam-oost-amsterdam-1129740",
+    externalUrl: "https://www.werkenbijalbron.nl/vacatures/barista-coffeecompany-maastricht-oost-maastricht-1129740",
   },
   {
-    slug: "bagels-beans-allround-medewerker-Amsterdam",
-    title: "Bagels and Beans Allround Medewerker (Amsterdam)",
+    slug: "bagels-beans-allround-medewerker-Maastricht",
+    title: "Bagels and Beans Allround Medewerker (Maastricht)",
     orgName: "Bagels and Beans",
     descriptionHtml:
-      "<p>Daytime hospitality role: service, prep, coffee, and team support. Multiple Amsterdam locations recruit via the Bagels and Beans job site.</p>",
+      "<p>Daytime hospitality role: service, prep, coffee, and team support. Multiple Maastricht locations recruit via the Bagels and Beans job site.</p>",
     employmentType: "PART_TIME",
-    addressLocality: "Amsterdam",
+    addressLocality: "Maastricht",
     workHours: "Day shifts, usually no late evenings",
     datePosted: new Date().toISOString().slice(0, 10),
     validThrough: "2026-12-31",
@@ -374,25 +374,25 @@ const NEW_JOBS: RawJob[] = [
     externalUrl: "https://www.werkenbijbagelsbeans.nl/",
   },
   {
-    slug: "starbucks-barista-amsterdam-zuid-cs-Amsterdam",
-    title: "Barista Starbucks Amsterdam Zuid CS",
+    slug: "starbucks-barista-maastricht-zuid-cs-Maastricht",
+    title: "Barista Starbucks Maastricht Zuid CS",
     orgName: "SSP (Starbucks store)",
     descriptionHtml:
-      "<p>Barista role at a Starbucks location in Amsterdam. Customer focused work, training, and shift flexibility.</p>",
+      "<p>Barista role at a Starbucks location in Maastricht. Customer focused work, training, and shift flexibility.</p>",
     employmentType: "PART_TIME",
     baseSalaryMin: 14.91,
     currency: "EUR",
     payUnit: "HOUR",
-    addressLocality: "Amsterdam",
+    addressLocality: "Maastricht",
     workHours: "Shifts, weekend availability commonly requested",
     datePosted: new Date().toISOString().slice(0, 10),
     validThrough: "2026-12-31",
     categories: ["hospitality"],
-    externalUrl: "https://nl.indeed.com/q-barista-starbucks-l-amsterdam-vacatures.html",
+    externalUrl: "https://nl.indeed.com/q-barista-starbucks-l-maastricht-vacatures.html",
   },
   {
-    slug: "sales-promotor-rai-Amsterdam",
-    title: "Sales Promotor at RAI (Amsterdam)",
+    slug: "sales-promotor-rai-Maastricht",
+    title: "Sales Promotor at RAI (Maastricht)",
     orgName: "YoungCapital (RAI assignment)",
     descriptionHtml:
       "<p>Demonstrate products on the RAI floor and engage visitors. Listed pay is €15 per hour.</p>",
@@ -400,21 +400,21 @@ const NEW_JOBS: RawJob[] = [
     baseSalaryMin: 15.0,
     currency: "EUR",
     payUnit: "HOUR",
-    addressLocality: "Amsterdam",
+    addressLocality: "Maastricht",
     workHours: "32 to 40 h/week",
     datePosted: new Date().toISOString().slice(0, 10),
     validThrough: "2026-12-31",
     categories: ["sales", "events"],
-    externalUrl: "https://www.youngcapital.nl/vacatures/5701070-fulltime-sales-promotor-in-amsterdam-15-p-u",
+    externalUrl: "https://www.youngcapital.nl/vacatures/5701070-fulltime-sales-promotor-in-maastricht-15-p-u",
   },
   {
-    slug: "johan-cruijff-arena-steward-host-Amsterdam",
+    slug: "johan-cruijff-arena-steward-host-Maastricht",
     title: "Johan Cruijff ArenA Event Crew (Steward, Host, Bar)",
     orgName: "Randstad (Johan Cruijff ArenA)",
     descriptionHtml:
       "<p>Work matches and concerts as event crew. Typical student setup with a few events per month and short shifts per event.</p>",
     employmentType: "TEMPORARY",
-    addressLocality: "Amsterdam",
+    addressLocality: "Maastricht",
     workHours: "2 to 5 events per month, about 4.5 hours per event",
     datePosted: new Date().toISOString().slice(0, 10),
     validThrough: "2026-12-31",
@@ -422,7 +422,7 @@ const NEW_JOBS: RawJob[] = [
     externalUrl: "https://www.randstad.nl/werknemers/vacatures/topwerkgevers/johan-cruijff-arena",
   },
   {
-    slug: "pal-voor-de-klas-teaching-assistant-Amsterdam",
+    slug: "pal-voor-de-klas-teaching-assistant-Maastricht",
     title: "PAL voor de Klas (Teaching Assistant) via UvA and VU",
     orgName: "PAL voor de Klas",
     descriptionHtml:
@@ -431,7 +431,7 @@ const NEW_JOBS: RawJob[] = [
     baseSalaryMin: 11.0,
     currency: "EUR",
     payUnit: "HOUR",
-    addressLocality: "Amsterdam",
+    addressLocality: "Maastricht",
     workHours: "About 8 h/week (minimum availability typically 4 h/week)",
     datePosted: new Date().toISOString().slice(0, 10),
     validThrough: "2026-12-31",
@@ -439,241 +439,283 @@ const NEW_JOBS: RawJob[] = [
     externalUrl: "https://student.uva.nl/informatie/assisteren-bij-onderwijs",
   },
   {
-    slug: "rai-flexpool-event-crew-Amsterdam",
+    slug: "rai-flexpool-event-crew-Maastricht",
     title: "RAI Flexpool (Event crew, hospitality, floor support)",
-    orgName: "RAI Amsterdam",
+    orgName: "RAI Maastricht",
     descriptionHtml:
-      "<p>Work flexible event shifts at RAI Amsterdam via their flex routes. Roles vary per event and department.</p>",
+      "<p>Work flexible event shifts at RAI Maastricht via their flex routes. Roles vary per event and department.</p>",
     employmentType: "TEMPORARY",
-    addressLocality: "Amsterdam",
+    addressLocality: "Maastricht",
     workHours: "Event based shifts",
     datePosted: new Date().toISOString().slice(0, 10),
     validThrough: "2026-12-31",
     categories: ["events", "hospitality"],
     externalUrl: "https://careers.rai.nl/departments/flex",
   },
+  {
+    slug: "lidl-verkoopmedewerker-maastricht-herculeshof-16-32-Maastricht",
+    title: "Lidl Verkoopmedewerker Maastricht Herculeshof (16 to 32 h/week)",
+    orgName: "Lidl",
+    descriptionHtml:
+      "<p>Allround supermarket role: fill shelves, keep the store tidy, help customers, and work the register. Flexible shifts, including evenings and weekends.</p>",
+    employmentType: "PART_TIME",
+    addressLocality: "Maastricht",
+    area: "Herculeshof",
+    workHours: "16 to 32 h/week",
+    datePosted: new Date().toISOString().slice(0, 10),
+    validThrough: "2026-12-31",
+    categories: ["retail"],
+    externalUrl:
+      "https://www.werkenbijlidl.nl/jobs/verkoopmedewerker-maastricht-herculeshof-16-32-uur-maastricht-596909",
+  },
+
+  {
+    slug: "gamma-bijbaan-verkoopmedewerker-maastricht-belvedere-Maastricht",
+    title: "GAMMA Bijbaan Verkoopmedewerker (Maastricht Belvédère, 3 to 12 h/week)",
+    orgName: "GAMMA",
+    descriptionHtml:
+      "<p>DIY store assistant job: help customers, learn products, keep aisles tidy, and support the team. Flexible availability, evenings and weekends. Dutch required.</p>",
+    employmentType: "PART_TIME",
+    addressLocality: "Maastricht",
+    area: "Maastricht Belvédère",
+    workHours: "3 to 12 h/week",
+    datePosted: new Date().toISOString().slice(0, 10),
+    validThrough: "2026-04-07",
+    categories: ["retail"],
+    externalUrl: "https://www.werkenbijgamma.nl/vacature/14961/bijbaan-verkoopmedewerker-116",
+  },
+
+  {
+    slug: "lidl-bijbaan-weekendhulp-vakkenvuller-kassamedewerker-kies-winkel-Maastricht",
+    title: "Lidl Bijbaan (Weekendhulp, Vakkenvuller, Kassamedewerker) choose Maastricht store",
+    orgName: "Lidl",
+    descriptionHtml:
+      "<p>Student job at Lidl. Apply once and select one or more Maastricht stores during the application. Roles include shelf stacking, cashier, and general store support. Hourly pay depends on age and hours.</p>",
+    employmentType: "PART_TIME",
+    baseSalaryMin: 6.06,
+    baseSalaryMax: 19.08,
+    currency: "EUR",
+    payUnit: "HOUR",
+    addressLocality: "Maastricht",
+    workHours: "Flexible",
+    datePosted: new Date().toISOString().slice(0, 10),
+    validThrough: "2026-12-31",
+    categories: ["retail"],
+    externalUrl: "https://www.werkenbijlidl.nl/supermarkt/bijbaan",
+  },
+
+  {
+    slug: "hema-winkelmedewerker-kies-maastricht-Maastricht",
+    title: "HEMA Store roles (choose Maastricht in the vacancy search)",
+    orgName: "HEMA",
+    descriptionHtml:
+      "<p>HEMA store jobs like winkelmedewerker or horecamedewerker. Use the vacancy search and filter for Maastricht to see the current open roles.</p>",
+    employmentType: "PART_TIME",
+    addressLocality: "Maastricht",
+    workHours: "Varies by store",
+    datePosted: new Date().toISOString().slice(0, 10),
+    validThrough: "2026-12-31",
+    categories: ["retail"],
+    externalUrl: "https://www.werkenbijhema.nl/",
+  },
+
+  {
+    slug: "primark-retail-assistant-zoek-maastricht-Maastricht",
+    title: "Primark Retail Assistant (search Maastricht on the Primark job site)",
+    orgName: "Primark",
+    descriptionHtml:
+      "<p>Retail Assistant roles at Primark. Use the Primark vacancies search and select Maastricht to see the currently open positions.</p>",
+    employmentType: "PART_TIME",
+    addressLocality: "Maastricht",
+    workHours: "Store shifts",
+    datePosted: new Date().toISOString().slice(0, 10),
+    validThrough: "2026-12-31",
+    categories: ["retail"],
+    externalUrl: "https://careers.primark.com/nl",
+  },
 ];
 
 RAW_JOBS.push(...NEW_JOBS);
+
 const NEW_JOBS2: RawJob[] = [
   {
-    slug: "goodnews-barista-staff-Amsterdam",
-    title: "Barista / Staff (GoodNews Amsterdam)",
-    orgName: "GoodNews",
+    slug: "kfc-horecamedewerker-maastricht-parttime-Maastricht",
+    title: "KFC Horecamedewerker (Maastricht, part time)",
+    orgName: "KFC",
     descriptionHtml:
-      "<p>Barista and shop staff role in Amsterdam. Customer service, coffee prep, opening/closing, and occasional brand activations. English is recommended and pay is listed as €14.71 gross per hour.</p>",
+      "<p>Fast paced hospitality job: help guests, prepare orders, keep the restaurant clean, and work in a team. Shifts typically include evenings and weekends.</p>",
     employmentType: "PART_TIME",
-    baseSalaryMin: 14.71,
-    baseSalaryMax: 14.71,
-    currency: "EUR",
-    payUnit: "HOUR",
-    addressLocality: "Amsterdam",
-    englishFriendly: true,
-    workHours: "13 to 32.5 h/week (multiple contract options)",
-    datePosted: new Date().toISOString().slice(0, 10),
-    validThrough: "2026-12-31",
-    categories: ["hospitality"],
-    externalUrl:
-      "https://careers.goodnewsco.es/jobs/4270410-barista-staff-at-goodnews-amsterdam",
-  },
-  {
-    slug: "social-hub-front-office-host-Amsterdam-west",
-    title: "Front Office Host (Amsterdam West)",
-    orgName: "The Social Hub",
-    descriptionHtml:
-      "<p>Guest facing front of house role: welcome, self check-in kiosk help, bookings support, and service in bars and restaurant areas. Fluent English is required.</p>",
-    employmentType: "PART_TIME",
-    addressLocality: "Amsterdam",
-    area: "Amsterdam West",
-    englishFriendly: true,
-    workHours: "Shifts",
-    datePosted: new Date().toISOString().slice(0, 10),
-    validThrough: "2026-12-31",
-    categories: ["hospitality"],
-    externalUrl: "https://job-boards.eu.greenhouse.io/thesocialhub/jobs/4728264101",
-  },
-  {
-    slug: "meininger-receptionist-Amsterdam-city-west",
-    title: "Receptionist (Amsterdam City West)",
-    orgName: "MEININGER Hotels",
-    descriptionHtml:
-      "<p>Hotel reception role in Amsterdam City West. Guest service, check-in/out, and front desk support in an international environment. Listed as NL/EN.</p>",
-    employmentType: "PART_TIME",
-    addressLocality: "Amsterdam",
-    area: "City West",
-    englishFriendly: true,
+    addressLocality: "Maastricht",
     workHours: "Shifts (part time)",
     datePosted: new Date().toISOString().slice(0, 10),
     validThrough: "2026-12-31",
     categories: ["hospitality"],
-    externalUrl:
-      "https://www.hotelprofessionals.nl/en/job/receptionist-fmd-amsterdam-173484",
+    externalUrl: "https://careers.kfc.nl/vacatures/horecamedewerker/kfc-maastricht/80574",
   },
+
   {
-    slug: "holiday-inn-express-fb-attendant-amsterdam-noord-riverside",
-    title: "Food and Beverage Attendant (Amsterdam Noord Riverside)",
-    orgName: "Holiday Inn Express (Odyssey Hotel Group)",
+    slug: "bastion-supervisor-housekeeping-maastricht-30-38-Maastricht",
+    title: "Bastion Hotels Supervisor Housekeeping (Maastricht, 30 to 38 h/week)",
+    orgName: "Bastion Hotels",
     descriptionHtml:
-      "<p>Food and beverage team role with breakfast, bar, and dinner service support. Good fit for students who like morning shifts and fast paced hospitality.</p>",
+      "<p>Lead the housekeeping team, plan daily operations, and quality-check rooms and public areas. Listed starting salary is €2364.04 gross per month based on a 38 hour week, plus allowances.</p>",
     employmentType: "PART_TIME",
-    addressLocality: "Amsterdam",
-    area: "Noord",
-    englishFriendly: true,
-    workHours: "Morning focused shifts",
-    datePosted: new Date().toISOString().slice(0, 10),
-    validThrough: "2026-12-31",
-    categories: ["hospitality"],
-    externalUrl:
-      "https://www.hotelprofessionals.nl/en/job/food-and-beverage-attendant-amsterdam-173854",
-  },
-  {
-    slug: "spirit-receptionist-european-medicines-agency-Amsterdam",
-    title: "Receptionist (European Medicines Agency)",
-    orgName: "Spirit Hospitality Services",
-    descriptionHtml:
-      "<p>Receptionist role at the European Medicines Agency in Amsterdam. International environment and fluent English is required.</p>",
-    employmentType: "PART_TIME",
-    addressLocality: "Amsterdam",
-    englishFriendly: true,
-    workHours: "Part time",
-    datePosted: new Date().toISOString().slice(0, 10),
-    validThrough: "2026-12-31",
-    categories: ["hospitality"],
-    externalUrl:
-      "https://www.spirit-hospitality.nl/vacancies/receptionist-at-the-european-medicines-agency/",
-  },
-  {
-    slug: "flagship-host-bartender-canal-cruise-Amsterdam",
-    title: "Host and Bartender (Canal Cruise, start March 2026)",
-    orgName: "Flagship Amsterdam",
-    descriptionHtml:
-      "<p>Host and bartender on canal cruises. Weekend availability is the basis, with extra weekday shifts depending on tourism and weather. Good command of English is required and Dutch is a plus.</p>",
-    employmentType: "PART_TIME",
-    addressLocality: "Amsterdam",
-    englishFriendly: true,
-    workHours: "Mostly weekends, seasonal",
-    datePosted: new Date().toISOString().slice(0, 10),
-    validThrough: "2026-12-31",
-    categories: ["events", "hospitality"],
-    externalUrl:
-      "https://werkenbijflagshipamsterdam.recruitee.com/l/en/o/hostbartender-op-rondvaartboot-in-amsterdam-startdatum-maart-2026?lang=en",
-  },
-  {
-    slug: "abike-shop-assistant-sales-tiger-Amsterdam",
-    title: "Shop Assistant (Sales, part time)",
-    orgName: "A-Bike Rental and Tours",
-    descriptionHtml:
-      "<p>Bike rental shop assistant role in Amsterdam locations. Customer help, contracts, recommendations, and sales focused support. Fluency in English is listed as required.</p>",
-    employmentType: "PART_TIME",
-    addressLocality: "Amsterdam",
-    englishFriendly: true,
-    workHours: "8 to 20 h/week",
-    datePosted: new Date().toISOString().slice(0, 10),
-    validThrough: "2026-12-31",
-    categories: ["retail", "sales"],
-    externalUrl: "https://a-bike.nl/join-our-team-at-a-bike/",
-  },
-  {
-    slug: "abike-bike-mechanic-part-time-Amsterdam",
-    title: "Bike Mechanic (part time)",
-    orgName: "A-Bike Rental and Tours",
-    descriptionHtml:
-      "<p>Part time bike mechanic role for rentals and tours. Basic bike repairs and keeping the fleet tour ready. English is listed as required and Dutch is a plus.</p>",
-    employmentType: "PART_TIME",
-    addressLocality: "Amsterdam",
-    englishFriendly: true,
-    workHours: "8 to 20 h/week",
-    datePosted: new Date().toISOString().slice(0, 10),
-    validThrough: "2026-12-31",
-    categories: ["retail"],
-    externalUrl: "https://a-bike.nl/join-our-team-at-a-bike/",
-  },
-  {
-    slug: "abike-tour-guide-part-time-Amsterdam",
-    title: "Tour Guide (bike tours, part time)",
-    orgName: "A-Bike Rental and Tours",
-    descriptionHtml:
-      "<p>Lead bike tours through Amsterdam landmarks and hidden gems. Outdoor work with tourists and storytelling. Part time options are listed.</p>",
-    employmentType: "PART_TIME",
-    addressLocality: "Amsterdam",
-    englishFriendly: true,
-    workHours: "8 to 20 h/week",
-    datePosted: new Date().toISOString().slice(0, 10),
-    validThrough: "2026-12-31",
-    categories: ["events"],
-    externalUrl: "https://a-bike.nl/join-our-team-at-a-bike/",
-  },
-  {
-    slug: "macbike-rental-officer-seasonal-Amsterdam",
-    title: "Rental Officer (seasonal, bike rental shops)",
-    orgName: "MacBike",
-    descriptionHtml:
-      "<p>Seasonal shop role helping customers with rentals, safety advice, bike adjustments, and minor repairs. The role asks for excellent English and other languages are a plus.</p>",
-    employmentType: "TEMPORARY",
-    addressLocality: "Amsterdam",
-    englishFriendly: true,
-    workHours: "Seasonal shifts",
-    datePosted: new Date().toISOString().slice(0, 10),
-    validThrough: "2026-12-31",
-    categories: ["retail", "sales"],
-    externalUrl: "https://www.macbike.nl/en/about-us/vacature-verhuurder-en/",
-  },
-  {
-    slug: "360amsterdamtours-tour-guide-freelance-Amsterdam",
-    title: "Tour Guide (freelance)",
-    orgName: "360 Amsterdam Tours",
-    descriptionHtml:
-      "<p>Outdoor tour guide role for visitors in Amsterdam. The listing mentions €30 to €40 per hour freelance and requires a valid work permit plus KvK registration.</p>",
-    employmentType: "TEMPORARY",
-    baseSalaryMin: 30,
-    baseSalaryMax: 40,
-    currency: "EUR",
-    payUnit: "HOUR",
-    addressLocality: "Amsterdam",
-    englishFriendly: true,
-    workHours: "Flexible (freelance)",
-    datePosted: new Date().toISOString().slice(0, 10),
-    validThrough: "2026-12-31",
-    categories: ["events"],
-    externalUrl: "https://360amsterdamtours.com/jobs/",
-  },
-  {
-    slug: "heineken-experience-retail-internship-Amsterdam",
-    title: "Retail Internship (Heineken Experience Flagship Store)",
-    orgName: "HEINEKEN",
-    descriptionHtml:
-      "<p>Full time retail internship based in Amsterdam with a listed monthly allowance of €650 gross (40 hours). Starting in March, duration 6 months.</p>",
-    employmentType: "TEMPORARY",
-    baseSalaryMin: 650,
+    baseSalaryMin: 2364.04,
+    baseSalaryMax: 2364.04,
     currency: "EUR",
     payUnit: "MONTH",
-    addressLocality: "Amsterdam",
-    englishFriendly: true,
-    workHours: "40 h/week (internship)",
+    addressLocality: "Maastricht",
+    workHours: "30 to 38 h/week",
     datePosted: new Date().toISOString().slice(0, 10),
     validThrough: "2026-12-31",
-    categories: ["retail"],
+    categories: ["hospitality"],
     externalUrl:
-      "https://careers.theheinekencompany.com/TheNetherlands/job/Amsterdam-Internship-Retail-Heineken-Experience-Flagship-Store/1288588101/",
-  },
-  {
-    slug: "redbull-student-marketeer-Amsterdam",
-    title: "Student Marketeer (Amsterdam)",
-    orgName: "Red Bull",
-    descriptionHtml:
-      "<p>Student marketing and brand activation role. Typical student friendly setup tied to campus life and events, listed for Amsterdam.</p>",
-    employmentType: "PART_TIME",
-    addressLocality: "Amsterdam",
-    englishFriendly: true,
-    workHours: "Part time",
-    datePosted: new Date().toISOString().slice(0, 10),
-    validThrough: "2026-12-31",
-    categories: ["sales", "events"],
-    externalUrl: "https://nl.linkedin.com/jobs/view/student-marketeer-amsterdam-at-red-bull-4210538771",
+      "https://www.werkenbijbastionhotels.nl/maastricht/shiftleader-housekeeping",
   },
 ];
 
 RAW_JOBS.push(...NEW_JOBS2);
+
+const NEW_JOBS3: RawJob[] = [
+  {
+    slug: "jumbo-vakkenvuller-maastricht-avond-weekend-Maastricht",
+    title: "Jumbo Vakkenvuller (Evening and Weekend shifts)",
+    orgName: "Jumbo",
+    descriptionHtml:
+      "<p>Stock shelves, assist customers, and keep the supermarket organized. Typical student job with evening and weekend shifts.</p>",
+    employmentType: "PART_TIME",
+    addressLocality: "Maastricht",
+    workHours: "Flexible evening and weekend shifts",
+    datePosted: new Date().toISOString().slice(0, 10),
+    validThrough: "2026-12-31",
+    categories: ["retail"],
+    externalUrl: "https://www.werkenbijjumbo.nl/vacatures",
+  },
+  {
+    slug: "thuisbezorgd-bezorger-maastricht-Maastricht",
+    title: "Thuisbezorgd Delivery Driver (Maastricht)",
+    orgName: "Thuisbezorgd.nl",
+    descriptionHtml:
+      "<p>Deliver meals by bike or scooter in Maastricht. Flexible hours, contract based employment, and paid per hour.</p>",
+    employmentType: "PART_TIME",
+    addressLocality: "Maastricht",
+    englishFriendly: true,
+    workHours: "Flexible shifts",
+    datePosted: new Date().toISOString().slice(0, 10),
+    validThrough: "2026-12-31",
+    categories: ["delivery"],
+    externalUrl: "https://www.justeattakeaway.com/careers/jobs",
+  },
+  {
+    slug: "dominos-pizza-bezorger-maastricht-Maastricht",
+    title: "Domino's Pizza Delivery Driver (Maastricht)",
+    orgName: "Domino's Pizza",
+    descriptionHtml:
+      "<p>Deliver pizzas and assist in store during quieter hours. Evening focused shifts, suitable for students.</p>",
+    employmentType: "PART_TIME",
+    addressLocality: "Maastricht",
+    workHours: "Evenings and weekends",
+    datePosted: new Date().toISOString().slice(0, 10),
+    validThrough: "2026-12-31",
+    categories: ["delivery", "hospitality"],
+    externalUrl: "https://www.werkenbijdominos.nl/vacatures",
+  },
+  {
+    slug: "action-winkelmedewerker-maastricht-Maastricht",
+    title: "Action Winkelmedewerker (Maastricht)",
+    orgName: "Action",
+    descriptionHtml:
+      "<p>Retail assistant role: cashier, shelf restocking, and helping customers. Fast paced discount retail environment.</p>",
+    employmentType: "PART_TIME",
+    addressLocality: "Maastricht",
+    workHours: "Flexible store shifts",
+    datePosted: new Date().toISOString().slice(0, 10),
+    validThrough: "2026-12-31",
+    categories: ["retail"],
+    externalUrl: "https://werkenbij.action.com/nl/vacatures",
+  },
+
+];
+
+RAW_JOBS.push(...NEW_JOBS3);
+
+const NEW_JOBS4: RawJob[] = [
+  {
+    slug: "vue-bioscoop-medewerker-maastricht-Maastricht",
+    title: "Vue Cinema Employee (Maastricht)",
+    orgName: "Vue Cinemas",
+    descriptionHtml:
+      "<p>Work at the cinema: ticket scanning, bar service, and customer assistance. Flexible shifts including evenings.</p>",
+    employmentType: "PART_TIME",
+    addressLocality: "Maastricht",
+    workHours: "Evening and weekend shifts",
+    datePosted: new Date().toISOString().slice(0, 10),
+    validThrough: "2026-12-31",
+    categories: ["hospitality", "events"],
+    externalUrl: "https://www.werkenbijvue.nl/vacatures",
+  },
+  {
+    slug: "sacha-verkoopmedewerker-maastricht-Maastricht",
+    title: "Sacha Verkoopmedewerker (Maastricht)",
+    orgName: "Sacha",
+    descriptionHtml:
+      "<p>Fashion retail job: help customers, manage stock, and support visual merchandising in store.</p>",
+    employmentType: "PART_TIME",
+    addressLocality: "Maastricht",
+    workHours: "Part time retail shifts",
+    datePosted: new Date().toISOString().slice(0, 10),
+    validThrough: "2026-12-31",
+    categories: ["retail"],
+    externalUrl: "https://www.werkenbijsacha.nl/vacatures",
+  },
+  {
+    slug: "studentchauffeur-maastricht-ubiway-Maastricht",
+    title: "Student Driver (Maastricht region)",
+    orgName: "Student Chauffeurs",
+    descriptionHtml:
+      "<p>Drive clients in their own cars to meetings or airports. Flexible scheduling, ideal for students with a driving license.</p>",
+    employmentType: "PART_TIME",
+    addressLocality: "Maastricht",
+    workHours: "On call, flexible",
+    datePosted: new Date().toISOString().slice(0, 10),
+    validThrough: "2026-12-31",
+    categories: ["fieldwork"],
+    externalUrl: "https://www.studentchauffeurs.nl/vacatures",
+  },
+  {
+    slug: "asa-talent-warehouse-worker-maastricht-Maastricht",
+    title: "Warehouse Worker (via ASA Talent, Maastricht)",
+    orgName: "ASA Talent",
+    descriptionHtml:
+      "<p>Warehouse and fieldwork roles in Maastricht. Order picking, packing, and distribution center support.</p>",
+    employmentType: "PART_TIME",
+    addressLocality: "Maastricht",
+    englishFriendly: true,
+    workHours: "Shifts",
+    datePosted: new Date().toISOString().slice(0, 10),
+    validThrough: "2026-12-31",
+    categories: ["fieldwork"],
+    externalUrl: "https://www.asatalent.nl/vacatures",
+  },
+  {
+    slug: "redbull-wings-team-maastricht-Maastricht",
+    title: "Red Bull Wings Team Member (Maastricht)",
+    orgName: "Red Bull",
+    descriptionHtml:
+      "<p>Promotional student role: represent Red Bull on campus and at events. Brand activation, sampling, and social engagement.</p>",
+    employmentType: "PART_TIME",
+    addressLocality: "Maastricht",
+    englishFriendly: true,
+    workHours: "Flexible student schedule",
+    datePosted: new Date().toISOString().slice(0, 10),
+    validThrough: "2026-12-31",
+    categories: ["sales", "events"],
+    externalUrl: "https://jobs.redbull.com/nl-nl",
+  },
+];
+
+RAW_JOBS.push(...NEW_JOBS4);
+
 
 
 export const JOBS: JobRecord[] = RAW_JOBS.map((j) => ({

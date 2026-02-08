@@ -1,35 +1,35 @@
-// src/app/part-time-jobs-amsterdam-students/page.tsx
+// src/app/part-time-jobs-maastricht-students/page.tsx
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
-const BASE_URL = "https://studentjobsamsterdam.nl";
-const CANONICAL = `${BASE_URL}/part-time-jobs-amsterdam-students`;
+const BASE_URL = "https://studentjobsmaastricht.nl";
+const CANONICAL = `${BASE_URL}/part-time-jobs-maastricht-students`;
 
 const PUBLISH_DATE = "2026-10-02";
 const MODIFIED_DATE = "2026-02-07";
 
 // Use the local image you mentioned (in /public/blog/)
-const HERO_IMAGE_PATH = "/blog/amsterdam-bridge.jpg";
+const HERO_IMAGE_PATH = "/blog/maastricht-bridge.jpg";
 const OG_IMAGE_URL = `${BASE_URL}${HERO_IMAGE_PATH}`;
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
-  title: "Student Part Time Jobs in Amsterdam (2026) | English Friendly + Weekend | Student Jobs Amsterdam",
+  title: "Student Part Time Jobs in Maastricht (2026) | English Friendly + Weekend | Student Jobs Maastricht",
   description:
-    "Find student part time jobs in Amsterdam in 2026. English friendly roles, evening and weekend shifts, no experience jobs, hourly pay table, contract types, and live vacancies.",
+    "Find student part time jobs in Maastricht in 2026. English friendly roles, evening and weekend shifts, no experience jobs, hourly pay table, contract types, and live vacancies.",
   keywords: [
-    "student part time jobs Amsterdam",
-    "part time jobs Amsterdam students",
-    "student jobs Amsterdam",
-    "English speaking student jobs Amsterdam",
-    "no experience student jobs Amsterdam",
-    "weekend jobs Amsterdam students",
-    "evening jobs Amsterdam students",
-    "bijbaan Amsterdam",
-    "flex jobs Amsterdam",
-    "warehouse jobs Amsterdam students",
-    "hospitality jobs Amsterdam students",
+    "student part time jobs Maastricht",
+    "part time jobs Maastricht students",
+    "student jobs Maastricht",
+    "English speaking student jobs Maastricht",
+    "no experience student jobs Maastricht",
+    "weekend jobs Maastricht students",
+    "evening jobs Maastricht students",
+    "bijbaan Maastricht",
+    "flex jobs Maastricht",
+    "warehouse jobs Maastricht students",
+    "hospitality jobs Maastricht students",
   ],
   alternates: { canonical: CANONICAL },
   robots: {
@@ -44,13 +44,13 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Student Part Time Jobs in Amsterdam (2026): Pay, Filters, and Where to Apply",
+    title: "Student Part Time Jobs in Maastricht (2026): Pay, Filters, and Where to Apply",
     description:
-      "Pillar guide for Amsterdam students: English friendly vacancies, evening and weekend shifts, pay table, contract types, and quick filters.",
+      "Pillar guide for Maastricht students: English friendly vacancies, evening and weekend shifts, pay table, contract types, and quick filters.",
     url: CANONICAL,
     type: "article",
     locale: "en_NL",
-    siteName: "Student Jobs Amsterdam",
+    siteName: "Student Jobs Maastricht",
     publishedTime: PUBLISH_DATE,
     modifiedTime: MODIFIED_DATE,
     images: [
@@ -58,20 +58,20 @@ export const metadata: Metadata = {
         url: OG_IMAGE_URL,
         width: 1200,
         height: 630,
-        alt: "Amsterdam bridge and canals",
+        alt: "Maastricht bridge and canals",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Student Part Time Jobs in Amsterdam (2026)",
+    title: "Student Part Time Jobs in Maastricht (2026)",
     description:
-      "English friendly roles, weekend and evening shifts, pay table, and live vacancies in Amsterdam.",
+      "English friendly roles, weekend and evening shifts, pay table, and live vacancies in Maastricht.",
     images: [OG_IMAGE_URL],
   },
 };
 
-export default function PartTimeJobsAmsterdamStudents() {
+export default function PartTimeJobsMaastrichtStudents() {
   const updatedLabel = new Date(MODIFIED_DATE).toLocaleDateString("en-NL", {
     year: "numeric",
     month: "long",
@@ -84,16 +84,16 @@ export default function PartTimeJobsAmsterdamStudents() {
         {/* HEADER */}
         <header className="max-w-3xl">
           <h1 className="text-3xl md:text-5xl font-semibold leading-tight">
-            Student part time jobs in Amsterdam: the ultimate guide (2026)
+            Student part time jobs in Maastricht: the ultimate guide (2026)
           </h1>
           <p className="mt-3 text-sm text-slate-600">
-            By <span className="font-medium">Student Jobs Amsterdam</span> • Updated {updatedLabel}
+            By <span className="font-medium">Student Jobs Maastricht</span> • Updated {updatedLabel}
           </p>
 
           {/* Language toggle */}
           <div className="mt-3">
             <Link
-              href="/studenten-bijbaan-amsterdam"
+              href="/studenten-bijbaan-maastricht"
               className="inline-flex items-center rounded-full border px-3 py-1 text-xs md:text-sm underline hover:no-underline"
               aria-label="Lees in het Nederlands"
               data-ab="dutch-cta"
@@ -105,7 +105,7 @@ export default function PartTimeJobsAmsterdamStudents() {
           <figure className="mt-5 overflow-hidden rounded-2xl border bg-white">
             <Image
               src={HERO_IMAGE_PATH}
-              alt="Amsterdam bridge and canals"
+              alt="Maastricht bridge and canals"
               width={1280}
               height={720}
               priority
@@ -114,32 +114,32 @@ export default function PartTimeJobsAmsterdamStudents() {
             <figcaption className="px-4 py-3 text-xs text-slate-600">
               Photo credit:{" "}
               <a
-                href="https://www.amsterdamprivateboat.com"
+                href="https://www.maastrichtprivateboat.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="underline"
               >
-                amsterdamprivateboat.com
+                maastrichtprivateboat.com
               </a>
             </figcaption>
           </figure>
 
           {/* Quick filters */}
           <div className="mt-6 flex flex-wrap gap-2">
-            <Link href="/jobs?city=Amsterdam&evening=true" className="rounded-full border px-3 py-1 text-sm underline">
+            <Link href="/jobs?city=Maastricht&evening=true" className="rounded-full border px-3 py-1 text-sm underline">
               Evening
             </Link>
-            <Link href="/jobs?city=Amsterdam&weekend=true" className="rounded-full border px-3 py-1 text-sm underline">
+            <Link href="/jobs?city=Maastricht&weekend=true" className="rounded-full border px-3 py-1 text-sm underline">
               Weekend
             </Link>
-            <Link href="/jobs?city=Amsterdam&noExperience=true" className="rounded-full border px-3 py-1 text-sm underline">
+            <Link href="/jobs?city=Maastricht&noExperience=true" className="rounded-full border px-3 py-1 text-sm underline">
               No experience
             </Link>
-            <Link href="/jobs?city=Amsterdam&english=true" className="rounded-full border px-3 py-1 text-sm underline">
+            <Link href="/jobs?city=Maastricht&english=true" className="rounded-full border px-3 py-1 text-sm underline">
               English friendly
             </Link>
-            <Link href="/jobs?city=Amsterdam" className="rounded-full border px-3 py-1 text-sm underline">
-              All vacancies (Amsterdam)
+            <Link href="/jobs?city=Maastricht" className="rounded-full border px-3 py-1 text-sm underline">
+              All vacancies (Maastricht)
             </Link>
           </div>
         </header>
@@ -166,7 +166,7 @@ export default function PartTimeJobsAmsterdamStudents() {
               <li><a href="#contracts" className="underline">Contract types</a></li>
               <li><a href="#non-eu" className="underline">Non EU students</a></li>
               <li><a href="#apply" className="underline">Application tips and free CV</a></li>
-              <li><a href="#live" className="underline">Live vacancies (Amsterdam)</a></li>
+              <li><a href="#live" className="underline">Live vacancies (Maastricht)</a></li>
               <li><a href="#faq" className="underline">FAQ</a></li>
             </ul>
           </nav>
@@ -187,15 +187,15 @@ export default function PartTimeJobsAmsterdamStudents() {
             "
           >
             <p>
-              Amsterdam has a massive student job market, but the fastest way to get hired is simple: pick one or two
+              Maastricht has a massive student job market, but the fastest way to get hired is simple: pick one or two
               job categories, apply early, and target shifts employers struggle to fill (evenings and weekends).
               Use the filters on this page to go straight to vacancies that match your schedule.
             </p>
 
-            <h2 id="where-to-find">Where to find a part time job fast in Amsterdam (areas that hire a lot)</h2>
+            <h2 id="where-to-find">Where to find a part time job fast in Maastricht (areas that hire a lot)</h2>
             <p>
               You match faster when you can start close to home. Begin with{" "}
-              <Link href="/jobs?city=Amsterdam">all Amsterdam vacancies</Link> and focus on areas with lots of employers:
+              <Link href="/jobs?city=Maastricht">all Maastricht vacancies</Link> and focus on areas with lots of employers:
             </p>
             <ul>
               <li><strong>Centrum</strong>: hospitality, retail, tourist focused roles, events venues.</li>
@@ -206,11 +206,11 @@ export default function PartTimeJobsAmsterdamStudents() {
               <li><strong>Sloterdijk and Westpoort</strong>: logistics and warehouses, evening or night allowances.</li>
             </ul>
 
-            <h2 id="english">English speaking student jobs in Amsterdam</h2>
+            <h2 id="english">English speaking student jobs in Maastricht</h2>
             <p>
-              Amsterdam is one of the most English friendly cities in the Netherlands. You will find English speaking
+              Maastricht is one of the most English friendly cities in the Netherlands. You will find English speaking
               teams in hospitality, delivery and logistics, international retail, and customer support. Start here:{" "}
-              <Link href="/jobs?city=Amsterdam&english=true">English friendly Amsterdam vacancies</Link>.
+              <Link href="/jobs?city=Maastricht&english=true">English friendly Maastricht vacancies</Link>.
             </p>
 
             <h2 id="schedules">Weekend and evening schedules that fit your classes</h2>
@@ -331,8 +331,8 @@ export default function PartTimeJobsAmsterdamStudents() {
             <div className="rounded-2xl border p-5 bg-white">
               <div className="font-semibold text-lg">Ready to start?</div>
               <p className="mt-1">
-                See <Link href="/jobs?city=Amsterdam">all vacancies</Link>,{" "}
-                <Link href="/jobs?city=Amsterdam&english=true">English friendly</Link>, or{" "}
+                See <Link href="/jobs?city=Maastricht">all vacancies</Link>,{" "}
+                <Link href="/jobs?city=Maastricht&english=true">English friendly</Link>, or{" "}
                 <Link href="/categories">browse categories</Link>. Employer?{" "}
                 <Link href="/employers">Feature your job</Link>.
               </p>
@@ -341,17 +341,17 @@ export default function PartTimeJobsAmsterdamStudents() {
               </p>
             </div>
 
-            <h2 id="live">Live vacancies (Amsterdam)</h2>
+            <h2 id="live">Live vacancies (Maastricht)</h2>
             <p className="text-sm text-slate-600">
-              Tip: filter by <Link href="/jobs?city=Amsterdam&evening=true">evening</Link>,{" "}
-              <Link href="/jobs?city=Amsterdam&weekend=true">weekend</Link>,{" "}
-              <Link href="/jobs?city=Amsterdam&noExperience=true">no experience</Link>,{" "}
-              <Link href="/jobs?city=Amsterdam&english=true">English friendly</Link>.
+              Tip: filter by <Link href="/jobs?city=Maastricht&evening=true">evening</Link>,{" "}
+              <Link href="/jobs?city=Maastricht&weekend=true">weekend</Link>,{" "}
+              <Link href="/jobs?city=Maastricht&noExperience=true">no experience</Link>,{" "}
+              <Link href="/jobs?city=Maastricht&english=true">English friendly</Link>.
             </p>
 
             <div className="rounded-2xl border bg-white p-4">
-              <Link href="/jobs?city=Amsterdam" className="underline">
-                Open live vacancies for Amsterdam
+              <Link href="/jobs?city=Maastricht" className="underline">
+                Open live vacancies for Maastricht
               </Link>
               <div className="mt-3 flex flex-wrap gap-2">
                 <Link href="/categories/hospitality" className="rounded-full border px-3 py-1 text-sm underline">
@@ -377,19 +377,19 @@ export default function PartTimeJobsAmsterdamStudents() {
 
             <h2 id="faq">FAQ</h2>
 
-            <h3>How many hours can I work as a student in Amsterdam?</h3>
+            <h3>How many hours can I work as a student in Maastricht?</h3>
             <p>
               Many students work 8 to 20 hours per week. If you are a non EU student, extra limits or permit rules may
               apply. Always check your situation.
             </p>
 
-            <h3>Are there English speaking student jobs in Amsterdam?</h3>
+            <h3>Are there English speaking student jobs in Maastricht?</h3>
             <p>
               Yes. Especially in hospitality, delivery and logistics, events, and customer support. Start with{" "}
-              <Link href="/jobs?city=Amsterdam&english=true">English friendly vacancies</Link>.
+              <Link href="/jobs?city=Maastricht&english=true">English friendly vacancies</Link>.
             </p>
 
-            <h3>What does a student earn per hour in Amsterdam in 2026?</h3>
+            <h3>What does a student earn per hour in Maastricht in 2026?</h3>
             <p>
               Often €13 to €17 per hour in hospitality, logistics, retail, and support. Tutoring is often €15 to €22.
               Allowances and tips can increase your hourly rate.
@@ -409,25 +409,25 @@ export default function PartTimeJobsAmsterdamStudents() {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Article",
-              headline: "Student Part Time Jobs in Amsterdam (2026)",
+              headline: "Student Part Time Jobs in Maastricht (2026)",
               description:
-                "Pillar guide for student part time jobs in Amsterdam with fast filters, pay table, contract types, and live vacancies.",
+                "Pillar guide for student part time jobs in Maastricht with fast filters, pay table, contract types, and live vacancies.",
               image: [OG_IMAGE_URL],
               datePublished: PUBLISH_DATE,
               dateModified: MODIFIED_DATE,
               inLanguage: "en-NL",
               author: {
                 "@type": "Organization",
-                name: "Student Jobs Amsterdam",
+                name: "Student Jobs Maastricht",
                 url: `${BASE_URL}/`,
               },
               publisher: {
                 "@type": "Organization",
-                name: "Student Jobs Amsterdam",
+                name: "Student Jobs Maastricht",
                 url: `${BASE_URL}/`,
               },
               mainEntityOfPage: { "@type": "WebPage", "@id": CANONICAL },
-              about: [{ "@type": "Place", name: "Amsterdam" }],
+              about: [{ "@type": "Place", name: "Maastricht" }],
             }),
           }}
         />
@@ -440,7 +440,7 @@ export default function PartTimeJobsAmsterdamStudents() {
               "@type": "BreadcrumbList",
               itemListElement: [
                 { "@type": "ListItem", position: 1, name: "Home", item: `${BASE_URL}/` },
-                { "@type": "ListItem", position: 2, name: "Student part time jobs Amsterdam", item: CANONICAL },
+                { "@type": "ListItem", position: 2, name: "Student part time jobs Maastricht", item: CANONICAL },
               ],
             }),
           }}
@@ -456,7 +456,7 @@ export default function PartTimeJobsAmsterdamStudents() {
               mainEntity: [
                 {
                   "@type": "Question",
-                  name: "How many hours can I work as a student in Amsterdam?",
+                  name: "How many hours can I work as a student in Maastricht?",
                   acceptedAnswer: {
                     "@type": "Answer",
                     text:
@@ -465,7 +465,7 @@ export default function PartTimeJobsAmsterdamStudents() {
                 },
                 {
                   "@type": "Question",
-                  name: "Are there English speaking student jobs in Amsterdam?",
+                  name: "Are there English speaking student jobs in Maastricht?",
                   acceptedAnswer: {
                     "@type": "Answer",
                     text:
@@ -474,7 +474,7 @@ export default function PartTimeJobsAmsterdamStudents() {
                 },
                 {
                   "@type": "Question",
-                  name: "What does a student earn per hour in Amsterdam in 2026?",
+                  name: "What does a student earn per hour in Maastricht in 2026?",
                   acceptedAnswer: {
                     "@type": "Answer",
                     text:

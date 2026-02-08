@@ -1,35 +1,35 @@
-// src/app/studenten-bijbaan-amsterdam/page.tsx
+// src/app/studenten-bijbaan-maastricht/page.tsx
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
-const BASE_URL = "https://studentjobsamsterdam.nl";
+const BASE_URL = "https://studentjobsmaastricht.nl";
 
 const PUBLISH_DATE = "2026-10-02";
 const MODIFIED_DATE = "2026-02-07";
-const CANONICAL = `${BASE_URL}/studenten-bijbaan-amsterdam`;
+const CANONICAL = `${BASE_URL}/studenten-bijbaan-maastricht`;
 
-// Local image in /public/blog/amsterdam-bridge.jpg
-const HERO_IMAGE_PATH = "/blog/amsterdam-bridge.jpg";
+// Local image in /public/blog/maastricht-bridge.jpg
+const HERO_IMAGE_PATH = "/blog/maastricht-bridge.jpg";
 
 // Absolute URL for OG, Twitter, JSON-LD
 const OG_IMAGE_URL = `${BASE_URL}${HERO_IMAGE_PATH}`;
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
-  title: "Studenten bijbaan Amsterdam (2026) | Goed betaald, Engelstalig, avond en weekend",
+  title: "Studenten bijbaan Maastricht (2026) | Goed betaald, Engelstalig, avond en weekend",
   description:
-    "De complete gids voor een studenten bijbaan in Amsterdam. Filters voor avond en weekend, Engelstalige banen, zonder ervaring starten, uurloon per sector, contracten en live vacatures.",
+    "De complete gids voor een studenten bijbaan in Maastricht. Filters voor avond en weekend, Engelstalige banen, zonder ervaring starten, uurloon per sector, contracten en live vacatures.",
   keywords: [
-    "studenten bijbaan Amsterdam",
-    "bijbaan Amsterdam",
-    "studentenbaan Amsterdam",
-    "parttime baan Amsterdam student",
-    "student jobs Amsterdam",
-    "Engelstalige bijbaan Amsterdam",
-    "weekend bijbaan Amsterdam",
-    "avond bijbaan Amsterdam",
-    "vacatures Amsterdam studenten",
+    "studenten bijbaan Maastricht",
+    "bijbaan Maastricht",
+    "studentenbaan Maastricht",
+    "parttime baan Maastricht student",
+    "student jobs Maastricht",
+    "Engelstalige bijbaan Maastricht",
+    "weekend bijbaan Maastricht",
+    "avond bijbaan Maastricht",
+    "vacatures Maastricht studenten",
   ],
   alternates: { canonical: CANONICAL },
   robots: {
@@ -44,13 +44,13 @@ export const metadata: Metadata = {
     },
   },
   openGraph: {
-    title: "Studenten bijbaan Amsterdam (2026) | Goed betaald, Engelstalig, avond en weekend",
+    title: "Studenten bijbaan Maastricht (2026) | Goed betaald, Engelstalig, avond en weekend",
     description:
-      "Pillar pagina met snelle filters, uurloon per sector, contractvormen en live vacatures voor studenten in Amsterdam.",
+      "Pillar pagina met snelle filters, uurloon per sector, contractvormen en live vacatures voor studenten in Maastricht.",
     url: CANONICAL,
     type: "article",
     locale: "nl_NL",
-    siteName: "Student Jobs Amsterdam",
+    siteName: "Student Jobs Maastricht",
     publishedTime: PUBLISH_DATE,
     modifiedTime: MODIFIED_DATE,
     images: [
@@ -58,31 +58,31 @@ export const metadata: Metadata = {
         url: OG_IMAGE_URL,
         width: 1200,
         height: 630,
-        alt: "Amsterdam brug en grachten",
+        alt: "Maastricht brug en grachten",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Studenten bijbaan Amsterdam (2026) | Goed betaald, Engelstalig, avond en weekend",
+    title: "Studenten bijbaan Maastricht (2026) | Goed betaald, Engelstalig, avond en weekend",
     description:
-      "Snel een bijbaan in Amsterdam vinden als student. Filters, uurloon, contracten en live vacatures.",
+      "Snel een bijbaan in Maastricht vinden als student. Filters, uurloon, contracten en live vacatures.",
     images: [OG_IMAGE_URL],
   },
 };
 
-export default function StudentenBijbaanAmsterdam() {
+export default function StudentenBijbaanMaastricht() {
   return (
     <section className="section">
       <div className="mx-auto max-w-6xl">
         {/* HEADER */}
         <header className="max-w-3xl">
           <h1 className="text-3xl md:text-5xl font-semibold leading-tight">
-            Studenten bijbaan in Amsterdam: de ultieme gids (2026)
+            Studenten bijbaan in Maastricht: de ultieme gids (2026)
           </h1>
 
           <p className="mt-3 text-sm text-slate-600">
-            Door <span className="font-medium">Student Jobs Amsterdam</span> • Bijgewerkt{" "}
+            Door <span className="font-medium">Student Jobs Maastricht</span> • Bijgewerkt{" "}
             {new Date(MODIFIED_DATE).toLocaleDateString("nl-NL", {
               year: "numeric",
               month: "long",
@@ -93,7 +93,7 @@ export default function StudentenBijbaanAmsterdam() {
           {/* Language toggle */}
           <div className="mt-3">
             <Link
-              href="/blog/student-jobs-amsterdam-complete-guide-2026"
+              href="/blog/student-jobs-maastricht-complete-guide-2026"
               className="inline-flex items-center rounded-full border px-3 py-1 text-xs md:text-sm underline hover:no-underline"
               aria-label="Read in English"
               data-ab="english-cta"
@@ -105,7 +105,7 @@ export default function StudentenBijbaanAmsterdam() {
           <figure className="mt-5 overflow-hidden rounded-2xl border bg-white">
             <Image
               src={HERO_IMAGE_PATH}
-              alt="Amsterdam brug en grachten, bijbaan vinden als student in Amsterdam"
+              alt="Maastricht brug en grachten, bijbaan vinden als student in Maastricht"
               width={1280}
               height={720}
               priority
@@ -114,12 +114,12 @@ export default function StudentenBijbaanAmsterdam() {
             <figcaption className="px-4 py-3 text-xs text-slate-600">
               Foto:{" "}
               <a
-                href="https://www.amsterdamprivateboat.com"
+                href="https://www.maastrichtprivateboat.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="underline"
               >
-                amsterdamprivateboat.com
+                maastrichtprivateboat.com
               </a>
             </figcaption>
           </figure>
@@ -127,34 +127,34 @@ export default function StudentenBijbaanAmsterdam() {
           {/* Quick filters */}
           <div className="mt-6 flex flex-wrap gap-2">
             <Link
-              href="/jobs?city=Amsterdam&evening=true"
+              href="/jobs?city=Maastricht&evening=true"
               className="rounded-full border px-3 py-1 text-sm underline"
             >
               Avond
             </Link>
             <Link
-              href="/jobs?city=Amsterdam&weekend=true"
+              href="/jobs?city=Maastricht&weekend=true"
               className="rounded-full border px-3 py-1 text-sm underline"
             >
               Weekend
             </Link>
             <Link
-              href="/jobs?city=Amsterdam&noExperience=true"
+              href="/jobs?city=Maastricht&noExperience=true"
               className="rounded-full border px-3 py-1 text-sm underline"
             >
               Zonder ervaring
             </Link>
             <Link
-              href="/jobs?city=Amsterdam&english=true"
+              href="/jobs?city=Maastricht&english=true"
               className="rounded-full border px-3 py-1 text-sm underline"
             >
               Engels
             </Link>
             <Link
-              href="/jobs?city=Amsterdam"
+              href="/jobs?city=Maastricht"
               className="rounded-full border px-3 py-1 text-sm underline"
             >
-              Alle vacatures (Amsterdam)
+              Alle vacatures (Maastricht)
             </Link>
           </div>
         </header>
@@ -181,7 +181,7 @@ export default function StudentenBijbaanAmsterdam() {
               <li><a href="#contracten" className="underline">Contractvormen</a></li>
               <li><a href="#non-eu" className="underline">Non EU studenten</a></li>
               <li><a href="#sollicitatie" className="underline">Sollicitatietips en gratis CV</a></li>
-              <li><a href="#live-vacatures" className="underline">Live vacatures (Amsterdam)</a></li>
+              <li><a href="#live-vacatures" className="underline">Live vacatures (Maastricht)</a></li>
               <li><a href="#faq" className="underline">FAQ</a></li>
             </ul>
           </nav>
@@ -202,32 +202,32 @@ export default function StudentenBijbaanAmsterdam() {
             "
           >
             <p>
-              Wil je snel een studenten bijbaan in Amsterdam? De beste aanpak is simpel:
+              Wil je snel een studenten bijbaan in Maastricht? De beste aanpak is simpel:
               kies 2 tot 3 sectoren, zet je beschikbaarheid scherp neer (avond of weekend),
               en solliciteer gericht met korte follow up.
             </p>
 
-            <h2 id="waar-vinden">Waar vind je snel een bijbaan in Amsterdam (wijken en gebieden)</h2>
+            <h2 id="waar-vinden">Waar vind je snel een bijbaan in Maastricht (wijken en gebieden)</h2>
             <p>
               De snelste match krijg je als je dichtbij inzetbaar bent. Begin met{" "}
-              <Link href="/jobs?city=Amsterdam">alle vacatures</Link> en kies een gebied dat past bij jouw reisafstand:
+              <Link href="/jobs?city=Maastricht">alle vacatures</Link> en kies een gebied dat past bij jouw reisafstand:
             </p>
             <ul>
               <li><strong>Centrum</strong>: horeca, retail, toerisme, evenementen.</li>
               <li><strong>De Pijp en Oud Zuid</strong>: cafés, restaurants, barista, boutique retail.</li>
               <li><strong>Oud West en Westerpark</strong>: horeca, avondshifts, weekenddrukte.</li>
-              <li><strong>Amsterdam Oost</strong>: horeca en retail, vaak veel studenten.</li>
-              <li><strong>Amsterdam Noord</strong>: events, horeca, flexibele shifts.</li>
+              <li><strong>Maastricht Oost</strong>: horeca en retail, vaak veel studenten.</li>
+              <li><strong>Maastricht Noord</strong>: events, horeca, flexibele shifts.</li>
               <li><strong>Zuidas</strong>: catering en kantoorservices, vaker doordeweeks.</li>
               <li><strong>Sloterdijk en Westpoort</strong>: logistiek en magazijn, vaak toeslagen in de avond of nacht.</li>
               <li><strong>Zuidoost</strong>: retail en grote locaties, soms langere shifts.</li>
             </ul>
 
-            <h2 id="engels">Engelstalige studentenbanen in Amsterdam</h2>
+            <h2 id="engels">Engelstalige studentenbanen in Maastricht</h2>
             <p>
-              Amsterdam heeft veel <strong>Engelstalige teams</strong>, vooral in horeca, bezorging, logistiek,
+              Maastricht heeft veel <strong>Engelstalige teams</strong>, vooral in horeca, bezorging, logistiek,
               internationale retail en support. Start met{" "}
-              <Link href="/jobs?city=Amsterdam&english=true">Engels vriendelijke vacatures</Link>.
+              <Link href="/jobs?city=Maastricht&english=true">Engels vriendelijke vacatures</Link>.
             </p>
 
             <h2 id="roosters">Weekend en avond: roosters die naast college passen</h2>
@@ -348,8 +348,8 @@ export default function StudentenBijbaanAmsterdam() {
               <div className="font-semibold text-lg">Klaar om te starten?</div>
               <p className="mt-1">
                 Bekijk{" "}
-                <Link href="/jobs?city=Amsterdam">alle vacatures (Amsterdam)</Link>,{" "}
-                <Link href="/jobs?city=Amsterdam&english=true">Engels vriendelijk</Link>{" "}
+                <Link href="/jobs?city=Maastricht">alle vacatures (Maastricht)</Link>,{" "}
+                <Link href="/jobs?city=Maastricht&english=true">Engels vriendelijk</Link>{" "}
                 of <Link href="/categories">categorieën</Link>. Werkgever?{" "}
                 <Link href="/employers">Adverteer je vacature</Link>.
               </p>
@@ -358,17 +358,17 @@ export default function StudentenBijbaanAmsterdam() {
               </p>
             </div>
 
-            <h2 id="live-vacatures">Live vacatures (Amsterdam)</h2>
+            <h2 id="live-vacatures">Live vacatures (Maastricht)</h2>
             <p className="text-sm text-slate-600">
               Tip: filter op{" "}
-              <Link href="/jobs?city=Amsterdam&evening=true">avond</Link>,{" "}
-              <Link href="/jobs?city=Amsterdam&weekend=true">weekend</Link>,{" "}
-              <Link href="/jobs?city=Amsterdam&noExperience=true">zonder ervaring</Link>,{" "}
-              <Link href="/jobs?city=Amsterdam&english=true">Engels</Link>.
+              <Link href="/jobs?city=Maastricht&evening=true">avond</Link>,{" "}
+              <Link href="/jobs?city=Maastricht&weekend=true">weekend</Link>,{" "}
+              <Link href="/jobs?city=Maastricht&noExperience=true">zonder ervaring</Link>,{" "}
+              <Link href="/jobs?city=Maastricht&english=true">Engels</Link>.
             </p>
             <div className="rounded-2xl border bg-white p-4">
-              <Link href="/jobs?city=Amsterdam" className="underline">
-                Open live vacatures voor Amsterdam
+              <Link href="/jobs?city=Maastricht" className="underline">
+                Open live vacatures voor Maastricht
               </Link>
               <div className="mt-3 flex flex-wrap gap-2">
                 <Link href="/categories/hospitality" className="rounded-full border px-3 py-1 text-sm underline">
@@ -400,10 +400,10 @@ export default function StudentenBijbaanAmsterdam() {
               Controleer je situatie bij officiële bronnen en je werkgever.
             </p>
 
-            <h3>Zijn er Engelstalige bijbanen in Amsterdam?</h3>
+            <h3>Zijn er Engelstalige bijbanen in Maastricht?</h3>
             <p>
               Ja. Vooral in horeca, bezorging, logistiek, internationale retail en klantenservice. Start bij{" "}
-              <Link href="/jobs?city=Amsterdam&english=true">Engels vriendelijke vacatures</Link>.
+              <Link href="/jobs?city=Maastricht&english=true">Engels vriendelijke vacatures</Link>.
             </p>
 
             <h3>Wat verdient een student in 2026?</h3>
@@ -427,16 +427,16 @@ export default function StudentenBijbaanAmsterdam() {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Article",
-              headline: "Studenten bijbaan Amsterdam (2026) | Goed betaald, Engelstalig, avond en weekend",
+              headline: "Studenten bijbaan Maastricht (2026) | Goed betaald, Engelstalig, avond en weekend",
               description:
-                "Pillar gids voor studenten bijbanen in Amsterdam met snelle filters, uurloon per sector, contractvormen en live vacatures.",
+                "Pillar gids voor studenten bijbanen in Maastricht met snelle filters, uurloon per sector, contractvormen en live vacatures.",
               image: [
                 {
                   "@type": "ImageObject",
                   url: OG_IMAGE_URL,
                   width: 1200,
                   height: 630,
-                  creditText: "amsterdamprivateboat.com",
+                  creditText: "maastrichtprivateboat.com",
                 },
               ],
               datePublished: PUBLISH_DATE,
@@ -444,16 +444,16 @@ export default function StudentenBijbaanAmsterdam() {
               inLanguage: "nl-NL",
               author: {
                 "@type": "Organization",
-                name: "Student Jobs Amsterdam",
+                name: "Student Jobs Maastricht",
                 url: `${BASE_URL}/`,
               },
               publisher: {
                 "@type": "Organization",
-                name: "Student Jobs Amsterdam",
+                name: "Student Jobs Maastricht",
                 url: `${BASE_URL}/`,
               },
               mainEntityOfPage: { "@type": "WebPage", "@id": CANONICAL },
-              about: [{ "@type": "Place", name: "Amsterdam" }],
+              about: [{ "@type": "Place", name: "Maastricht" }],
             }),
           }}
         />
@@ -466,7 +466,7 @@ export default function StudentenBijbaanAmsterdam() {
               "@type": "BreadcrumbList",
               itemListElement: [
                 { "@type": "ListItem", position: 1, name: "Home", item: `${BASE_URL}/` },
-                { "@type": "ListItem", position: 2, name: "Studenten bijbaan Amsterdam", item: CANONICAL },
+                { "@type": "ListItem", position: 2, name: "Studenten bijbaan Maastricht", item: CANONICAL },
               ],
             }),
           }}
@@ -491,7 +491,7 @@ export default function StudentenBijbaanAmsterdam() {
                 },
                 {
                   "@type": "Question",
-                  name: "Zijn er Engelstalige bijbanen in Amsterdam?",
+                  name: "Zijn er Engelstalige bijbanen in Maastricht?",
                   acceptedAnswer: {
                     "@type": "Answer",
                     text:

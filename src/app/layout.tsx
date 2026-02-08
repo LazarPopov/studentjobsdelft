@@ -6,8 +6,8 @@ import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import Script from "next/script";
 
-const SITE_URL = "https://studentjobsamsterdam.nl";
-const SITE_NAME = "Student Jobs Amsterdam";
+const SITE_URL = "https://studentjobsmaastricht.nl";
+const SITE_NAME = "Student Jobs Maastricht";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     template: `%s | ${SITE_NAME}`,
   },
   description:
-    "Find student jobs in Amsterdam: English friendly roles, fast apply tips, and real pay ranges.",
+    "Find student jobs in Maastricht: English friendly roles, fast apply tips, and real pay ranges.",
   alternates: { canonical: "/" },
   robots: {
     index: true,
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     siteName: SITE_NAME,
     title: SITE_NAME,
     description:
-      "Find student jobs in Amsterdam: English friendly roles, fast apply tips, and real pay ranges.",
+      "Find student jobs in Maastricht: English friendly roles, fast apply tips, and real pay ranges.",
     locale: "en_NL",
     images: [
       {
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: SITE_NAME,
     description:
-      "Find student jobs in Amsterdam: English friendly roles, fast apply tips, and real pay ranges.",
+      "Find student jobs in Maastricht: English friendly roles, fast apply tips, and real pay ranges.",
     images: ["/og.jpg"],
   },
   other: {
@@ -107,7 +107,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           />
         </noscript>
 
-        <Script defer data-domain="studentjobsamsterdam.nl" src="https://plausible.io/js/script.js" />
+        <Script defer data-domain="studentjobsmaastricht.nl" src="https://plausible.io/js/script.js" />
 
         <Script
           src="https://analytics.ahrefs.com/analytics.js"

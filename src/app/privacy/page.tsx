@@ -1,7 +1,7 @@
 export const metadata = {
-  title: "Privacy Policy | Student Jobs Amsterdam",
-  description: "Privacy policy for Student Jobs Amsterdam.",
-  alternates: { canonical: "https://studentjobsamsterdam.nl/privacy" },
+  title: "Privacy Policy | Student Jobs Maastricht",
+  description: "Privacy policy for Student Jobs Maastricht.",
+  alternates: { canonical: "https://studentjobsmaastricht.nl/privacy" },
 };
 
 export default function PrivacyPage() {

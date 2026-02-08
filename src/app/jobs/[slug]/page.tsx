@@ -6,7 +6,7 @@ import JobApplyForm from "@/components/JobApplyForm";
 import { getJobBySlug, listJobs } from "@/data/jobs";
 import type { Metadata } from "next";
 
-const BASE_URL = "https://studentjobsamsterdam.nl";
+const BASE_URL = "https://studentjobsmaastricht.nl";
 
 function paySnippet(job: any) {
   if (!job?.baseSalaryMin) return "";
@@ -20,7 +20,7 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   const job = getJobBySlug(params.slug);
   if (!job) return { title: "Job not found" };
 
-  const city = (job.addressLocality ? String(job.addressLocality) : "Amsterdam").trim();
+  const city = (job.addressLocality ? String(job.addressLocality) : "Maastricht").trim();
   const title = `${job.title} at ${job.orgName} in ${city}`;
   const pay = paySnippet(job);
   const english = job.englishFriendly ? "English friendly" : "Dutch required";
@@ -63,7 +63,7 @@ export async function generateStaticParams() {
   return listJobs().map((j) => ({ slug: j.slug }));
 }
 function JobPostingJsonLd({ job, baseUrl }: { job: any; baseUrl: string }) {
-  const city = (job.addressLocality ? String(job.addressLocality) : "Amsterdam").trim();
+  const city = (job.addressLocality ? String(job.addressLocality) : "Maastricht").trim();
 
   const jsonLd: any = {
     "@context": "https://schema.org",
@@ -124,7 +124,7 @@ export default function JobPage({ params }: { params: { slug: string } }) {
   if (!job) notFound();
 
   const cityPrefill =
-    (job.addressLocality ? String(job.addressLocality) : "amsterdam").toLowerCase();
+    (job.addressLocality ? String(job.addressLocality) : "maastricht").toLowerCase();
 
   return (
     <section className="px-6 py-10">
@@ -198,7 +198,7 @@ export default function JobPage({ params }: { params: { slug: string } }) {
             jobSlug={job.slug}
             jobTitle={job.title}
             orgName={job.orgName}
-            city={(job.addressLocality || "amsterdam").toLowerCase()}
+            city={(job.addressLocality || "maastricht").toLowerCase()}
             redirectTo={`/thank-you?job=${encodeURIComponent(job.slug)}`}
           />
           </div>

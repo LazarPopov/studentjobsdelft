@@ -7,6 +7,6 @@
   ],
   "redirects": [
     { "source": "/guides/:path*", "destination": "/blog/:path*", "permanent": true },
-    { "source": "/blog/best-paying-student-jobs-Amsterdam", "destination": "/blog/best-paying-student-jobs-Amsterdam-2026", "permanent": true }
+    { "source": "/blog/best-paying-student-jobs-Maastricht", "destination": "/blog/best-paying-student-jobs-Maastricht-2026", "permanent": true }
   ]
 }

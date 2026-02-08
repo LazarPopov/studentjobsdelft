@@ -79,7 +79,7 @@ export async function sendJobSubmissionNotification(data: JobSubmissionEmailData
       <div class="container">
         <div class="header">
           <h1>🎉 New Job Submission</h1>
-          <p style="margin: 5px 0 0 0; opacity: 0.9;">Student Jobs Amsterdam</p>
+          <p style="margin: 5px 0 0 0; opacity: 0.9;">Student Jobs Maastricht</p>
         </div>
         
         <div class="content">
@@ -195,8 +195,8 @@ export async function sendJobSubmissionNotification(data: JobSubmissionEmailData
         </div>
         
         <div class="footer">
-          <p>This is an automated notification from Student Jobs Amsterdam</p>
-          <p>Submission received at ${new Date().toLocaleString('nl-NL', { timeZone: 'Europe/Amsterdam' })}</p>
+          <p>This is an automated notification from Student Jobs Maastricht</p>
+          <p>Submission received at ${new Date().toLocaleString('nl-NL', { timeZone: 'Europe/Maastricht' })}</p>
         </div>
       </div>
     </body>
@@ -204,7 +204,7 @@ export async function sendJobSubmissionNotification(data: JobSubmissionEmailData
   `;
 
   const textContent = `
-New Job Submission - Student Jobs Amsterdam
+New Job Submission - Student Jobs Maastricht
 ==========================================
 
 SUBMISSION ID: ${submissionId}
@@ -239,11 +239,11 @@ ${submission.logo_url ? `\nLogo: ${submission.logo_url}` : ''}
 
 ---
 Review this submission in your Supabase dashboard.
-Received at ${new Date().toLocaleString('nl-NL', { timeZone: 'Europe/Amsterdam' })}
+Received at ${new Date().toLocaleString('nl-NL', { timeZone: 'Europe/Maastricht' })}
   `.trim();
 
   const mailOptions = {
-    from: `"${process.env.GMAIL_FROM_NAME || 'Student Jobs Amsterdam'}" <${process.env.GMAIL_FROM_ADDRESS || process.env.GMAIL_USERNAME}>`,
+    from: `"${process.env.GMAIL_FROM_NAME || 'Student Jobs Maastricht'}" <${process.env.GMAIL_FROM_ADDRESS || process.env.GMAIL_USERNAME}>`,
     to: process.env.GMAIL_RECEIVER || 'info@domakin.nl',
     subject: `🆕 New Job: ${submission.job_title} at ${submission.company}`,
     text: textContent,
@@ -292,7 +292,7 @@ export async function sendEmployerConfirmation(data: JobSubmissionEmailData): Pr
       <div class="container">
         <div class="header">
           <h1>✅ Job Submitted Successfully!</h1>
-          <p style="margin: 10px 0 0 0; opacity: 0.9;">Student Jobs Amsterdam</p>
+          <p style="margin: 10px 0 0 0; opacity: 0.9;">Student Jobs Maastricht</p>
         </div>
         
         <div class="content">
@@ -306,19 +306,19 @@ export async function sendEmployerConfirmation(data: JobSubmissionEmailData): Pr
           <ol>
             <li>Our team reviews your job posting</li>
             <li>We'll contact you if we need any additional information</li>
-            <li>Once approved, your job will be published on Student Jobs Amsterdam</li>
+            <li>Once approved, your job will be published on Student Jobs Maastricht</li>
             <li>You'll start receiving applications from interested students</li>
           </ol>
           
           <p>If you have any questions, feel free to reply to this email.</p>
           
           <p>Best regards,<br>
-          <strong>Student Jobs Amsterdam Team</strong></p>
+          <strong>Student Jobs Maastricht Team</strong></p>
         </div>
         
         <div class="footer">
-          <p>Student Jobs Amsterdam | Connecting students with opportunities</p>
-          <p><a href="https://studentjobsamsterdam.nl">studentjobsamsterdam.nl</a></p>
+          <p>Student Jobs Maastricht | Connecting students with opportunities</p>
+          <p><a href="https://studentjobsmaastricht.nl">studentjobsmaastricht.nl</a></p>
         </div>
       </div>
     </body>
@@ -326,7 +326,7 @@ export async function sendEmployerConfirmation(data: JobSubmissionEmailData): Pr
   `;
 
   const mailOptions = {
-    from: `"${process.env.GMAIL_FROM_NAME || 'Student Jobs Amsterdam'}" <${process.env.GMAIL_FROM_ADDRESS || process.env.GMAIL_USERNAME}>`,
+    from: `"${process.env.GMAIL_FROM_NAME || 'Student Jobs Maastricht'}" <${process.env.GMAIL_FROM_ADDRESS || process.env.GMAIL_USERNAME}>`,
     to: submission.email,
     subject: `Job Submitted: ${submission.job_title}`,
     html: htmlContent,

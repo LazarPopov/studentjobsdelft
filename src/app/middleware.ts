@@ -2,7 +2,7 @@
 import type { NextRequest } from "next/server";
 import { NextResponse } from "next/server";
 
-const CANONICAL_HOST = "studentjobsamsterdam.nl";
+const CANONICAL_HOST = "studentjobsmaastricht.nl";
 
 export function middleware(req: NextRequest) {
   const url = new URL(req.url);
