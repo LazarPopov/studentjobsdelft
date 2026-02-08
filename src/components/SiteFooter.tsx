@@ -82,53 +82,86 @@ export default function SiteFooter() {
           </ul>
         </nav>
 
-        {/* City network */}
-        <nav aria-label="Student Jobs city network">
-          <div className="font-semibold">More cities</div>
-          <ul className="mt-3 space-y-2 text-sm">
-            <li>
-              <a
-                href="https://www.studentjobsamsterdam.nl/"
-                className="underline underline-offset-2"
-                rel="noopener"
-              >
-                Student Jobs Amsterdam
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://studentjobsgroningen.nl/"
-                className="underline underline-offset-2"
-                rel="noopener"
-              >
-                Student Jobs Groningen
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.studentjobsrotterdam.nl/"
-                className="underline underline-offset-2"
-                rel="noopener"
-              >
-                Student Jobs Rotterdam
-              </a>
-            </li>
-                        <li>
-              <a
-                href="https://www.studentjobsdelft.nl/"
-                className="underline underline-offset-2"
-                rel="noopener"
-              >
-                Student Jobs Delft
-              </a>
-            </li>
-          </ul>
+ {/* City network */}
+    <nav aria-label="Student Jobs city network">
+      <div className="font-semibold">More cities</div>
+      <ul className="mt-3 space-y-2 text-sm">
+        <li>
+          <a
+            href="https://www.studentjobsamsterdam.nl/"
+            className="underline underline-offset-2"
+            rel="noopener"
+          >
+            Student Jobs Amsterdam
+          </a>
+        </li>
 
-          <p className="mt-3 text-xs text-slate-500">
-            Looking for a bijbaan in another city? Browse our local job boards and guides.
-          </p>
-        </nav>
-      </div>
+        <li>
+          <a
+            href="https://www.studentjobsgroningen.nl/"
+            className="underline underline-offset-2"
+            rel="noopener"
+          >
+            Student Jobs Groningen
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="https://www.studentjobsrotterdam.nl/"
+            className="underline underline-offset-2"
+            rel="noopener"
+          >
+            Student Jobs Rotterdam
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="https://www.studentjobseindhoven.nl/"
+            className="underline underline-offset-2"
+            rel="noopener"
+          >
+            Student Jobs Eindhoven
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="https://www.studentjobsdelft.nl/"
+            className="underline underline-offset-2"
+            rel="noopener"
+          >
+            Student Jobs Delft
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="https://www.studentjobsenchede.nl/"
+            className="underline underline-offset-2"
+            rel="noopener"
+          >
+            Student Jobs Enschede
+          </a>
+        </li>
+
+        <li>
+          <a
+            href="https://www.studentjobmaastricht.nl/"
+            className="underline underline-offset-2"
+            rel="noopener"
+          >
+            Student Job Maastricht
+          </a>
+        </li>
+      </ul>
+
+      <p className="mt-3 text-xs text-slate-500">
+        Looking for a bijbaan in another city? Browse our local job boards and guides.
+      </p>
+    </nav>
+  </div>
 
       {/* Bottom bar */}
       <div className="bg-white border-t">
