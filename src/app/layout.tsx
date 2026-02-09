@@ -1,4 +1,4 @@
-// src/app/layout.tsx
+﻿// src/app/layout.tsx
 import type { Metadata } from "next";
 import "./globals.css";
 import SiteFooter from "@/components/SiteFooter";
@@ -59,7 +59,7 @@ export const metadata: Metadata = {
 };
 
 const GTM_ID = process.env.NEXT_PUBLIC_GTM_ID || "GTM-WT8SB7T6";
-const GA4_ID = process.env.NEXT_PUBLIC_GA4_ID || "G-Y6XXRPF6QB";
+const GA4_ID = process.env.NEXT_PUBLIC_GA4_ID;
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -125,3 +125,4 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     </html>
   );
 }
+
