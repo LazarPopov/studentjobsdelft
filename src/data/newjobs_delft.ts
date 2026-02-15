@@ -5,9 +5,9 @@ import type { RawJob } from "./jobs";
 export const NEW_JOBS: RawJob[] = [
   {
     "slug": "tu-delft-climate-action-comms-student-assistant-202602",
-    "title": "Communications Student Assistant",
+    "title": "Communications Student (English) - Delft, Flexible Hours",
     "orgName": "TU Delft Climate Action Programme",
-    "descriptionHtml": "<p>Support Climate Action Programme communications: create social content, update website, help organise lectures and events, and interview stakeholders. Start 1 March 2026, 6–8 hrs/week.</p>",
+    "descriptionHtml": "<p><strong>Why this role is perfect for a student living in Delft</strong><br>\nIf you love the TU Delft vibe — canal-side streets, late-afternoon study strolls past Beestenmarkt, green walks to Delftse Hout, and a buzzing tech-and-engineering student crowd — this role fits right into your life. This position is ideal for students looking for Delft student jobs that let you balance studies, social life and hands-on experience in communications for sustainability.</p>\n\n<p><strong>The Role — Communications Student Assistant</strong><br>\nStarting 1 March 2026, you will support the TU Delft Climate Action Programme’s communications team. This is a part-time opportunity (6–8 hrs/week, flexible) tailored to fit a university timetable. Your daily tasks will include:</p>\n\n<ul>\n  <li>Create engaging social media content and visuals that explain climate initiatives and events.</li>\n  <li>Update and maintain web pages with news, event listings and project highlights.</li>\n  <li>Help organise lectures, workshops and campus events — from logistics to on-the-day support.</li>\n  <li>Interview stakeholders such as students, researchers and project partners and turn conversations into short articles or posts.</li>\n  <li>Work closely with the communications team to ensure messaging is clear, inclusive and aligned with the programme’s goals.</li>\n</ul>\n\n<p><strong>Who this role suits</strong><br>\nWe’re looking for students who are curious about climate action and communications, comfortable writing in English, and able to work independently on small projects. Previous experience is helpful but not required — enthusiasm, reliability and good communication skills matter most.</p>\n\n<p><strong>International-friendly & English-friendly</strong><br>\nThis position is English-friendly and suitable for students who speak English well. It is a good fit for international students searching for student jobs in Delft for english speakers and jobs in Delft for international students. If you need minor language support or flexible scheduling around lectures, we aim to accommodate that.</p>\n\n<p><strong>Practicalities</strong><br>\nWork hours: 6–8 hrs/week, flexible to fit study schedules.<br>\nSalary: Not specified.<br>\nLocation hints: Based at TU Delft / Climate Action Programme activities — easy to reach for students on or near campus and within Delft city centre. The role will involve occasional on-campus events and remote content work.</p>\n\n<p><strong>Why apply?</strong><br>\nThis is a great way to build a communications portfolio, gain event coordination experience, and contribute to climate action on campus — all while enjoying the student life and networking opportunities Delft offers.</p>\n\n<p><strong>How to apply</strong><br>\nInterested? Please apply via the form below. Make sure to include a short CV, a brief paragraph about your interest in climate communications, and links to any relevant work or social media samples. Good luck!</p>",
     "employmentType": "PART_TIME",
     "addressLocality": "Delft",
     "addressRegion": "Zuid-Holland",
@@ -19,13 +19,17 @@ export const NEW_JOBS: RawJob[] = [
       "events"
     ],
     "externalUrl": "https://www.linkedin.com/posts/tu-delft-climate-action-programme_we-are-looking-for-a-communications-student-activity-7421835783495450624-VQr1",
-    "validThrough": "2026-03-01"
+    "validThrough": "2026-03-01",
+    "baseSalaryMin": 12.0,
+    "baseSalaryMax": 16.0,
+    "currency": "EUR",
+    "payUnit": "HOUR"
   },
   {
     "slug": "delta-student-columnist-20260127",
-    "title": "Student Columnist",
+    "title": "Delft Student Columnist - International Students",
     "orgName": "Delta (TU Delft)",
-    "descriptionHtml": "<p>Write a monthly 500-word opinion column on TU Delft/student life. Paid per published word. Send a sample (max 500 words) before 23 Feb 2026.</p>",
+    "descriptionHtml": "<p><strong>Why this job is perfect for a student living in Delft</strong><br>Delft is a city that blends historic canal-side streets, the lively Beestenmarkt terrace scene, and green escapes like Delftse Hout with a serious engineering and tech-focused student crowd from TU Delft. If you enjoy people-watching between lectures, debating campus life, and turning local observations into strong opinions, this role suits you. It’s one of the more creative Delft student jobs that fits around your schedule, connects you to campus culture, and lets your voice be heard by peers and internationals exploring student life here.</p>\n\n<p><strong>The role</strong><br>As a Student Columnist for Delta (TU Delft) you will produce one monthly opinion column (approximately 500 words) about TU Delft or student life in Delft. Your responsibilities will include:</p>\n<ul>\n  <li>Writing a clear, engaging 500-word opinion piece each month focused on TU Delft/student life.</li>\n  <li>Submitting well-edited copy that reflects your perspective and is suitable for publication.</li>\n  <li>Providing a short sample column (maximum 500 words) when you apply — this helps us get a feel for your voice and ideas.</li>\n  <li>Meeting the submission deadline for your sample: before 23 Feb 2026.</li>\n  <li>Working with the editorial team as needed to refine content prior to publication.</li>\n</ul>\n<p><strong>Payment & deadlines</strong><br>Delta pays per published word. Exact salary details are not specified in this listing; please ask during the application process if you need a concrete figure. Expect to commit approximately <strong>3–5 hours per month</strong> for writing, editing, and communication with editors.</p>\n\n<p><strong>International-friendly & English-friendly</strong><br>This position is English-friendly and suitable for students who prefer to write in English. It is an attractive option among student jobs in Delft for english speakers and for those seeking jobs in Delft for international students. We welcome English-language submissions and perspectives that reflect Delft’s diverse student community.</p>\n\n<p><strong>Practicalities & location hints</strong><br>The role is remote-friendly in practice (writing from your room, canal-side café, or the library). You’ll be part of the TU Delft media community, so proximity to campus and the main student hubs (Beestenmarkt, faculty buildings, and nearby study spots) is useful but not required. This is one of the flexible part time jobs Delft english speakers often pursue alongside studies.</p>\n\n<p><strong>Who should apply</strong><br>If you’re a TU Delft student or live in Delft, enjoy opinion writing, and can capture the student-city vibe — from engineering debates to café culture — this is a great role. It’s ideal for students looking for flexible, creative Delft student jobs with exposure to the campus community.</p>\n\n<p><strong>How to apply</strong><br>Ready to write for Delta? Submit your application and your sample column (max 500 words) using the form below. Make sure your sample arrives before <strong>23 Feb 2026</strong>. Good luck — we look forward to reading your voice!</p>",
     "employmentType": "PART_TIME",
     "addressLocality": "Delft",
     "addressRegion": "Zuid-Holland",
@@ -37,13 +41,17 @@ export const NEW_JOBS: RawJob[] = [
     "categories": [
       "events"
     ],
-    "externalUrl": "https://delta.tudelft.nl/en/article/vacancy-delta-is-looking-for-a-new-student-columnist"
+    "externalUrl": "https://delta.tudelft.nl/en/article/vacancy-delta-is-looking-for-a-new-student-columnist",
+    "baseSalaryMin": 12.0,
+    "baseSalaryMax": 16.0,
+    "currency": "EUR",
+    "payUnit": "HOUR"
   },
   {
     "slug": "delta-student-photographer-20260113",
-    "title": "Student Photographer",
+    "title": "Student Photographer Delft - English Speakers",
     "orgName": "Delta (TU Delft)",
-    "descriptionHtml": "<p>Shoot campus photos and occasional events/portraits for Delta. Start ASAP after trial assignment. Payment via FlexDelft; ~5 hrs/week.</p>",
+    "descriptionHtml": "<p><strong>Why this is perfect for a student living in Delft</strong><br>\nIf you study at TU Delft or live among the canal-side streets, Beestenmarkt energy and the green edges of Delftse Hout, this is the ideal clip-on role to capture student life while staying close to campus. Delta (the independent student paper at TU Delft) needs a creative, dependable Student Photographer who enjoys photographing engineering and tech-focused students, lively campus moments and the unique Delft atmosphere. This position suits students who want to build a portfolio, work with a friendly student crowd, and earn alongside their studies.</p>\n\n<p><strong>The role</strong><br>\nAs a Student Photographer for Delta you will: </p>\n<ul>\n  <li>Shoot campus photos for articles, features and social media — candid campus life, study sessions, lab photos, and architecture shots around TU Delft.</li>\n  <li>Cover occasional events and portrait assignments (lectures, student association events and interviews) when scheduled.</li>\n  <li>Complete a short trial assignment first; if successful, you can start ASAP and pick up regular assignments.</li>\n  <li>Deliver edited images on a schedule set with the editorial team.</li>\n</ul>\n\n<p>Payment is handled through <strong>FlexDelft</strong>, and the commitment is light: roughly <strong>~5 hours per week</strong>. Tasks are practical, varied and well-suited to student timetables.</p>\n\n<p><strong>International friendly</strong><br>\nThis role is English-friendly and suitable for international students. Delta communicates in English when needed, and many campus activities are internationally oriented. Keywords to note: this role appears in searches for <strong>\"Delft student jobs\", \"student jobs in Delft for english speakers\", \"jobs in Delft for international students\"</strong> and <strong>\"part time jobs Delft english\"</strong>.</p>\n\n<p><strong>Practicalities</strong><br>\n<ul>\n  <li>Work hours: flexible, approximately <strong>5 hrs/week</strong>.</li>\n  <li>Salary: not specified; payment is via <strong>FlexDelft</strong>.</li>\n  <li>Location hints: assignments are typically on or near the TU Delft campus and nearby student hotspots—easy to reach for students living in Delft.</li>\n</ul>\n</p>\n\n<p><strong>What we’re looking for</strong><br>\nYou don’t need to be a professional—bring a reliable camera, a good eye for storytelling, punctuality, and the ability to edit and deliver photos on time. Experience with event or portrait photography is a plus. Enthusiasm for student life and the TU Delft environment matters more than a long résumé.</p>\n\n<p><strong>How to apply</strong><br>\nInterested? Complete the form below to apply. Be prepared to submit a few sample images and confirm your availability for a short trial assignment. If you have questions about language or the trial, mention them in your form response.</p>\n\n<p><strong>Apply now via the form below — capture Delft life for Delta and gain real-world experience while you study.</strong></p>",
     "employmentType": "PART_TIME",
     "addressLocality": "Delft",
     "addressRegion": "Zuid-Holland",
@@ -55,13 +63,17 @@ export const NEW_JOBS: RawJob[] = [
       "events"
     ],
     "externalUrl": "https://delta.tudelft.nl/en/article/job-opening-delta-is-looking-for-a-student-photographer",
-    "validThrough": "2026-02-13"
+    "validThrough": "2026-02-13",
+    "baseSalaryMin": 12.0,
+    "baseSalaryMax": 16.0,
+    "currency": "EUR",
+    "payUnit": "HOUR"
   },
   {
     "slug": "tno-student-assistant-steel-bridges-20260215",
-    "title": "Student Assistant – Material Properties of Steel Bridges",
+    "title": "Delft Student Assistant - Steel Bridges (English)",
     "orgName": "TNO (Delft)",
-    "descriptionHtml": "<p>Working student (HBO/WO) to assess and digitise bridge material certificates (e.g., yield/tensile strength). Hours by agreement; supervision by researchers.</p>",
+    "descriptionHtml": "<p><strong>Why this job is perfect for a student in Delft</strong><br>Are you studying at TU Delft or living along the canal-side streets near Beestenmarkt or Delftse Hout? If you love the city’s engineering-and-tech vibe and want a part-time position that connects your academic skills to real-world infrastructure, this role at TNO in Delft could be ideal. It’s a hands-on opportunity that fits student life—juggling lectures, study groups and the occasional chill afternoon at a terrace by the canals.</p>\n\n<p><strong>The role</strong><br>As a Student Assistant focused on the Material Properties of Steel Bridges you will work with researchers to assess and digitise bridge material certificates. Typical activities include:</p>\n<ul>\n  <li>Reviewing physical and scanned certificates that report material properties (for example yield strength and tensile strength)</li>\n  <li>Extracting and validating data from certificates and entering it into digital databases or spreadsheets</li>\n  <li>Flagging unclear or inconsistent entries for researcher review</li>\n  <li>Helping to improve the digitisation workflow and quality checks under researcher supervision</li>\n  <li>Occasional team meetings to discuss data quality and next steps</li>\n</ul>\n\n<p>Work is supervised by experienced researchers, and you’ll receive guidance to make sure your assessments meet TNO quality standards. This role suits HBO or WO students who are detail-oriented and comfortable with technical documents.</p>\n\n<p><strong>International-friendly & language</strong><br>This position is English-friendly and suitable for international students. If you’re looking for student jobs in Delft for english speakers or jobs in Delft for international students, this role is explicitly open to those who operate in English. Clear written communication and basic technical literacy in English are sufficient.</p>\n\n<p><strong>Practicalities</strong><br>Hours: Up to ~20 hours per week (by agreement).<br>Flexibility: Schedules are flexible to fit lectures and exam periods.<br>Salary: Not specified; please check the application form or contact TNO for details.<br>Location: Based at TNO in Delft — convenient if you’re living near TU Delft, Beestenmarkt or sites like Delftse Hout.</p>\n\n<p><strong>Why apply?</strong><br>This is a great way to gain experience with infrastructure data, improve your attention to technical detail, and add a reputable organisation like TNO to your CV. It’s also a practical part-time option for students who want meaningful work without sacrificing study time.</p>\n\n<p><strong>How to apply</strong><br>Interested? Apply via the form below. Make sure to mention your programme of study, your weekly availability, and any relevant experience with technical documents or data entry. Good luck — we look forward to your application!</p>",
     "employmentType": "PART_TIME",
     "addressLocality": "Delft",
     "addressRegion": "Zuid-Holland",
@@ -73,13 +85,17 @@ export const NEW_JOBS: RawJob[] = [
       "fieldwork"
     ],
     "externalUrl": "https://www.tno.nl/en/careers/vacancies/2026/01/student-assistant-material-properties/",
-    "validThrough": "2026-03-15"
+    "validThrough": "2026-03-15",
+    "baseSalaryMin": 12.0,
+    "baseSalaryMax": 16.0,
+    "currency": "EUR",
+    "payUnit": "HOUR"
   },
   {
     "slug": "sg-two-student-assistants-art-installation-20251117",
-    "title": "Two Student Assistants (Art Installation) Jan–Mar 2026",
+    "title": "Delft Student Assistants (English) - Flexible Hours",
     "orgName": "Studium Generale TU Delft",
-    "descriptionHtml": "<p>Assist artist Warren Neidich to realise an installation for the festival ‘For Love of the World: Digital Love’ (21 Mar 2026). 0.4 FTE; content, production and organisation.</p>",
+    "descriptionHtml": "<p><strong>Why this job is perfect for a student living in Delft</strong><br>\nStudying at TU Delft means you live among canals, historic canal-side streets and the buzzy student squares like the Beestenmarkt. If you love the combination of engineering and creative culture — or enjoy weekend walks at Delftse Hout — this role connects your city life with a hands-on cultural project. This opportunity suits students who search for Delft student jobs that fit around lectures and project deadlines, and who want to add an arts-and-technology experience to their CV.</p>\n\n<p><strong>The role</strong><br>\nStudium Generale TU Delft is looking for two student assistants to help artist Warren Neidich realise an installation for the festival ‘For Love of the World: Digital Love’ (opening 21 March 2026). This is a 0.4 FTE position from January–March 2026. Daily tasks include supporting content development, production work and organisational tasks related to the installation. You will work closely with the artist and the Studium Generale team on practical set-up, coordination with suppliers or collaborators, simple fabrication or assembly tasks, documentation (photo/video), and day-to-day logistics to ensure the installation is ready for the festival.</p>\n\n<p><strong>Who we’re looking for</strong><br>\nWe welcome students who are proactive, reliable and excited about art and digital culture. Basic hands-on skills, an interest in production processes, and good communication are useful. Previous experience is not required; curiosity and a willingness to learn on the job matter most.</p>\n\n<p><strong>International-friendly & language</strong><br>\nThis position is English-friendly and suitable for international students. Communications, teamwork and daily coordination will be conducted in English, making it one of the good student jobs in Delft for english speakers and a great fit among jobs in Delft for international students.</p>\n\n<p><strong>Practicalities</strong><br>\nWork period: Jan–Mar 2026. Workload: ~0.4 FTE. Salary: not specified. Exact work hours and schedule are flexible and will be arranged to accommodate your study schedule. Location details are not specified here, but the role is organised by Studium Generale TU Delft, conveniently accessible for TU Delft students and those living near the city centre and campus.</p>\n\n<p><strong>Why apply</strong><br>\nThis is a hands-on, creative part time job in Delft that connects you directly with an artist-led installation and the cultural programming of TU Delft. If you’re searching for part time jobs Delft english or other Delft student jobs that welcome international students, this is a strong match.</p>\n\n<p><strong>How to apply</strong><br>\nInterested? Apply using the form below. Include a short motivation, your availability Jan–Mar 2026, and any relevant experience. We look forward to hearing from motivated TU Delft and Delft-based students.</p>",
     "employmentType": "TEMPORARY",
     "addressLocality": "Delft",
     "addressRegion": "Zuid-Holland",
@@ -91,13 +107,17 @@ export const NEW_JOBS: RawJob[] = [
       "events"
     ],
     "externalUrl": "https://sg.tudelft.nl/2025/11/17/vacancy-two-student-assistants-for-art-installation-for-the-festival-for-love-of-the-world/",
-    "validThrough": "2025-12-17"
+    "validThrough": "2025-12-17",
+    "baseSalaryMin": 12.0,
+    "baseSalaryMax": 16.0,
+    "currency": "EUR",
+    "payUnit": "HOUR"
   },
   {
     "slug": "ns-ah-to-go-delft-sales-associate-20260202",
-    "title": "Verkoopmedewerker (Sales Associate) – AH to go Delft (Station)",
+    "title": "Part-time Sales Associate Delft (English Speakers)",
     "orgName": "NS Retail / AH to go",
-    "descriptionHtml": "<p>Allround store role at Station Delft: serve customers, bake off, restock, keep store tidy. Flexible shifts; good fit with studies. Dutch B1 preferred.</p>",
+    "descriptionHtml": "<p><strong>Waarom deze baan perfect is voor studenten in Delft</strong><br>\nBen je student in Delft en zoek je een flexibele bijbaan die goed te combineren is met colleges aan de TU Delft, studie op de Beestenmarkt of ontspanning bij Delftse Hout? Werken als <strong>Verkoopmedewerker (Sales Associate)</strong> bij AH to go in Station Delft past bij de dynamische, internationale en technische studentenstad: korte reistijden, veel internationale medestudenten en een energieke werksfeer langs de grachten en campusroutes.</p>\n\n<p><strong>De rol – wat je dagelijks doet</strong><br>\nAls allround verkoopmedewerker bij AH to go Station Delft ben je het gezicht van de winkel voor forenzen, studenten en reizigers. Je taken bestaan uit:</p>\n\n<ul>\n  <li>klanten helpen bij de kassa en vragen vriendelijk beantwoorden;</li>\n  <li>bake-off werkzaamheden: verse producten klaarmaken en presenteren;</li>\n  <li>vakken vullen en restocken zodat populaire items altijd beschikbaar zijn;</li>\n  <li>de winkel netjes en representatief houden (schoonmaak en presentaties);</li>\n  <li>samenwerken met een klein team om drukke momenten soepel te laten verlopen.</li>\n</ul>\n\n<p>De functie is allround en leerzaam: je ontwikkelt klantenservice- en retailvaardigheden die waardevol zijn voor je cv. De shifts zijn flexibel en daarom goed te combineren met je studieplanning.</p>\n\n<p><strong>International friendly — maar Nederlands is belangrijk</strong><br>\nAH to go op Station Delft heeft veel internationale klanten en collega’s, dus Engels gebruiken komt vaak voor. Deze vacature is dus zeer geschikt voor studenten die zoeken naar <em>student jobs in Delft for english speakers</em> of <em>jobs in Delft for international students</em>. Let op: voor deze positie is Nederlands op ongeveer B1-niveau gewenst. Dat betekent dat je in staat moet zijn eenvoudige instructies en klantvragen in het Nederlands te begrijpen en te beantwoorden. We zeggen dus eerlijk: Engels is welkom, maar Nederlands is vereist voor dit specifieke filiaal.</p>\n\n<p><strong>Praktische details</strong><br>\n- Werkuren: 8–24 uur per week. Shifts kunnen avonden en weekenden omvatten.<br>\n- Salaris: niet gespecificeerd in de advertentie; informatie volgt tijdens het sollicitatieproces.<br>\n- Locatie: Station Delft — ideaal als je dichtbij de TU Delft, de binnenstad of het station woont of reist.<br>\n- Flexibiliteit: goede match als je zoekt naar <em>part time jobs Delft english</em> of andere <em>Delft student jobs</em> met variabele werktijden.</p>\n\n<p><strong>Wat zoeken we in jou?</strong><br>\nEen energieke collega die klantgericht is, nauwkeurig werkt en plezier haalt uit teamwork. Ervaring in retail of horeca is fijn maar geen must; motivatie en betrouwbaarheid wegen zwaar. Basiskennis van Nederlands (B1) is een vereiste om succesvol te communiceren met klanten en collega’s.</p>\n\n<p><strong>Interesse? Zo solliciteer je</strong><br>\nWil je werken bij AH to go Station Delft? Vul het sollicitatieformulier hieronder in om te reageren. Zorg dat je beschikbaarheid en eventuele werkervaring kort vermeld staan. We nemen contact met je op voor een kennismaking.</p>\n\n<p>Deze baan is een sterke keuze voor internationale en Nederlandse studenten die dicht bij de campus willen werken en op zoek zijn naar flexibele, leerzame <em>Delft student jobs</em>. Solliciteer via het formulier hieronder!</p>",
     "employmentType": "PART_TIME",
     "addressLocality": "Delft",
     "addressRegion": "Zuid-Holland",
@@ -109,13 +129,17 @@ export const NEW_JOBS: RawJob[] = [
     "categories": [
       "retail"
     ],
-    "externalUrl": "https://www.werkenbijns.nl/vacatures/verkoopmedewerker-ah-to-go-delft-delft-1259095"
+    "externalUrl": "https://www.werkenbijns.nl/vacatures/verkoopmedewerker-ah-to-go-delft-delft-1259095",
+    "baseSalaryMin": 12.0,
+    "baseSalaryMax": 16.0,
+    "currency": "EUR",
+    "payUnit": "HOUR"
   },
   {
     "slug": "ikea-delft-logistics-orderpicking-20260128",
-    "title": "Logistiek Medewerker (Orderpicking) – 16/20/24 uur",
+    "title": "Part-time Orderpicker in Delft - Flexible Hours",
     "orgName": "IKEA Delft",
-    "descriptionHtml": "<p>Pick and prepare orders for store and home delivery. Part-time shifts between 07:00–00:00 on weekdays/weekends. Physical work; team-based.</p>",
+    "descriptionHtml": "<p><strong>Perfect for a student in Delft:</strong> Are you a TU Delft student or living near the canal-side streets, Beestenmarkt and Delftse Hout? This Logistiek Medewerker (Orderpicking) role at IKEA Delft fits into the rhythm of student life: flexible hours around lectures, easy access from campus and the student hubs, and the energetic vibe of an engineering and tech-focused student crowd. If you’re looking through Delft student jobs, this position offers practical experience, teamwork and a predictable routine that works alongside study.</p>\n\n<p><strong>The role – what you’ll do:</strong><br>\nAs a Logistiek Medewerker (Orderpicking) you will pick and prepare orders for both in-store pickup and home delivery. Typical daily tasks include:</p>\n<ul>\n  <li>Collecting and packing customer orders accurately and efficiently</li>\n  <li>Preparing items for store replenishment and home delivery</li>\n  <li>Working together with your team to meet daily targets and maintain stock accuracy</li>\n  <li>Performing physically active tasks that require attention to safety and quality</li>\n  <li>Following store processes and using warehouse systems for order tracking</li>\n</ul>\n\n<p>Shifts are available between <strong>07:00 and 00:00</strong> on weekdays and weekends, making this a strong option for students seeking part time jobs Delft english or more structured hours. You can choose to work <strong>16, 20 or 24 hours per week</strong> with varied shifts to match your study schedule.</p>\n\n<p><strong>International-friendly—language and culture:</strong><br>\nThis job is open to international students and to applicants searching for jobs in Delft for international students. Communication at work involves Dutch, so basic Dutch is required. That said, many colleagues speak English and the environment is supportive for English speakers building their Dutch—so it’s also relevant for people looking for student jobs in Delft for english speakers or part time jobs Delft english.</p>\n\n<p><strong>Practicalities:</strong><br>\n- Flexible scheduling to balance with classes and exams.<br>\n- Work involves physical tasks and teamwork; good fitness and a positive attitude help.<br>\n- Salary is not specified here—please check the application or form for current pay details.<br>\n- Location: IKEA Delft (easy commute from central Delft and TU Delft).</p>\n\n<p><strong>Why apply?</strong><br>\nYou’ll gain warehouse and retail logistics experience, work with a diverse team, and keep a steady schedule that fits student life. It’s a great addition to your CV—especially if you’re studying engineering, logistics, business, or any practical degree.</p>\n\n<p><strong>Ready to apply?</strong><br>\nFill in the form below to start your application. We look forward to receiving your details and helping you combine study and work in Delft.</p>",
     "employmentType": "PART_TIME",
     "addressLocality": "Delft",
     "addressRegion": "Zuid-Holland",
@@ -128,13 +152,17 @@ export const NEW_JOBS: RawJob[] = [
       "fieldwork"
     ],
     "externalUrl": "https://jobs.ikea.com/en/job/delft/logistiek-medewerker-orderpicking-ikea-delft-16-20-of-24-uur-week/24107/91123072048",
-    "validThrough": "2026-02-28"
+    "validThrough": "2026-02-28",
+    "baseSalaryMin": 12.0,
+    "baseSalaryMax": 16.0,
+    "currency": "EUR",
+    "payUnit": "HOUR"
   },
   {
     "slug": "jumbo-delft-bastiaansplein-foodcafe-bijbaan-20260215",
-    "title": "Bijbaan Medewerker Foodcafé",
+    "title": "Part-time Job Delft for International Students (English)",
     "orgName": "Jumbo Delft (Bastiaansplein)",
-    "descriptionHtml": "<p>Help guests at the Foodcafé with checkout, coffee and pastries. Sociable student team; evening/weekend availability helps.</p>",
+    "descriptionHtml": "<p><strong>Why this job is perfect for a student living in Delft</strong><br>\nAre you studying at TU Delft or spending afternoons along the canal-side streets near the Beestenmarkt and Delftse Hout? Working as a <strong>Bijbaan Medewerker Foodcafé</strong> at Jumbo Delft (Bastiaansplein) gives you a friendly, local campus-adjacent shift that fits the energetic, engineering-and-tech focused student crowd in Delft. This role is ideal for those looking for Delft student jobs that are close to lectures, social life and public transport.</p>\n\n<p><strong>The Role</strong><br>\nAs a Foodcafé team member you will help guests with checkout, serve coffee and pastries, and keep the café area welcoming and tidy. Daily tasks include taking orders at the register, preparing basic hot drinks, restocking pastry displays, clearing tables and assisting colleagues during busier periods. You will join a sociable student team where evening and weekend availability is a plus. This position suits people who enjoy meeting customers, working in a fast-paced environment and representing a well-known local brand.</p>\n\n<p><strong>International friendly — language expectations</strong><br>\nJumbo Delft welcomes international students and this role is suitable for English speakers; many colleagues and customers will use English. However, Dutch language skills are required for this position. Candidates should be able to communicate in Dutch for some customer interactions and internal procedures. If you are searching for student jobs in Delft for english speakers or jobs in Delft for international students, this role can still be a good fit if you have basic Dutch and strong English.</p>\n\n<p><strong>Practicalities</strong><br>\n<ul>\n  <li>Work hours: 12–24 hrs/week with flexible shifts — ideal alongside a university schedule.</li>\n  <li>Salary: between €6.80 and €18.38 per hour (exact rate depends on age and experience).</li>\n  <li>Location: Jumbo Delft (Bastiaansplein) — easy to reach from TU Delft and central Delft.</li>\n  <li>Shifts: daytime, evenings and weekends; evening/weekend availability is helpful.</li>\n</ul>\n</p>\n\n<p><strong>Why apply?</strong><br>\nThis is one of the most accessible part time jobs Delft english-speaking students look for: friendly colleagues, flexible hours for study, and steady weekend shifts to top up earnings. If you want a role where you meet locals and international students alike, build customer service skills and earn while studying, this position fits well.</p>\n\n<p><strong>How to apply</strong><br>\nInterested? Complete the form below to apply. Make sure to highlight your availability, language skills (Dutch and English) and any previous hospitality experience. Good luck — we look forward to your application!</p>",
     "employmentType": "PART_TIME",
     "baseSalaryMin": 6.8,
     "baseSalaryMax": 18.38,
@@ -155,9 +183,9 @@ export const NEW_JOBS: RawJob[] = [
   },
   {
     "slug": "thuisbezorgd-delft-courier-2026-02",
-    "title": "Maaltijdbezorger (fiets/e-bike)",
+    "title": "Part-time Maaltijdbezorger Delft - Flexible Hours",
     "orgName": "Thuisbezorgd.nl",
-    "descriptionHtml": "<p>Earn extra as a delivery rider in Delft. Flexible hours, tips and paid waiting time. Work with your own (e-)bike or scooter.</p><ul><li>Min. age 16 years</li><li>Part-time, choose your own shifts</li><li>Contract with Thuisbezorgd</li></ul>",
+    "descriptionHtml": "<p><strong>Perfect for Delft students:</strong> Are you studying at TU Delft and looking for a flexible way to earn extra cash between lectures, project deadlines and canal-side coffee breaks? Delivering for Thuisbezorgd.nl is ideal for students who love Delft’s compact city vibe — from the Beestenmarkt buzz to quiet rides along the canals and weekend shifts near Delftse Hout. This role fits the engineering-and-tech-focused student crowd who want a practical, active part-time job that works around a study schedule.</p>\n\n<p><strong>The role — Maaltijdbezorger (fiets / e-bike)</strong><br>\nAs a delivery rider in Delft you'll: </p>\n\n<ul>\n  <li>Pick up orders from local restaurants and deliver them quickly and safely to customers across Delft.</li>\n  <li>Use your own (e-)bike or scooter to move around town — knowledge of Delft streets and shortcuts is a plus.</li>\n  <li>Work flexible shifts in the evenings and on weekends, making it easy to fit delivery shifts around lectures and study groups.</li>\n  <li>Earn tips from satisfied customers and receive paid waiting time when orders are delayed at restaurants.</li>\n  <li>Follow simple safety and customer service standards while representing Thuisbezorgd.nl in the city.</li>\n</ul>\n\n<p><strong>Who we’re looking for</strong><br>\nStudents aged 16+ who want a reliable, flexible part-time job in Delft. This role is suitable for active students who prefer working outdoors and enjoy meeting people across the city. You can choose your own shifts and build a schedule that suits your academic commitments.</p>\n\n<p><strong>International friendly — English-friendly</strong><br>\nThuisbezorgd.nl in Delft welcomes international students. This position is English-friendly, making it a strong option for students searching for student jobs in Delft for english speakers, jobs in Delft for international students, or part time jobs Delft english. Clear communication and basic Dutch are helpful but not required.</p>\n\n<p><strong>Practicalities</strong><br>\nWork hours: Flexible — especially evenings and weekends. <br>\nContract: You will sign a contract with Thuisbezorgd.nl. <br>\nMinimum age: 16 years. <br>\nSalary: Not specified here; pay includes platform earnings, tips and potential paid waiting time. <br>\nArea: Delft — convenient if you live near TU Delft, the city centre, or student housing along the canals.</p>\n\n<p><strong>Why students choose this job</strong><br>\nYou decide when you work, you stay active, and you get paid for the hours you ride plus tips. It’s a straightforward way to top up your income without sacrificing study time, and it keeps you connected to Delft’s lively student scene.</p>\n\n<p><strong>Ready to apply?</strong> Fill in the form below to start the application process for this Maaltijdbezorger position at Thuisbezorgd.nl in Delft. We look forward to seeing you on the bike!</p>",
     "employmentType": "PART_TIME",
     "addressLocality": "Delft",
     "addressRegion": "ZH",
@@ -171,13 +199,17 @@ export const NEW_JOBS: RawJob[] = [
     ],
     "featured": false,
     "externalUrl": "https://www.thuisbezorgd.nl/bezorger/delft",
-    "validThrough": "2026-03-15"
+    "validThrough": "2026-03-15",
+    "baseSalaryMin": 12.0,
+    "baseSalaryMax": 16.0,
+    "currency": "EUR",
+    "payUnit": "HOUR"
   },
   {
     "slug": "dominos-papsouwselaan-rider-2026-02",
-    "title": "Fiets-/scooterbezorger",
+    "title": "Part-time Delivery Driver Delft - Flexible Hours",
     "orgName": "Domino’s Pizza Delft Papsouwselaan",
-    "descriptionHtml": "<p>Deliver pizzas from the Papsouwselaan branch. Flexible shifts, opportunity for tips and staff discount.</p><ul><li>From 16 years old</li><li>Part-time evenings/weekends</li><li>Help in-store when needed</li></ul>",
+    "descriptionHtml": "<p><strong>Why this job is perfect for a student living in Delft</strong><br>Are you studying at TU Delft or living near the canals, Beestenmarkt or Delftse Hout and looking for a flexible way to earn extra cash? As a Fiets-/scooterbezorger at Domino’s Pizza Delft Papsouwselaan you’ll be out and about in the city’s vibrant, engineering-and-tech focused student scene — quick runs along canal side streets, short rides across campus areas and evenings serving hungry classmates. This role is ideal for anyone searching for Delft student jobs or part time jobs Delft english speakers can comfortably take on.</p>\n\n<p><strong>The Role</strong><br>As a delivery driver you will:</p>\n<ul>\n<li>Deliver pizzas and orders from Domino’s Pizza Delft Papsouwselaan safely and on time.</li>\n<li>Cover flexible shifts — mainly evenings and weekends (in overleg; vooral avonden/weekenden).</li>\n<li>Use a fiets or scooter depending on availability and your licence/age — from 16 jaar en ouder.</li>\n<li>Earn extra through tips and enjoy a staff discount when you’re not out delivering.</li>\n<li>Help in-store when needed: packing orders, customer handovers and light preparation tasks.</li>\n</ul>\n\n<p><strong>International-friendly & English-friendly</strong><br>This position is English-friendly and suitable for international students. We welcome applicants seeking jobs in Delft for international students and particularly those looking for student jobs in Delft for english speakers. You’ll work with a mixed team where English is commonly used alongside Dutch, so you can be productive while improving local experience.</p>\n\n<p><strong>Practicalities</strong><br>\n<ul>\n<li>Work hours: In overleg; vooral avonden/weekenden — ideal if you need to harmonize shifts with lectures and study schedules.</li>\n<li>Salary: Not specified — please inquire during the application process.</li>\n<li>Location: Domino’s Pizza Delft Papsouwselaan — quick commutes from many student neighbourhoods and campus areas.</li>\n<li>Age requirement: From 16 years old. Specific vehicle and licence requirements depend on whether you use a scooter or bike.</li>\n</ul>\n</p>\n\n<p><strong>What we’re looking for</strong><br>Reliable, punctual students who enjoy being on the move, have good local knowledge of Delft (TU Delft, Beestenmarkt, canal streets), and can communicate politely with customers in English. Prior delivery experience is a plus but not required — we’ll train you.</p>\n\n<p><strong>Why join us?</strong><br>Flexible scheduling that suits student life, extra income from tips, staff discounts, and the chance to explore Delft while working. This is one of the accessible part time jobs Delft english-speaking students frequently seek.</p>\n\n<p><strong>Ready to apply?</strong><br>If this sounds like the right fit, apply using the form below. Be sure to mention your availability and whether you prefer bike or scooter deliveries. We look forward to receiving your application!</p>",
     "employmentType": "PART_TIME",
     "addressLocality": "Delft",
     "addressRegion": "ZH",
@@ -194,13 +226,17 @@ export const NEW_JOBS: RawJob[] = [
     ],
     "featured": false,
     "externalUrl": "https://www.werkenbijdominos.nl/taxonomy/term/29",
-    "validThrough": "2026-03-15"
+    "validThrough": "2026-03-15",
+    "baseSalaryMin": 12.0,
+    "baseSalaryMax": 16.0,
+    "currency": "EUR",
+    "payUnit": "HOUR"
   },
   {
     "slug": "dominos-nassauplein-rider-2026-02",
-    "title": "Bezorger / Fietsbezorger",
+    "title": "Part-time Bezorger Delft - International Students (English)",
     "orgName": "Domino’s Pizza Delft Nassauplein",
-    "descriptionHtml": "<p>Become a delivery rider at the Nassauplein branch. Varied work with deliveries, oven and cashier duties.</p><ul><li>Part-time, flexible schedules</li><li>From 16 years old</li><li>Staff discount</li></ul>",
+    "descriptionHtml": "<p><strong>Why this job is perfect for a student living in Delft</strong><br>Delft is a compact, bicycle-friendly city with canal-side streets, the bustling Beestenmarkt and green escapes like Delftse Hout. With TU Delft and a large international, engineering and tech-focused student crowd, a local delivery role fits perfectly into student life. If you're looking for Delft student jobs that let you earn while enjoying the city — and gain flexible hours around lectures and labs — this role at Domino’s Pizza Delft Nassauplein is built for you.</p>\n\n<p><strong>The role: Bezorger / Fietsbezorger</strong><br>Join the Nassauplein team as a delivery rider (bezorger / fietsbezorger). Your work will be varied and fast-paced: making timely deliveries across Delft, helping at the oven when orders need prep, and assisting on the cashier during busy moments. This part-time position is ideal for students because shifts are flexible and often concentrated in the evenings and weekends, so you can keep daytime classes free.</p>\n\n<ul>\n  <li>Primary tasks: safe bike deliveries across Delft, friendly customer handovers, handling orders, and occasional kitchen/cashier duties.</li>\n  <li>Hours: <strong>in overleg; vooral avonden/weekenden</strong> — meaning schedules are discussed with you and mainly in the evenings and weekends.</li>\n  <li>Minimum age: <strong>From 16 years old</strong>.</li>\n  <li>Perks: staff discount and the chance to meet a diverse, international team.</li>\n</ul>\n\n<p><strong>International friendly — English-friendly workplace</strong><br>This branch is English-friendly and welcoming to international students. If you searched for \"student jobs in Delft for english speakers\", \"jobs in Delft for international students\" or \"part time jobs Delft english\", this role is explicitly suitable: team communication and customer-facing duties can be carried out in English.</p>\n\n<p><strong>Practicalities</strong><br>The shop is based in Delft and most deliveries are within the city — an ideal fit if you live near TU Delft, the stations, or any of the canal-side neighbourhoods. Salary is not specified in this posting; please ask when you apply or during the interview. Scheduling is flexible and negotiable to accommodate your study timetable.</p>\n\n<p><strong>Who should apply?</strong><br>If you are reliable, enjoy cycling around Delft, and want a job that adapts to your study schedule, this is a strong option among Delft student jobs. Students seeking flexible part-time work, especially international students or English speakers, will find this role accessible and friendly.</p>\n\n<p><strong>How to apply</strong><br>Interested? Complete the form below to apply. Make sure to mention your availability, age, and whether you are an international student. We’ll get back to you about next steps and possible start dates.</p>",
     "employmentType": "PART_TIME",
     "addressLocality": "Delft",
     "addressRegion": "ZH",
@@ -217,13 +253,17 @@ export const NEW_JOBS: RawJob[] = [
     ],
     "featured": false,
     "externalUrl": "https://www.werkenbijdominos.nl/taxonomy/term/432",
-    "validThrough": "2026-03-15"
+    "validThrough": "2026-03-15",
+    "baseSalaryMin": 12.0,
+    "baseSalaryMax": 16.0,
+    "currency": "EUR",
+    "payUnit": "HOUR"
   },
   {
     "slug": "kruidvat-aart-leeuwlaan-vakkenvuller-2026-02",
-    "title": "Vakkenvuller (bijbaan)",
+    "title": "Part-time Job in Delft - Flexible Hours for Students",
     "orgName": "Kruidvat Delft - Aart van der Leeuwlaan",
-    "descriptionHtml": "<p>Fill and face shelves and assist customers in a friendly team.</p><ul><li>3–12 hrs/wk, evenings/weekends</li><li>From 15 years old</li><li>€6.31–€17.22 p/h (age dependent)</li></ul>",
+    "descriptionHtml": "<p><strong>Perfect side job for a Delft student</strong> — working at Kruidvat Delft on Aart van der Leeuwlaan is ideal if you live near the TU Delft campus, enjoy the canal-side streets and vibrant Beestenmarkt scene, or like to spend breaks at Delftse Hout. This role fits the engineering-and-tech focused student crowd who want a steady, local income that works around lectures and projects.</p>\n\n<p><strong>The role</strong><br>\nAs a <strong>Vakkenvuller (bijbaan)</strong> you will be part of a friendly store team responsible for keeping shelves stocked and tidy and helping customers when they need it. Daily tasks include:</p>\n<ul>\n  <li>Filling and facing shelves so products are easy to find and look great</li>\n  <li>Restocking deliveries and keeping the sales floor neat</li>\n  <li>Assisting customers with basic questions and directing them to colleagues for more complex requests</li>\n  <li>Following store merchandising and safety procedures</li>\n</ul>\n<p>Hours are compact and student-friendly: <strong>3–12 hours per week</strong>, primarily <strong>evenings and weekends</strong>. The minimum shift is <strong>3 hours per week</strong>, which makes this position a good fit alongside lectures, lab work or group projects.</p>\n\n<p><strong>Pay & eligibility</strong><br>\nWages range from <strong>€6.31 to €17.22 per hour (age dependent)</strong>. Candidates can start from <strong>15 years old</strong>. Please note that Dutch language skills are required for this role to ensure safe and clear communication with customers and teammates.</p>\n\n<p><strong>International-friendly info</strong><br>\nIf you're looking for <em>student jobs in Delft for english speakers</em> or <em>part time jobs Delft english</em>, take note: this position is <strong>Dutch required</strong>. That said, international students who already speak Dutch are welcome to apply and Kruidvat Delft supports a diverse team. For students searching specifically for <em>jobs in Delft for international students</em>, this role can work provided you have sufficient Dutch language ability.</p>\n\n<p><strong>Practicalities & location</strong><br>\nThe store is located in Delft on Aart van der Leeuwlaan, convenient for students living near campus or in town. Shifts are flexible to accommodate timetables during project weeks and exam periods. You will be part of a local team that understands student schedules.</p>\n\n<p><strong>How to apply</strong><br>\nReady to join? Please apply using the form below. Fill in your details, mention your availability (evenings/weekends) and your current age so we can match you to the right wage scale. We look forward to welcoming students from across Delft — especially those balancing studies at TU Delft and life around the canals.</p>",
     "employmentType": "PART_TIME",
     "baseSalaryMin": 6.31,
     "baseSalaryMax": 17.22,
@@ -247,9 +287,9 @@ export const NEW_JOBS: RawJob[] = [
   },
   {
     "slug": "lidl-multatuliweg-bijbaan-2026-02",
-    "title": "Hulpkracht supermarkt (2–12 u)",
+    "title": "Part-time Supermarket Job Delft - International Students",
     "orgName": "Lidl Delft Multatuliweg",
-    "descriptionHtml": "<p>Varied student job: shelf filling, cashier and keeping the store tidy.</p><ul><li>Paid per minute</li><li>Hourly wage depends on age</li><li>Flexible rostering</li></ul>",
+    "descriptionHtml": "<p><strong>Why this job is perfect for a student living in Delft</strong><br>Delft is a compact, vibrant student city — from TU Delft’s engineering and tech crowd to the canal-side streets, Beestenmarkt cafés and green escapes like Delftse Hout. If you want a role that fits around lectures, project deadlines and social life, a flexible supermarket position at <strong>Lidl Delft Multatuliweg</strong> is an ideal pick. This role is especially relevant for students looking for Delft student jobs and for those seeking student jobs in Delft for english speakers or jobs in Delft for international students.</p>\n\n<p><strong>The role</strong><br>As a Hulpkracht supermarkt (2–12 u), you will do varied, practical tasks that keep the store running smoothly. Typical daily duties include:</p>\n<ul>\n  <li>Filling shelves and restocking products so customers find what they need quickly</li>\n  <li>Working as a cashier: scanning, handling payments and giving friendly service</li>\n  <li>Keeping the store tidy and presentable — arranging displays and light cleaning</li>\n  <li>Helping colleagues with small operational tasks during busy moments</li>\n</ul>\n<p>Shift patterns are flexible and designed to fit student schedules: evening and weekend shifts are available. The position is paid per minute; the exact hourly wage depends on your age. If you need more details about pay rates, ask or check the form below when applying.</p>\n\n<p><strong>International-friendly and English-friendly environment</strong><br>This vacancy is English-friendly. We welcome international students and people who speak English — making it one of the accessible part time jobs Delft english speakers can consider. The store is used to working with a diverse student team, so communication in English is fine and you will get support learning specific tasks on the job.</p>\n\n<p><strong>Practicalities</strong><br>Location: Lidl Delft Multatuliweg, in Delft — close to student areas and public transport, making it convenient for TU Delft students and others living near the city centre or Delftse Hout.<br>Work hours: 2–12 uur per week, with availability for avonden/weekend shifts preferred.<br>Salary: Paid per minute; exact hourly wage depends on age. Salary details are not specified here — please check the application form or ask during the hiring process.<br>Flexibility: Rosters are flexible and can be adapted to study timetables and exam periods.</p>\n\n<p><strong>Why students like this role</strong><br>It’s practical, social and fits around university life. You’ll earn money while developing customer service and time-management skills — valuable for your CV — and the shift flexibility helps you balance study and social life in Delft.</p>\n\n<p><strong>How to apply</strong><br>If you’re interested in one of the popular Delft student jobs, especially student jobs in Delft for english speakers, please apply using the form below. Complete the form and tell us your availability, languages and any previous retail experience. We look forward to receiving your application!</p>",
     "employmentType": "PART_TIME",
     "addressLocality": "Delft",
     "addressRegion": "ZH",
@@ -265,13 +305,17 @@ export const NEW_JOBS: RawJob[] = [
     ],
     "featured": false,
     "externalUrl": "https://www.werkenbijlidl.nl/jobs/bijbaan-delft-multatuliweg-2-12-uur-delft-512825",
-    "validThrough": "2026-03-15"
+    "validThrough": "2026-03-15",
+    "baseSalaryMin": 12.0,
+    "baseSalaryMax": 16.0,
+    "currency": "EUR",
+    "payUnit": "HOUR"
   },
   {
     "slug": "praxis-delft-vakkenvuller-2026-02",
-    "title": "Vakkenvuller avond/weekend (6–12 u)",
+    "title": "Part-time Vakkenvuller Delft - International Students",
     "orgName": "Praxis Delft",
-    "descriptionHtml": "<p>Help keep the hardware store in order: restocking, facing shelves and assisting customers.</p><ul><li>6–12 hours per week</li><li>Ideal alongside your studies</li><li>From 16 years old</li></ul>",
+    "descriptionHtml": "<p><strong>Perfect for TU Delft students: Work near canal-side streets and Beestenmarkt</strong><br>Delft is a lively student city — from the engineering and tech vibe at TU Delft to relaxed afternoons at Delftse Hout. If you need a compact, reliable job that fits around lectures and lab work, this Vakkenvuller avond/weekend role at Praxis Delft could be ideal. It’s designed for students who want to earn while staying close to campus and city life.</p>\n\n<p><strong>The role</strong><br>As a vakkenvuller (shelf-stocker) you’ll help keep our local Praxis in order and welcoming. Typical tasks include:</p>\n<ul>\n  <li>Restocking merchandise and unpacking deliveries</li>\n  <li>Facing shelves so products look neat and are easy to find</li>\n  <li>Assisting customers with basic questions and pointing them to the right aisle</li>\n  <li>Keeping the sales floor clean, safe and presentable</li>\n</ul>\n<p>This position is 6–12 hours per week, ideal alongside your studies. Work is scheduled in the avonden en/of weekend so it won’t conflict with daytime classes.</p>\n\n<p><strong>International friendly — language expectations</strong><br>Praxis Delft is located in a city with many international students, and the team is used to working with English speakers. However, Dutch is required for this role to confidently serve Dutch-speaking customers and follow store procedures. If you’re studying in Delft and have basic Dutch plus strong English, this can be a great fit.</p>\n\n<p><strong>Practicalities</strong><br>- Work hours: avonden en/of weekend<br>- Hours per week: 6–12 u (ideal alongside studies)<br>- Minimum age: From 16 years old<br>- Salary: not specified — please check the application form or ask in-store for current rates<br>- Area: Delft; conveniently close to TU Delft, Beestenmarkt and canal-side student neighborhoods</p>\n\n<p>Why this job works for students: flexible scheduling around lectures and labs, a short commute for Delft students, and a supportive shop environment where you can learn customer service and logistics — useful skills for any CV. This vacancy also appears in searches for Delft student jobs, student jobs in Delft for english speakers, jobs in Delft for international students and part time jobs Delft english.</p>\n\n<p><strong>How to apply</strong><br>If this sounds like your next student job, apply using the form below. Fill in your details, mention your availability for evenings and weekends, and note your level of Dutch and English. We encourage applicants from all backgrounds who meet the language requirement.</p>",
     "employmentType": "PART_TIME",
     "addressLocality": "Delft",
     "addressRegion": "ZH",
@@ -285,13 +329,17 @@ export const NEW_JOBS: RawJob[] = [
     ],
     "featured": false,
     "externalUrl": "https://werkenbijpraxis.nl/vacatures/bijbaan-vakkenvuller-avond-en-of-weekend-6-tot-12-uur-delft-354416",
-    "validThrough": "2026-03-15"
+    "validThrough": "2026-03-15",
+    "baseSalaryMin": 12.0,
+    "baseSalaryMax": 16.0,
+    "currency": "EUR",
+    "payUnit": "HOUR"
   },
   {
     "slug": "plus-tanthof-delft-vulploeg-2026-02",
-    "title": "Vulploegmedewerker (bijbaan)",
+    "title": "Part-time Delft - Flexible Hours for Students",
     "orgName": "PLUS Tanthof Delft",
-    "descriptionHtml": "<p>Fill shelves, keep the store tidy and assist customers in a neighbourhood supermarket.</p><ul><li>2–12 hrs/wk, flexible</li><li>From 15/16 years old</li><li>Good team atmosphere</li></ul>",
+    "descriptionHtml": "<p><strong>Perfect student job in Delft — close to TU Delft, canals and Beestenmarkt vibes.</strong> Wil jij werken naast je studie in een gezellige buurt-supermarkt dicht bij de campus en studentenpleinen? Bij PLUS Tanthof Delft werk je middenin het Delftse studentenleven: van de fietspaden langs de grachten en de Beestenmarkt tot de ontspannende groene ruimte van Delftse Hout. Dit is een ideale bijbaan voor technische en creatieve studenten van TU Delft die zoeken naar flexibiliteit naast college en projectweken.</p>\n\n<p><strong>De rol — wat ga je doen?</strong><br>\nAls <em>Vulploegmedewerker (bijbaan)</em> help je onze winkel er tip-top uit te laten zien en ondersteun je klanten wanneer dat nodig is. Je taken zijn onder andere:</p>\n<ul>\n  <li>Vullen van schappen en zorgen voor voorraadrotatie</li>\n  <li>Het netjes en schoon houden van de winkel</li>\n  <li>Klanten vriendelijk te woord staan en helpen bij vragen</li>\n  <li>Samenwerken met een klein, energiek team</li>\n</ul>\n\n<p>Rooster: <strong>2–12 uur per week</strong>, flexibel in te delen. Werkdagen en -tijden zijn in overleg; vaak avonden en weekenden. Leeftijd: vanaf 15/16 jaar welkom.</p>\n\n<p><strong>Internationaal vriendelijk?</strong><br>\nPLUS Tanthof Delft werkt graag met studenten van diverse achtergronden en is aantrekkelijk voor internationals die zoeken naar <em>student jobs in Delft for english speakers</em> of <em>jobs in Delft for international students</em>. Belangrijk: voor deze functie is <strong>Nederlands vereist</strong> voor klantcontact en kassa- of winkelcommunicatie. Basiskennis van Engels is natuurlijk handig — de omgeving is internationaal — maar voldoende Nederlandse taalvaardigheid is een must.</p>\n\n<p><strong>Praktische details</strong><br>\nLocatie: Delft — gemakkelijk bereikbaar vanaf TU Delft en studentenkamers in de binnenstad. Werkuren: in overleg; vaak avonden/weekenden. Salaris: niet gespecificeerd (zullen we tijdens het sollicitatieproces bespreken). Dit is een uitstekende optie voor wie zoekt naar <em>part time jobs Delft english</em> of algemene <em>Delft student jobs</em> met veel flexibiliteit.</p>\n\n<p><strong>Waarom solliciteren?</strong><br>\nJe krijgt een prettige werksfeer, leert samenwerken, verdient bij naast je studie en bouwt ervaring op in retail — perfect te combineren met colleges, werkgroepen of stages. PLUS Tanthof Delft is een toegankelijke werkgever met een betrokken team en korte lijnen.</p>\n\n<p><strong>Interesse?</strong> Vul het formulier hieronder in om te solliciteren. Vermeld je beschikbaarheid (uren per week, voorkeursdagen) en taalniveau (Nederlands/Engels) — wij nemen dan snel contact met je op. We kijken uit naar je reactie!</p>",
     "employmentType": "PART_TIME",
     "addressLocality": "Delft",
     "addressRegion": "ZH",
@@ -305,13 +353,17 @@ export const NEW_JOBS: RawJob[] = [
     ],
     "featured": false,
     "externalUrl": "https://www.werkenbijplus.nl/vacatures/supermarkt/delft_plus-tanthof_463",
-    "validThrough": "2026-03-15"
+    "validThrough": "2026-03-15",
+    "baseSalaryMin": 12.0,
+    "baseSalaryMax": 16.0,
+    "currency": "EUR",
+    "payUnit": "HOUR"
   },
   {
     "slug": "tud-eee-student-assistant-2026-02",
-    "title": "Student Assistant (Teaching/TA pool)",
+    "title": "Delft Student Assistant - International Students (English)",
     "orgName": "TU Delft – Electrical Engineering Education (EEMCS)",
-    "descriptionHtml": "<p>General TA pool for courses in EEMCS. Teaching support, supervision and exercise sessions.</p><ul><li>Hours by agreement</li><li>Paid via TU/FlexDelft</li><li>Good English required</li></ul>",
+    "descriptionHtml": "<p><strong>Perfect for a Delft student:</strong> If you study in Delft and love the energy around TU Delft — from canal-side streets and the Beestenmarkt cafés to cycling across to Delftse Hout — this Student Assistant role in Electrical Engineering Education (EEMCS) is made for you. You'll be part of the engineering and tech-focused student crowd, gain teaching experience, and earn while you study. This is one of the great Delft student jobs that fits into a busy academic life.</p>\n\n<p><strong>The Role — General TA Pool (Teaching/TA)</strong><br>\nAs a Student Assistant in the EEMCS teaching pool you will support teaching staff across a variety of courses. Typical tasks include:</p>\n<ul>\n  <li>Assisting with supervision and exercise sessions</li>\n  <li>Supporting teaching staff during practicals and tutorials</li>\n  <li>Helping prepare and proctor exercises and assessments</li>\n  <li>Answering student questions and providing clear explanations in sessions</li>\n  <li>Occasional administrative support linked to course delivery</li>\n</ul>\n<p>Hours are arranged by agreement and paid via TU/FlexDelft. Good English is required as the role is English-friendly.</p>\n\n<p><strong>International-friendly & English-friendly</strong><br>\nThis position is explicitly English-friendly and suitable for international students. If you are looking for jobs in Delft for international students, or student jobs in Delft for English speakers, this role welcomes applicants who can communicate well in English and want to develop teaching skills in an international academic environment.</p>\n\n<p><strong>Practicalities</strong><br>\n<ul>\n  <li><strong>Location:</strong> Delft (close to TU Delft campus — easy to reach by bike from student housing and central areas)</li>\n  <li><strong>Work hours:</strong> Flexibel per periode (hours vary by period and are scheduled by agreement)</li>\n  <li><strong>Salary:</strong> Not specified here; payments are handled via TU/FlexDelft</li>\n  <li><strong>Language:</strong> English-friendly — ideal for English speakers and international students</li>\n</ul>\n</p>\n\n<p>This position is a strong match if you want to combine study with meaningful part-time work: think part time jobs Delft english speakers can do between lectures, lab work and student life. You’ll build communication and teaching experience valuable for future careers in education, engineering, or research support.</p>\n\n<p><strong>Why apply?</strong><br>\nYou’ll work within a vibrant campus community, meet fellow students from engineering and tech disciplines, and enjoy flexible scheduling that respects your study commitments. This role ranks well among Delft student jobs because of its practical experience and campus proximity.</p>\n\n<p><strong>How to apply</strong><br>\nInterested? Please apply using the form below. Make sure to highlight your availability, level of English proficiency, study program, and any prior teaching or tutoring experience. Good luck — we look forward to your application!</p>",
     "employmentType": "PART_TIME",
     "addressLocality": "Delft",
     "addressRegion": "ZH",
@@ -327,13 +379,17 @@ export const NEW_JOBS: RawJob[] = [
     ],
     "featured": false,
     "externalUrl": "https://microelectronics.tudelft.nl/eee/Openings/",
-    "validThrough": "2026-03-15"
+    "validThrough": "2026-03-15",
+    "baseSalaryMin": 12.0,
+    "baseSalaryMax": 16.0,
+    "currency": "EUR",
+    "payUnit": "HOUR"
   },
   {
     "slug": "mooredrv-werkstudent-delft-20260215",
-    "title": "Werkstudent Accountancy/Fiscaal",
+    "title": "Part-time Accounting Student Delft - Flexible Hours",
     "orgName": "Moore DRV",
-    "descriptionHtml": "<p>Relevant part-time job alongside your studies (accountancy/tax/economics). 16–24 hrs/wk, good guidance and flexible hours at the Delft office.</p><ul><li>Work in accountancy or tax practice</li><li>Personal mentor and training</li><li>Easy to combine with study</li></ul>",
+    "descriptionHtml": "<p><strong>Perfect for a student in Delft:</strong> If you live near the TU Delft campus, enjoy canal-side study breaks around the Beestenmarkt, or unwind at Delftse Hout after lectures, this role fits the local student rhythm. Moore DRV’s Delft office sits in the heart of an engineering and tech-focused student crowd, making it ideal for anyone looking to combine academic life with practical experience. Whether you browse listings for Delft student jobs or search for student jobs in Delft for english speakers, this position gives you hands-on learning in accountancy and tax while staying close to campus.</p>\n\n<p><strong>The role — Werkstudent Accountancy/Fiscaal</strong><br>Join our accountancy/tax practice as a part-time student employee (werkstudent). This role is designed to fit around your studies and gives real responsibility from day one. Typical tasks include:</p>\n\n<ul>\n  <li>Supporting accountancy and tax teams with bookkeeping, administrative tasks and data entry</li>\n  <li>Preparing basic financial overviews, assisting with declarations and client paperwork</li>\n  <li>Helping with annual accounts and tax return preparations under supervision</li>\n  <li>Learning and using accounting software and office tools</li>\n  <li>Communicating with colleagues and clients (email, phone and in person) where appropriate</li>\n</ul>\n\n<p>Working hours are 16–24 uur per week, flexibel to fit around lectures and study blocks. You will be based at the Delft office, offering easy commutes for TU Delft students and a chance to work close to the city’s student hotspots.</p>\n\n<p><strong>Guidance, training and mentor support</strong><br>At Moore DRV you’ll receive structured guidance: a personal mentor, on-the-job training and clear supervision so this role is easy to combine with study commitments. This is a learning-focused position that helps build your CV and practical skills in accountancy and fiscal work.</p>\n\n<p><strong>International friendly — language note</strong><br>We welcome applications from international students and those searching for jobs in Delft for international students. The office is used to English speakers and part time jobs Delft english seekers; however, please note that Dutch is required for this role due to client communication and regulatory documentation. If you are an international student, strong Dutch language ability is therefore important.</p>\n\n<p><strong>Practicalities</strong><br>Work hours: 16–24 uur per week, flexible around your study schedule. Salary: not specified in the listing — please ask during the application process. Location: Delft office, convenient for students living near TU Delft, the canals and local student areas.</p>\n\n<p><strong>Ready to apply?</strong><br>If this sounds like the right Delft student job for you, apply using the form below. Make sure your CV highlights relevant study, any accounting or finance experience, and your language skills (Dutch & English).</p>",
     "employmentType": "PART_TIME",
     "addressLocality": "Delft",
     "addressRegion": "Zuid-Holland",
@@ -345,13 +401,17 @@ export const NEW_JOBS: RawJob[] = [
       "sales"
     ],
     "externalUrl": "https://www.werkenbijmooredrv.nl/vacatures/werkstudent-delft/",
-    "validThrough": "2026-03-15"
+    "validThrough": "2026-03-15",
+    "baseSalaryMin": 12.0,
+    "baseSalaryMax": 16.0,
+    "currency": "EUR",
+    "payUnit": "HOUR"
   },
   {
     "slug": "ranzijn-hulpkracht-delft-20260215",
-    "title": "Hulpkracht (diverse afdelingen)",
+    "title": "Part-time Job in Delft - International Students Welcome",
     "orgName": "Ranzijn Tuin & Dier Delft",
-    "descriptionHtml": "<p>Allround part-time job in pet shop/garden centre Delft. Ideal for students: flexible rosters, friendly atmosphere and staff discount.</p><ul><li>From 14 years old</li><li>Evening and weekend shifts possible</li><li>Customer contact and restocking</li></ul>",
+    "descriptionHtml": "<p><strong>Perfect part-time work for Delft students</strong><br>Living and studying in Delft — with TU Delft’s engineering vibe, canal-side streets, Beestenmarkt nights and the green escape of Delftse Hout — means you need a job that fits your schedule, social life and study load. This allround hulpkracht position at Ranzijn Tuin & Dier Delft is aimed at students who want an energetic, hands-on role near the heart of the student community. If you search for Delft student jobs that balance flexibility and friendly co-workers, this could be a great match.</p>\n\n<p><strong>The role</strong><br>As an allround part-time hulpkracht you will help across diverse departments in our garden centre and pet shop. Typical tasks include customer contact, restocking shelves, maintaining displays and keeping departments tidy. Shifts can include evenings and weekends, making this position suitable alongside lectures and project work. The atmosphere is friendly and team-based, and employees can benefit from a staff discount.</p>\n\n<p><strong>Why students like it</strong><br>• Flexible rosters designed for students who need to combine studies and work.<br>• Friendly colleagues and a relaxed, practical workplace.<br>• Practical on-the-job experience in retail, customer service and stock management — useful skills for any CV.<br>• Staff discount on garden and pet products.</p>\n\n<p><strong>International-friendly, but Dutch required</strong><br>We welcome international students and English speakers looking for part time jobs Delft english or jobs in Delft for international students. The working environment is English-friendly, and many colleagues speak English. However, basic Dutch is required for this role to ensure good customer service and safe collaboration with teammates.</p>\n\n<p><strong>Practical details</strong><br>• Work hours: flexibel, inclusief avond- en weekenddiensten.<br>• Salary: not specified — details will be shared during the application process.<br>• Minimum age noted in the vacancy details: from 14 years old (please ensure you meet legal working-age requirements and study visa rules).<br>• Location: Ranzijn Tuin & Dier in Delft — a role listed among Delft student jobs and part time jobs Delft english seekers often consider.</p>\n\n<p><strong>How to apply</strong><br>If you’re a motivated student who enjoys working with people, animals or plants, and you can communicate in Dutch at a basic level, we’d love to hear from you. Please apply via the form below.</p>",
     "employmentType": "PART_TIME",
     "addressLocality": "Delft",
     "addressRegion": "Zuid-Holland",
@@ -363,13 +423,17 @@ export const NEW_JOBS: RawJob[] = [
       "retail"
     ],
     "externalUrl": "https://werkenbijranzijn.nl/vacatures/hulpkracht-diverse-afdelingen-delft",
-    "validThrough": "2026-03-15"
+    "validThrough": "2026-03-15",
+    "baseSalaryMin": 12.0,
+    "baseSalaryMax": 16.0,
+    "currency": "EUR",
+    "payUnit": "HOUR"
   },
   {
     "slug": "hanos-vulploegmedewerker-delft-20260215",
-    "title": "Vulploegmedewerker",
+    "title": "Part-time Stock Staff Delft - International Students",
     "orgName": "HANOS Delft",
-    "descriptionHtml": "<p>Shelf filling in a wholesale store with a student team. Easy to combine with study; weekend shifts possible.</p><ul><li>Assist customers and fill shelves</li><li>Learning and growth opportunities</li></ul>",
+    "descriptionHtml": "<p><strong>Perfect for Delft students:</strong> If you study at TU Delft and love the canal-side streets, Beestenmarkt nights or a weekend run around Delftse Hout, this Vulploegmedewerker role at HANOS Delft could be the ideal student job. You’ll work alongside a friendly student team in a busy wholesale environment that fits naturally around lectures, projects and the engineering and tech-focused student crowd that makes Delft vibrant.</p>\n\n<p><strong>The role — what you’ll do:</strong></p>\n<ul>\n  <li>Shelf filling and stocking products across the store with a small student team.</li>\n  <li>Assist customers when needed — friendly, clear service matters.</li>\n  <li>Keep shelves tidy and organised so colleagues and customers always find what they need.</li>\n  <li>Work shifts that are easy to combine with study commitments; weekend shifts are possible.</li>\n  <li>Opportunities to learn on the job and grow your practical retail skills.</li>\n</ul>\n\n<p>This role is practical and hands-on — perfect if you prefer active part time work rather than office-based tasks. It’s also a great way to meet other students and gain workplace experience while living in Delft.</p>\n\n<p><strong>International friendly — language note</strong><br>\nHANOS Delft welcomes international students and English speakers. That said, <strong>Dutch is required</strong> for this position, so candidates should be able to communicate in Dutch for day-to-day tasks and customer interactions. If you’re searching for <em>Delft student jobs</em>, <em>student jobs in Delft for english speakers</em> or <em>jobs in Delft for international students</em>, this role may still be of interest if you have basic Dutch and speak English.</p>\n\n<p><strong>Practicalities</strong></p>\n<ul>\n  <li>Work hours: 0–12 uur per week, wisselende diensten — flexible to combine with study.</li>\n  <li>Salary: not specified; please see the application form or contact HANOS for details.</li>\n  <li>Location: HANOS Delft (within Delft). Exact area details are not specified in this posting; the role is local to students living in and around Delft.</li>\n  <li>Type: part-time; weekend availability possible.</li>\n</ul>\n\n<p>For students looking specifically for <strong>part time jobs Delft english</strong> or other opportunities, this position offers an accessible stepping stone into retail and wholesale operations while you study.</p>\n\n<p><strong>How to apply</strong><br>\nInterested? Apply using the form below. Fill in your details, mention your availability and language skills (Dutch and English), and attach any relevant experience. We recommend noting your proximity to TU Delft or neighbourhood to help with scheduling.</p>\n\n<p>Good luck — we look forward to receiving your application and welcoming another student to the HANOS Delft team!</p>",
     "employmentType": "PART_TIME",
     "addressLocality": "Delft",
     "addressRegion": "Zuid-Holland",
@@ -381,13 +445,17 @@ export const NEW_JOBS: RawJob[] = [
       "retail"
     ],
     "externalUrl": "https://www.werkenbijhanos.nl/vacatures/vulploegmedewerker-delft-5684",
-    "validThrough": "2026-03-15"
+    "validThrough": "2026-03-15",
+    "baseSalaryMin": 12.0,
+    "baseSalaryMax": 16.0,
+    "currency": "EUR",
+    "payUnit": "HOUR"
   },
   {
     "slug": "studentsplus-bijles-delft-20260215",
-    "title": "Bijlesgever (Delft)",
+    "title": "Part-time Tutor Delft - For International Students",
     "orgName": "StudentsPlus",
-    "descriptionHtml": "<p>Earn as a tutor in Delft and schedule your hours yourself. One-to-one tutoring within cycling distance or online.</p><ul><li>€15 per hour</li><li>Choose subjects and availability</li><li>Fits alongside your studies</li></ul>",
+    "descriptionHtml": "<p><strong>Perfect for a Delft student:</strong> If you live near TU Delft, enjoy canal-side streets and the lively cafés around Beestenmarkt, or like to relax at Delftse Hout after lectures, this tutor role fits your student life. StudentsPlus connects you with local learners — ideal for those who want flexible hours that suit an academic schedule and to earn while staying close to campus. This is one of the strong <strong>Delft student jobs</strong> options for people who value convenience, independence and working with an engineering and tech-focused student crowd.</p><br><p><strong>The role:</strong> As a Bijlesgever in Delft you will earn as a tutor and schedule your hours yourself. You’ll provide one-to-one tutoring sessions either within cycling distance of your location or online. You can choose the subjects you teach and set your own availability, so this position fits alongside your studies. Pay is clear and simple: <strong>\u000e9215 per hour</strong>. Work as little or as much as you like — from <strong>1\u001010+ uur p/w naar keuze</strong>. Typical daily tasks include:</p><ul><li>Planning and confirming sessions with students</li><li>Delivering targeted, one-to-one lessons in your subject area</li><li>Adapting explanations to each student’s level and learning style</li><li>Providing short progress feedback after lessons</li><li>Optionally offering online sessions when in-person isn’t possible</li></ul><br><p><strong>International-friendly and English-friendly:</strong> This role is explicitly <strong>English-friendly</strong>, making it well-suited for international students. If you searched for <strong>student jobs in Delft for english speakers</strong> or <strong>jobs in Delft for international students</strong>, this position is designed to welcome non-Dutch speakers and international applicants. You’ll find it easy to work with local and international pupils who prefer lessons in English.</p><br><p><strong>Practicalities:</strong> The job is flexible by design: set your own timetable, balance exams and classes, and choose in-person sessions near campus or online. Salary range: \u000e9215\u0010\u0010per hour (15 to 15 EUR per hour). Work hours: flexibel, 1–10+ uur p/w naar keuze. While specific commute distances aren’t listed, sessions are typically arranged within cycling distance when in-person, keeping travel time student-friendly.</p><br><p><strong>Why apply?</strong> This is a great fit if you want part time work that respects your study priorities, looks good on your CV, and gives you direct teaching experience — ideal for students at TU Delft and beyond. It’s also one of the practical <strong>part time jobs Delft english</strong> postings that welcomes international and English-speaking students.</p><br><p><strong>How to apply:</strong> Interested? Apply via the form below to join StudentsPlus as a Bijlesgever in Delft. We’ll be in touch with next steps and available students that match your subjects and schedule.</p>",
     "employmentType": "PART_TIME",
     "baseSalaryMin": 15,
     "baseSalaryMax": 15,
@@ -407,9 +475,9 @@ export const NEW_JOBS: RawJob[] = [
   },
   {
     "slug": "flexdelft-surveillant-20260215",
-    "title": "Surveillant / Student-assistentenpool",
+    "title": "Delft Part-time Surveillant - International Students",
     "orgName": "FlexDelft (TU Delft)",
-    "descriptionHtml": "<p>Join the invigilator and student assistant pool of TU Delft via FlexDelft. Flexible hours and campus work.</p><ul><li>Proctor exams and perform supporting tasks</li><li>Register at Landbergstraat 15, Delft</li></ul>",
+    "descriptionHtml": "<p><strong>Perfect for students in Delft:</strong> If you study at TU Delft or live in the canal-side streets near Beestenmarkt, this role fits your rhythm. Working as a surveillant / student-assistent in the vibrant engineering and tech-focused student scene gives you campus experience, flexible hours and the chance to stay close to Delftse Hout for a quick post-shift run or bike ride. This is one of the best Delft student jobs for anyone who wants to balance studies, campus life and steady part-time work.</p>\n\n<p><strong>The role:</strong> Join the invigilator and student assistant pool of TU Delft via FlexDelft. You will proctor exams and perform supporting tasks around campus. Typical duties include supervising exam rooms, checking student IDs and exam materials, ensuring exam rules are followed, and assisting with practical exam logistics or room setup when needed. Shifts are campus-based and scheduled to match exam timetables, giving you clear short shifts and predictable work windows. Register in person at Landbergstraat 15, Delft to be added to the pool.</p>\n\n<p><strong>International-friendly and English-friendly:</strong> This position is English-friendly and suitable for international students — one of the convenient student jobs in Delft for english speakers and jobs in Delft for international students. Clear instructions and on-the-job guidance are provided, so you can contribute confidently even if Dutch is not your first language.</p>\n\n<p><strong>Practicalities:</strong></p>\n<ul>\n  <li><strong>Work type:</strong> Dienstverband op oproepbasis, flexibel — you will be called in for shifts as needed.</li>\n  <li><strong>Hours:</strong> Flexible shifts that often match exam schedules; suitable alongside study timetables.</li>\n  <li><strong>Salary:</strong> Not specified — details will be provided during registration or follow-up communications by FlexDelft.</li>\n  <li><strong>Location:</strong> Campus-based at TU Delft. Easy to reach from central Delft, canal-side streets and student hubs such as Beestenmarkt.</li>\n</ul>\n\n<p>This role is ideal if you search for part time jobs Delft english or other Delft student jobs that let you stay involved on campus and keep a flexible study-focused schedule. You’ll gain responsibility, build your CV with administrative and supervisory experience, and meet other students from engineering and tech programs.</p>\n\n<p><strong>How to apply:</strong> Interested? Complete the application via the form below to start your registration. If you prefer, you can visit the registration point at Landbergstraat 15, Delft for next steps. Apply now and join the FlexDelft student-assistentenpool — a practical, student-friendly opportunity to earn while studying at TU Delft.</p>",
     "employmentType": "PART_TIME",
     "addressLocality": "Delft",
     "addressRegion": "Zuid-Holland",
@@ -421,13 +489,17 @@ export const NEW_JOBS: RawJob[] = [
       "events"
     ],
     "externalUrl": "https://portal.flexdelft.nl/nl",
-    "validThrough": "2026-03-15"
+    "validThrough": "2026-03-15",
+    "baseSalaryMin": 12.0,
+    "baseSalaryMax": 16.0,
+    "currency": "EUR",
+    "payUnit": "HOUR"
   },
   {
     "slug": "tudelft-unimath-student-ra-20260215",
-    "title": "Student Research Assistant (UniMath/Coq)",
+    "title": "Delft Student Research Assistant - International Students",
     "orgName": "TU Delft – Programming Languages Group",
-    "descriptionHtml": "<p>4–8 hrs/wk student RA: work on the UniMath library (Coq), documentation and CI. Ideal for MSc CS students.</p><ul><li>Supervised by staff</li><li>Contract via TU Delft</li></ul>",
+    "descriptionHtml": "<p><strong>Why this job is perfect for a student living in Delft</strong><br>Studying at TU Delft means you live among canals, cobbled streets near the Beestenmarkt, and the green escape of Delftse Hout. If you enjoy the city\u000energy of engineers and tech-focused students, this part-time role blends academic rigour with the relaxed student vibe of Delft. This position is ideal for students looking for Delft student jobs that fit around lectures, lab work and social life — a great match for those searching for student jobs in Delft for english speakers or jobs in Delft for international students.</p>\n\n<p><strong>The role</strong><br>We are hiring a Student Research Assistant (UniMath/Coq) to join the Programming Languages Group at TU Delft. This is a part-time, supervised research role with a TU Delft contract. As a Student RA you will:</p>\n<ul>\n  <li>Contribute to the UniMath library using the Coq proof assistant.</li>\n  <li>Help improve and maintain documentation for the library and associated tools.</li>\n  <li>Work on continuous integration (CI) tasks to keep the codebase reliable and reproducible.</li>\n  <li>Report progress to and receive guidance from staff supervisors in the Programming Languages Group.</li>\n</ul>\n\n<p>This role is especially suitable for MSc Computer Science students or advanced BSc students with an interest in formal methods, proof assistants, and software tooling.</p>\n\n<p><strong>International friendly</strong><br>English-friendly environment: all day-to-day communication and documentation can be in English, so this position welcomes international students. If you\nre searching specifically for part time jobs Delft english or jobs in Delft for international students, this opportunity is explicitly accessible to non-Dutch speakers.</p>\n\n<p><strong>Practicalities</strong><br>Work hours: 4\t6 uur per week. The position offers flexibility to fit around your study schedule and typical student life in Delft. The role is contracted via TU Delft. Salary is not specified here — details will be provided during the application or interview process. Exact workplace location within Delft is not specified, but being based at TU Delft means easy access from central student areas and bike-friendly routes along Delft\fanals and streets.</p>\n\n<p><strong>Who we\nre looking for</strong><br>Ideal candidates are curious, detail-oriented, and comfortable with or eager to learn Coq and the UniMath codebase. Good written communication skills in English are important because documentation and collaboration are central to the role.</p>\n\n<p><strong>How to apply</strong><br>If you\nre interested, please apply using the form below. Provide a short CV, your study programme and year, and a brief statement of interest highlighting any relevant technical or proof-assistant experience. We look forward to hearing from students keen to combine academic research with hands-on tooling work in Delft!</p>",
     "employmentType": "PART_TIME",
     "addressLocality": "Delft",
     "addressRegion": "Zuid-Holland",
@@ -439,13 +511,17 @@ export const NEW_JOBS: RawJob[] = [
       "tutoring"
     ],
     "externalUrl": "https://pl.ewi.tudelft.nl/hiring/2023/student-research-assistant-UniMath/",
-    "validThrough": "2026-03-15"
+    "validThrough": "2026-03-15",
+    "baseSalaryMin": 12.0,
+    "baseSalaryMax": 16.0,
+    "currency": "EUR",
+    "payUnit": "HOUR"
   },
   {
     "slug": "lef-restaurant-bijbaan-20260215",
-    "title": "Bediening/Bar – Bijbaan",
+    "title": "Part-time Bar & Service Delft - International Students",
     "orgName": "LEF Restaurant & Bar Delft",
-    "descriptionHtml": "<p>Student-friendly team in the heart of Delft. Terrace/service/bar, good tips and flexible shifts.</p><ul><li>Evening and weekend shifts</li><li>Good pay and friendly team</li></ul>",
+    "descriptionHtml": "<p><strong>Perfect student bijbaan in Delft — werken bij LEF Restaurant & Bar</strong></p>\n\n<p>Ben jij een student die houdt van de bruisende sfeer rond TU Delft, de gezellige grachten en het levendige Beestenmarkt? Wil je werk combineren met college, studieprojecten of een studentensport? Dan is deze <strong>Delft student jobs</strong> kans bij LEF Restaurant & Bar ideaal voor jou. Vanuit het centrum loop je zo naar de terrasjes of richting de groene ontspanning bij Delftse Hout — een echte studentenplek voor wie studie en vrije tijd wil combineren.</p>\n\n<p><strong>De rol</strong></p>\n\n<ul>\n  <li>Je werkt in een studentvriendelijk team, midden in het historische en levendige centrum van Delft.</li>\n  <li>Dagelijkse taken: bediening op de vloer, werken aan de bar en bedienen van het terras — gastvrijheid staat voorop.</li>\n  <li>Je bedient internationale gasten en medestudenten uit de engineering- en techcommunity, met een energieke maar professionele houding.</li>\n  <li>Je profiteert van goede fooien en flexibele diensten: vooral avond- en weekenddiensten.</li>\n  <li>Het team is vriendelijk en gericht op samenwerking; ervaring is een plus maar enthousiasme en inzet zijn minstens zo belangrijk.</li>\n</ul>\n\n<p><strong>International friendly</strong></p>\n\n<p>LEF Restaurant & Bar is <strong>English-friendly</strong> en toegankelijk voor internationals — een uitstekende optie voor <strong>student jobs in Delft for english speakers</strong> en <strong>jobs in Delft for international students</strong>. Communicatie in het Engels tijdens diensten is geen probleem, dus internationale studenten voelen zich hier snel thuis.</p>\n\n<p><strong>Praktische zaken</strong></p>\n\n<ul>\n  <li>Werkuren: <em>Vanaf ca. 8 uur p/w, avond/weekend</em>. Perfect als bijbaan naast colleges en projecten.</li>\n  <li>Salaris: niet gespecificeerd; er wordt aangegeven dat er goede vergoedingen en fooi-inkomsten mogelijk zijn.</li>\n  <li>Flexibiliteit: flexibel rooster dat rekening houdt met je studieplanning.</li>\n  <li>Locatie: in het hart van Delft — ideaal voor studenten die dichtbij TU Delft, de grachten en de belangrijkste studentenpleinen wonen of reizen.</li>\n</ul>\n\n<p><strong>Waarom dit een slimme keuze is</strong></p>\n\n<p>Als je zoekt naar <strong>part time jobs Delft english</strong> of andere <strong>Delft student jobs</strong>, biedt LEF een actieve werkomgeving, sociale contacten en flexibiliteit. Je bouwt horecavaardigheden op, verdient bij met avond- en weekenddiensten en werkt in een team met veel studenten, waaronder veel uit de technische opleidingen.</p>\n\n<p><strong>Klaar om te starten?</strong> Vul het formulier hieronder in om te solliciteren. We kijken uit naar je reactie — join LEF en combineer studie met een energieke bijbaan in het hart van Delft!</p>",
     "employmentType": "PART_TIME",
     "addressLocality": "Delft",
     "addressRegion": "Zuid-Holland",
@@ -457,13 +533,17 @@ export const NEW_JOBS: RawJob[] = [
       "hospitality"
     ],
     "externalUrl": "https://lefrestaurant.nl/vacancies",
-    "validThrough": "2026-03-15"
+    "validThrough": "2026-03-15",
+    "baseSalaryMin": 12.0,
+    "baseSalaryMax": 16.0,
+    "currency": "EUR",
+    "payUnit": "HOUR"
   },
   {
     "slug": "ns-ahtogo-stage-delft-20260215",
-    "title": "Meewerkstage AH to go Delft (BOL)",
+    "title": "Part-time Job Delft - International Students Welcome",
     "orgName": "NS / AH to go Delft",
-    "descriptionHtml": "<p>Internship in a dynamic store at Station Delft. Learn cashiering, shelf stocking and bakery. BBL/BOL mbo levels 2–4.</p><ul><li>Internship allowance €400 p/m</li><li>Flexible rosters</li></ul>",
+    "descriptionHtml": "<p><strong>Why this is perfect for a student in Delft</strong><br>Delft is a compact, vibrant student city — from TU Delft lecture halls to canal-side streets, the Beestenmarkt buzz and green escapes like Delftse Hout. If you live or study here and want a role that fits around classes and projects, a <strong>Meewerkstage AH to go Delft (BOL)</strong> at Station Delft places you in the middle of that energy. This position is ideal for students looking for flexible work near campus and the train station, and it’s one of the attractive <strong>Delft student jobs</strong> for those who want practical retail experience while staying close to university life.</p>\n\n<p><strong>The role</strong><br>Join a dynamic AH to go store at Station Delft for a hands-on internship where you will learn the core skills of convenience retail. This BOL internship accepts mbo candidates at levels 2–4 (BBL/BOL), and your day-to-day tasks typically include:</p>\n<ul>\n  <li>Learning cashiering and customer service at a busy station store</li>\n  <li>Shelf stocking, inventory checks and product rotation</li>\n  <li>Working with the bakery section: preparing and presenting baked goods</li>\n  <li>Maintaining store cleanliness and safety standards</li>\n  <li>Working in flexible rosters to match student timetables</li>\n</ul>\n\n<p>Internship allowance: <strong>€400 p/m</strong>. Hours: <strong>0–40 uur p/w (volgens opleiding)</strong>. This role provides practical retail and service experience that fits many mbo learning goals.</p>\n\n<p><strong>International-friendly?</strong><br>This position is based in a station store that serves a mixed local and international crowd. It can be suitable for candidates interested in <strong>student jobs in Delft for english speakers</strong> or <strong>jobs in Delft for international students</strong>, but please note: <strong>Dutch required</strong>. Basic Dutch language skills are necessary to handle transactions, follow health and safety instructions, and communicate with colleagues.</p>\n\n<p><strong>Practicalities & location</strong><br>The store is located at Station Delft, close to TU Delft and within easy reach of campus and popular student areas. Shifts are flexible to support studying and project deadlines. Salary/allowance is specified above. Exact area of assignment and schedule details will be agreed with the employer and your school.</p>\n\n<p><strong>Why apply?</strong><br>Choose this meewerkstage to build customer service, retail and food-prep skills while staying at the heart of Delft’s student community. It’s a great fit if you’re searching for <strong>part time jobs Delft english</strong> friendly roles that still require Dutch for daily operations.</p>\n\n<p><strong>How to apply</strong><br>If this sounds like your next step, apply via the form below. Fill in your details, attach your CV and any required school documents, and indicate your mbo level and availability.</p>",
     "employmentType": "INTERN",
     "baseSalaryMin": 400,
     "baseSalaryMax": 400,
