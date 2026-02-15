@@ -18,7 +18,8 @@ export const NEW_JOBS: RawJob[] = [
     "categories": [
       "events"
     ],
-    "externalUrl": "https://www.linkedin.com/posts/tu-delft-climate-action-programme_we-are-looking-for-a-communications-student-activity-7421835783495450624-VQr1"
+    "externalUrl": "https://www.linkedin.com/posts/tu-delft-climate-action-programme_we-are-looking-for-a-communications-student-activity-7421835783495450624-VQr1",
+    "validThrough": "2026-03-01"
   },
   {
     "slug": "delta-student-columnist-20260127",
@@ -53,7 +54,8 @@ export const NEW_JOBS: RawJob[] = [
     "categories": [
       "events"
     ],
-    "externalUrl": "https://delta.tudelft.nl/en/article/job-opening-delta-is-looking-for-a-student-photographer"
+    "externalUrl": "https://delta.tudelft.nl/en/article/job-opening-delta-is-looking-for-a-student-photographer",
+    "validThrough": "2026-02-13"
   },
   {
     "slug": "tno-student-assistant-steel-bridges-20260215",
@@ -70,7 +72,8 @@ export const NEW_JOBS: RawJob[] = [
     "categories": [
       "fieldwork"
     ],
-    "externalUrl": "https://www.tno.nl/en/careers/vacancies/2026/01/student-assistant-material-properties/"
+    "externalUrl": "https://www.tno.nl/en/careers/vacancies/2026/01/student-assistant-material-properties/",
+    "validThrough": "2026-03-15"
   },
   {
     "slug": "sg-two-student-assistants-art-installation-20251117",
@@ -87,7 +90,8 @@ export const NEW_JOBS: RawJob[] = [
     "categories": [
       "events"
     ],
-    "externalUrl": "https://sg.tudelft.nl/2025/11/17/vacancy-two-student-assistants-for-art-installation-for-the-festival-for-love-of-the-world/"
+    "externalUrl": "https://sg.tudelft.nl/2025/11/17/vacancy-two-student-assistants-for-art-installation-for-the-festival-for-love-of-the-world/",
+    "validThrough": "2025-12-17"
   },
   {
     "slug": "ns-ah-to-go-delft-sales-associate-20260202",
@@ -123,7 +127,8 @@ export const NEW_JOBS: RawJob[] = [
       "retail",
       "fieldwork"
     ],
-    "externalUrl": "https://jobs.ikea.com/en/job/delft/logistiek-medewerker-orderpicking-ikea-delft-16-20-of-24-uur-week/24107/91123072048"
+    "externalUrl": "https://jobs.ikea.com/en/job/delft/logistiek-medewerker-orderpicking-ikea-delft-16-20-of-24-uur-week/24107/91123072048",
+    "validThrough": "2026-02-28"
   },
   {
     "slug": "jumbo-delft-bastiaansplein-foodcafe-bijbaan-20260215",
@@ -145,7 +150,8 @@ export const NEW_JOBS: RawJob[] = [
       "hospitality",
       "retail"
     ],
-    "externalUrl": "https://nl.jobs.jumbo.com/nl/vacature/bijbaan-foodcafe/2025-30482/"
+    "externalUrl": "https://nl.jobs.jumbo.com/nl/vacature/bijbaan-foodcafe/2025-30482/",
+    "validThrough": "2026-03-15"
   },
   {
     "slug": "thuisbezorgd-delft-courier-2026-02",
@@ -164,7 +170,8 @@ export const NEW_JOBS: RawJob[] = [
       "delivery"
     ],
     "featured": false,
-    "externalUrl": "https://www.thuisbezorgd.nl/bezorger/delft"
+    "externalUrl": "https://www.thuisbezorgd.nl/bezorger/delft",
+    "validThrough": "2026-03-15"
   },
   {
     "slug": "dominos-papsouwselaan-rider-2026-02",
@@ -186,7 +193,8 @@ export const NEW_JOBS: RawJob[] = [
       "hospitality"
     ],
     "featured": false,
-    "externalUrl": "https://www.werkenbijdominos.nl/taxonomy/term/29"
+    "externalUrl": "https://www.werkenbijdominos.nl/taxonomy/term/29",
+    "validThrough": "2026-03-15"
   },
   {
     "slug": "dominos-nassauplein-rider-2026-02",
@@ -208,7 +216,8 @@ export const NEW_JOBS: RawJob[] = [
       "hospitality"
     ],
     "featured": false,
-    "externalUrl": "https://www.werkenbijdominos.nl/taxonomy/term/432"
+    "externalUrl": "https://www.werkenbijdominos.nl/taxonomy/term/432",
+    "validThrough": "2026-03-15"
   },
   {
     "slug": "kruidvat-aart-leeuwlaan-vakkenvuller-2026-02",
@@ -233,7 +242,8 @@ export const NEW_JOBS: RawJob[] = [
       "retail"
     ],
     "featured": false,
-    "externalUrl": "https://www.werkenbijkruidvat.nl/vacatures/vakkenvuller-vanaf-15-jaar-e207895"
+    "externalUrl": "https://www.werkenbijkruidvat.nl/vacatures/vakkenvuller-vanaf-15-jaar-e207895",
+    "validThrough": "2026-03-15"
   },
   {
     "slug": "lidl-multatuliweg-bijbaan-2026-02",
@@ -254,7 +264,8 @@ export const NEW_JOBS: RawJob[] = [
       "retail"
     ],
     "featured": false,
-    "externalUrl": "https://www.werkenbijlidl.nl/jobs/bijbaan-delft-multatuliweg-2-12-uur-delft-512825"
+    "externalUrl": "https://www.werkenbijlidl.nl/jobs/bijbaan-delft-multatuliweg-2-12-uur-delft-512825",
+    "validThrough": "2026-03-15"
   },
   {
     "slug": "praxis-delft-vakkenvuller-2026-02",
@@ -273,7 +284,8 @@ export const NEW_JOBS: RawJob[] = [
       "retail"
     ],
     "featured": false,
-    "externalUrl": "https://werkenbijpraxis.nl/vacatures/bijbaan-vakkenvuller-avond-en-of-weekend-6-tot-12-uur-delft-354416"
+    "externalUrl": "https://werkenbijpraxis.nl/vacatures/bijbaan-vakkenvuller-avond-en-of-weekend-6-tot-12-uur-delft-354416",
+    "validThrough": "2026-03-15"
   },
   {
     "slug": "plus-tanthof-delft-vulploeg-2026-02",
@@ -292,7 +304,8 @@ export const NEW_JOBS: RawJob[] = [
       "retail"
     ],
     "featured": false,
-    "externalUrl": "https://www.werkenbijplus.nl/vacatures/supermarkt/delft_plus-tanthof_463"
+    "externalUrl": "https://www.werkenbijplus.nl/vacatures/supermarkt/delft_plus-tanthof_463",
+    "validThrough": "2026-03-15"
   },
   {
     "slug": "tud-eee-student-assistant-2026-02",
@@ -313,7 +326,8 @@ export const NEW_JOBS: RawJob[] = [
       "tutoring"
     ],
     "featured": false,
-    "externalUrl": "https://microelectronics.tudelft.nl/eee/Openings/"
+    "externalUrl": "https://microelectronics.tudelft.nl/eee/Openings/",
+    "validThrough": "2026-03-15"
   },
   {
     "slug": "mooredrv-werkstudent-delft-20260215",
@@ -330,7 +344,8 @@ export const NEW_JOBS: RawJob[] = [
     "categories": [
       "sales"
     ],
-    "externalUrl": "https://www.werkenbijmooredrv.nl/vacatures/werkstudent-delft/"
+    "externalUrl": "https://www.werkenbijmooredrv.nl/vacatures/werkstudent-delft/",
+    "validThrough": "2026-03-15"
   },
   {
     "slug": "ranzijn-hulpkracht-delft-20260215",
@@ -347,7 +362,8 @@ export const NEW_JOBS: RawJob[] = [
     "categories": [
       "retail"
     ],
-    "externalUrl": "https://werkenbijranzijn.nl/vacatures/hulpkracht-diverse-afdelingen-delft"
+    "externalUrl": "https://werkenbijranzijn.nl/vacatures/hulpkracht-diverse-afdelingen-delft",
+    "validThrough": "2026-03-15"
   },
   {
     "slug": "hanos-vulploegmedewerker-delft-20260215",
@@ -364,7 +380,8 @@ export const NEW_JOBS: RawJob[] = [
     "categories": [
       "retail"
     ],
-    "externalUrl": "https://www.werkenbijhanos.nl/vacatures/vulploegmedewerker-delft-5684"
+    "externalUrl": "https://www.werkenbijhanos.nl/vacatures/vulploegmedewerker-delft-5684",
+    "validThrough": "2026-03-15"
   },
   {
     "slug": "studentsplus-bijles-delft-20260215",
@@ -385,7 +402,8 @@ export const NEW_JOBS: RawJob[] = [
     "categories": [
       "tutoring"
     ],
-    "externalUrl": "https://www.studentsplus.nl/bijles-geven/delft"
+    "externalUrl": "https://www.studentsplus.nl/bijles-geven/delft",
+    "validThrough": "2026-03-15"
   },
   {
     "slug": "flexdelft-surveillant-20260215",
@@ -402,7 +420,8 @@ export const NEW_JOBS: RawJob[] = [
     "categories": [
       "events"
     ],
-    "externalUrl": "https://portal.flexdelft.nl/nl"
+    "externalUrl": "https://portal.flexdelft.nl/nl",
+    "validThrough": "2026-03-15"
   },
   {
     "slug": "tudelft-unimath-student-ra-20260215",
@@ -419,7 +438,8 @@ export const NEW_JOBS: RawJob[] = [
     "categories": [
       "tutoring"
     ],
-    "externalUrl": "https://pl.ewi.tudelft.nl/hiring/2023/student-research-assistant-UniMath/"
+    "externalUrl": "https://pl.ewi.tudelft.nl/hiring/2023/student-research-assistant-UniMath/",
+    "validThrough": "2026-03-15"
   },
   {
     "slug": "lef-restaurant-bijbaan-20260215",
@@ -436,7 +456,8 @@ export const NEW_JOBS: RawJob[] = [
     "categories": [
       "hospitality"
     ],
-    "externalUrl": "https://lefrestaurant.nl/vacancies"
+    "externalUrl": "https://lefrestaurant.nl/vacancies",
+    "validThrough": "2026-03-15"
   },
   {
     "slug": "ns-ahtogo-stage-delft-20260215",
