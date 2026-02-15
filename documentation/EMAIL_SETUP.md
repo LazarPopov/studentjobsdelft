@@ -39,9 +39,9 @@ Since you're using Gmail with 2FA, you need an **App Password**:
 3. Under "How you sign in to Google", click **2-Step Verification**
 4. Scroll to bottom, click **App passwords**
 5. Create new app password:
-   - Select app: **Mail**
-   - Select device: **Other (Custom name)**
-   - Name it: "Student Jobs Rotterdam"
+ - Select app: **Mail**
+ - Select device: **Other (Custom name)**
+ - Name it: "Student Jobs Rotterdam"
 6. Click **Generate**
 7. **Copy the 16-character password** (you'll use this below)
 
@@ -54,7 +54,7 @@ Add to your `.env.local` file:
 GMAIL_HOST=smtp.gmail.com
 GMAIL_PORT=587
 GMAIL_USERNAME=notificationdomakin@gmail.com
-GMAIL_PASSWORD=xxxx xxxx xxxx xxxx  # Your 16-char app password from Step 1
+GMAIL_PASSWORD=xxxx xxxx xxxx xxxx # Your 16-char app password from Step 1
 GMAIL_FROM_ADDRESS=notification@domakin.nl
 GMAIL_FROM_NAME="Student Jobs Rotterdam"
 GMAIL_RECEIVER=info@domakin.nl
@@ -82,8 +82,8 @@ You should see:
 1. Go to `http://localhost:3000/employers`
 2. Fill out and submit a job
 3. Check two places:
-   - **info@domakin.nl** inbox → Admin notification
-   - **Employer's email** inbox → Confirmation
+ - **info@domakin.nl** inbox → Admin notification
+ - **Employer's email** inbox → Confirmation
 
 ## 📊 Email Templates
 
@@ -92,27 +92,27 @@ You should see:
 Subject: 🆕 New Job: Barista at Coffee Shop
 
 ┌─────────────────────────────────────┐
-│  🎉 New Job Submission              │
-│  Student Jobs Rotterdam              │
+│ 🎉 New Job Submission    │
+│ Student Jobs Rotterdam    │
 └─────────────────────────────────────┘
 
 [PENDING REVIEW]
 
 Company Information:
-  Company: Coffee Shop
-  Contact: John Doe
-  Email: john@coffeeshop.com
-  
+ Company: Coffee Shop
+ Contact: John Doe
+ Email: john@coffeeshop.com
+ 
 Job Details:
-  Title: Barista
-  Type: PART TIME
-  Category: hospitality
-  Location: Rotterdam, Centrum
-  Salary: €13.50 - €15.00/hour
-  
+ Title: Barista
+ Type: PART TIME
+ Category: hospitality
+ Location: Rotterdam, Centrum
+ Salary: €13.50 - €15.00/hour
+ 
 Description:
-  We're looking for an enthusiastic barista...
-  
+ We're looking for an enthusiastic barista...
+ 
 [Review in Supabase Dashboard →]
 ```
 
@@ -172,9 +172,9 @@ Student Jobs Rotterdam Team
 ### Check logs
 ```bash
 # Terminal should show:
-[EMAIL_CONFIG] Server is ready to send emails  # ✅ Config OK
-[EMAIL_SENT] { messageId: '...', to: 'info@domakin.nl' }  # ✅ Sent
-[EMAIL_SEND_ERROR] ...  # ❌ Error details
+[EMAIL_CONFIG] Server is ready to send emails # ✅ Config OK
+[EMAIL_SENT] { messageId: '...', to: 'info@domakin.nl' } # ✅ Sent
+[EMAIL_SEND_ERROR] ... # ❌ Error details
 ```
 
 ## 🧪 Testing Commands
@@ -185,12 +185,12 @@ node -e "
 const nodemailer = require('nodemailer');
 require('dotenv').config({ path: '.env.local' });
 const transport = nodemailer.createTransport({
-  host: process.env.GMAIL_HOST,
-  port: 587,
-  auth: { 
-    user: process.env.GMAIL_USERNAME, 
-    pass: process.env.GMAIL_PASSWORD 
-  }
+ host: process.env.GMAIL_HOST,
+ port: 587,
+ auth: { 
+ user: process.env.GMAIL_USERNAME, 
+ pass: process.env.GMAIL_PASSWORD 
+ }
 });
 transport.verify().then(() => console.log('✅ SMTP OK')).catch(console.error);
 "
@@ -205,15 +205,15 @@ When deploying to Vercel:
 1. Go to your Vercel project
 2. **Settings** → **Environment Variables**
 3. Add each variable:
-   ```
-   GMAIL_HOST = smtp.gmail.com
-   GMAIL_PORT = 587
-   GMAIL_USERNAME = notificationdomakin@gmail.com
-   GMAIL_PASSWORD = [your app password]
-   GMAIL_FROM_ADDRESS = notification@domakin.nl
-   GMAIL_FROM_NAME = Student Jobs Rotterdam
-   GMAIL_RECEIVER = info@domakin.nl
-   ```
+ ```
+ GMAIL_HOST = smtp.gmail.com
+ GMAIL_PORT = 587
+ GMAIL_USERNAME = notificationdomakin@gmail.com
+ GMAIL_PASSWORD = [your app password]
+ GMAIL_FROM_ADDRESS = notification@domakin.nl
+ GMAIL_FROM_NAME = Student Jobs Rotterdam
+ GMAIL_RECEIVER = info@domakin.nl
+ ```
 4. Redeploy your app
 
 ### Alternative: Use Vercel Edge Config
@@ -238,7 +238,7 @@ const htmlContent = `...`;
 
 In `.env.local`:
 ```env
-GMAIL_RECEIVER=your-email@example.com  # Admin email
+GMAIL_RECEIVER=your-email@example.com # Admin email
 ```
 
 ### Disable Employer Confirmation
@@ -266,8 +266,8 @@ bcc: 'archive@domakin.nl'
 ### Attachments
 ```typescript
 attachments: [{
-  filename: 'logo.png',
-  path: submission.logo_url
+ filename: 'logo.png',
+ path: submission.logo_url
 }]
 ```
 
