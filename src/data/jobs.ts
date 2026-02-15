@@ -92,9 +92,9 @@ function makeShortDescription(job: Partial<JobRecord>): string {
 }
 
 // ---- Define raw jobs (without shortDescrition), then map to final JOBS with computed shortDescrition ----
-type RawJob = Omit<JobRecord, "shortDescrition">;
+export type RawJob = Omit<JobRecord, "shortDescrition">;
 
-export const RAW_JOBS: RawJob[] = [
+const RAW_JOBS: RawJob[] = [
  {
  slug: "domakin-agent-delft",
  title: "Domakin Student Agent",
