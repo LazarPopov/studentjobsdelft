@@ -109,11 +109,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
         <Script defer data-domain="studentjobsdelft.nl" src="https://plausible.io/js/script.js" />
 
-        <Script
-          src="https://analytics.ahrefs.com/analytics.js"
-          data-key="50xDoV1Gr1jgFxRU/Tgzsw"
-          strategy="afterInteractive"
-        />
+        <script src="https://analytics.ahrefs.com/analytics.js" data-key="yWKTq28/U+4JmzdFD7FiiQ" async></script>
 
         <main id="main" className="flex-1">
           {children}
