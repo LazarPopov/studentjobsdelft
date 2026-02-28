@@ -4,6 +4,8 @@ import Link from "next/link";
 import { listFeaturedJobs } from "@/data/jobs";
 import Image from "next/image";
 import FeaturedJobsAccordion from "@/components/FeaturedJobsAccordion";
+import PromoAd from "@/components/PromoAd";
+
 
 function JobCardLink({
   job,
@@ -248,7 +250,11 @@ export default function Page() {
           </div>
         </div>
       </section>
-
+    <section className="px-6 py-4 bg-gray-50">
+        <div className="mx-auto max-w-6xl">
+          <PromoAd placement="landing_page_1" />
+        </div>
+      </section>
       {/* SEARCH — moved below hero for clarity and mobile UX */}
       <section className="px-4 sm:px-6 py-6 md:py-8 bg-white">
         <div className="mx-auto max-w-6xl">
@@ -364,7 +370,11 @@ export default function Page() {
           </div>
         </div>
       </section>
-
+      <section className="px-6 py-4 bg-gray-50">
+        <div className="mx-auto max-w-6xl">
+          <PromoAd placement="landing_page_2" />
+        </div>
+      </section>
       {/* EMPLOYER CTA */}
       <section className="px-6 py-12">
         <div className="mx-auto max-w-6xl rounded-2xl border p-6 md:p-10 bg-white">
