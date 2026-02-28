@@ -1,4 +1,3 @@
-// src/components/PromoAd.tsx
 "use client";
 
 import { useEffect, useState } from "react";
@@ -6,13 +5,10 @@ import Image from "next/image";
 
 type Ad = {
   id: string;
-  url: string;
-  imgSrc: string;
-  sponsorText: string;
   headline: string;
   description: string;
-  discountText: string;
-  altText: string;
+  cta: string;
+  badge: string;
 };
 
 const CITY_LABELS: Record<string, string> = {
@@ -30,107 +26,120 @@ const CITY_LABELS: Record<string, string> = {
   tilburg: "Tilburg",
 };
 
-function titleCaseCity(raw: string): string {
-  if (!raw) return "";
-  if (CITY_LABELS[raw.toLowerCase()]) return CITY_LABELS[raw.toLowerCase()];
-  return raw.charAt(0).toUpperCase() + raw.slice(1).toLowerCase();
-}
-
-function getCityFromHostname(hostname: string): string | null {
-  // Examples:
-  // studentjobsgroningen.nl
-  // www.studentjobsamsterdam.nl
-  // studentjobsmaastricht.vercel.app (fallback: null)
-  const host = (hostname || "").toLowerCase().replace(/^www\./, "");
-
+function getCityFromHostname(): string | null {
+  if (typeof window === "undefined") return null;
+  const host = window.location.hostname.toLowerCase().replace(/^www\./, "");
   if (!host.startsWith("studentjobs")) return null;
 
-  const firstPart = host.split(".")[0]; // studentjobsgroningen
-  const rawCity = firstPart.replace(/^studentjobs/, "").trim();
-
-  if (!rawCity) return null;
-
-  // If you ever use hyphenated cities later (studentjobs-thehague.nl), support it
-  const cleaned = rawCity.replace(/[^a-z-]/g, "");
-  if (!cleaned) return null;
-
-  return titleCaseCity(cleaned.replace(/-/g, " "));
-}
-
-function buildAds(cityName: string | null): Ad[] {
-  const base: Omit<Ad, "id" | "headline" | "altText"> = {
-    url: "https://go.signaal.app/studentjobsnl",
-    imgSrc: "/signaal.png",
-    sponsorText: "Sponsored by Signaal.app",
-    description:
-      "Find your next rental in the Netherlands with instant alerts and one place to search all matching listings.",
-    discountText: "Use code ASJOBS for a 10% discount",
-  };
-
-  const generalAd: Ad = {
-    id: "signaal_ad_general_v1",
-    headline: "Fastest way to find rentals in the Netherlands.",
-    altText: "Signaal App, find rentals in the Netherlands",
-    ...base,
-  };
-
-  if (!cityName) return [generalAd];
-
-  const cityAd: Ad = {
-    id: "signaal_ad_city_v1",
-    headline: `Fastest way to find rentals in ${cityName}.`,
-    altText: `Signaal App, find rentals in ${cityName}`,
-    ...base,
-  };
-
-  return [generalAd, cityAd];
+  const rawCity = host.split(".")[0].replace("studentjobs", "");
+  return CITY_LABELS[rawCity] || (rawCity ? rawCity.charAt(0).toUpperCase() + rawCity.slice(1) : null);
 }
 
 export default function PromoAd({ placement = "general" }: { placement?: string }) {
-  const [ad, setAd] = useState<Ad | null>(null);
-  const [mounted, setMounted] = useState(false);
+  const [activeAd, setActiveAd] = useState<Ad | null>(null);
 
   useEffect(() => {
-    const cityName = getCityFromHostname(window.location.hostname);
-    const ADS = buildAds(cityName);
+    const cityName = getCityFromHostname();
 
-    const randomAd = ADS[Math.floor(Math.random() * ADS.length)];
-    setAd(randomAd);
-    setMounted(true);
+    const adPool: Ad[] = [];
+
+    if (cityName) {
+      // 1) City Specific Student Ad
+      adPool.push({
+        id: "signaal_city_students",
+        headline: `Find a student room in ${cityName}, faster.`,
+        description: `Stop refreshing tabs. Get instant alerts for every new student listing in ${cityName} the second it goes live.`,
+        cta: `Search ${cityName} Housing`,
+        badge: "STUDENT FAVORITE",
+      });
+
+      // 2) City Specific Generic Rentals Ad
+      adPool.push({
+        id: "signaal_city_general",
+        headline: `Be first for new rentals in ${cityName}.`,
+        description: `Instant alerts and one place to search matching listings in ${cityName}, so you can reply before everyone else.`,
+        cta: `Find Rentals in ${cityName}`,
+        badge: "FAST ALERTS",
+      });
+
+      // 3) National Student Ad
+      adPool.push({
+        id: "signaal_nl_students",
+        headline: "Beat the Dutch housing crisis.",
+        description: "The smartest way for students to find studios and apartments across the Netherlands. One search, all listings.",
+        cta: "Find a Room in NL",
+        badge: "TOP RATED",
+      });
+    } else {
+      // Fallback for general traffic
+      adPool.push({
+        id: "signaal_general",
+        headline: "The fastest way to find rentals in the Netherlands.",
+        description: "Get instant alerts and be the first to respond to new listings. Do not miss out on your next home.",
+        cta: "Start Your Search",
+        badge: "PROMO",
+      });
+    }
+
+    const randomAd = adPool[Math.floor(Math.random() * adPool.length)];
+    setActiveAd(randomAd);
   }, []);
 
-  if (!mounted || !ad) return null;
+  if (!activeAd) return null;
 
   return (
-    <div className="my-6 flex justify-center w-full">
+    <div className="my-8 flex justify-center w-full px-4">
       <a
-        href={ad.url}
+        href="https://go.signaal.app/studentjobsnl"
         target="_blank"
         rel="noopener noreferrer"
-        className="block w-full max-w-2xl rounded-2xl border bg-white p-5 md:p-6 shadow-sm hover:shadow-md transition-shadow group"
+        className="group relative block w-full max-w-2xl overflow-hidden rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition-all hover:border-blue-300 hover:shadow-xl"
         data-gtm-event="ad_click"
-        data-gtm-label={ad.id}
+        data-gtm-label={activeAd.id}
         data-gtm-placement={placement}
       >
-        <div className="text-xs font-semibold text-slate-400 mb-3 uppercase tracking-wider">
-          {ad.sponsorText}
+        {/* Badge */}
+        <div className="absolute top-0 right-0 rounded-bl-lg bg-blue-600 px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-white">
+          {activeAd.badge}
         </div>
 
-        <div className="flex flex-col sm:flex-row gap-5 items-center sm:items-start">
-          <div className="relative h-24 w-24 shrink-0 rounded-xl overflow-hidden border border-slate-100 bg-slate-50 flex items-center justify-center">
-            <Image src={ad.imgSrc} alt={ad.altText} fill className="object-contain p-2" />
+        <div className="flex flex-col gap-6 sm:flex-row sm:items-center">
+          {/* App Icon */}
+          <div className="relative flex h-20 w-20 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-blue-50 to-slate-50 border border-slate-100 shadow-inner">
+            <Image
+              src="/signaal.png"
+              alt="Signaal.app"
+              width={56}
+              height={56}
+              className="object-contain transition-transform group-hover:scale-110"
+            />
           </div>
 
-          <div className="text-center sm:text-left flex-1">
-            <h4 className="font-bold text-slate-900 text-lg md:text-xl group-hover:text-blue-600 transition-colors">
-              {ad.headline}
+          <div className="flex-1 text-left">
+            <div className="text-xs font-bold uppercase tracking-tight text-blue-600 mb-1">
+              Sponsored by Signaal.app
+            </div>
+            <h4 className="text-xl font-extrabold text-slate-900 md:text-2xl leading-tight">
+              {activeAd.headline}
             </h4>
-            <p className="text-sm md:text-base text-slate-600 mt-2 leading-relaxed">
-              {ad.description}
+            <p className="mt-2 text-sm leading-relaxed text-slate-600 md:text-base">
+              {activeAd.description}
             </p>
 
-            <div className="mt-4 inline-block bg-blue-50 border border-blue-100 text-blue-700 text-sm font-bold px-4 py-2 rounded-lg">
-              {ad.discountText}
+            <div className="mt-5 flex flex-wrap items-center gap-4">
+              {/* CTA Button */}
+              <span className="inline-flex items-center justify-center rounded-xl bg-slate-900 px-5 py-2.5 text-sm font-bold text-white transition-colors group-hover:bg-blue-600">
+                {activeAd.cta}
+              </span>
+
+              {/* Discount Code */}
+              <div className="flex items-center gap-2">
+                <span className="text-xs font-medium text-slate-500 italic">Use code:</span>
+                <span className="rounded-md border-2 border-dashed border-blue-200 bg-blue-50 px-2 py-1 text-sm font-mono font-bold text-blue-700">
+                  ASJOBS
+                </span>
+                <span className="text-sm font-bold text-blue-700">(10% off)</span>
+              </div>
             </div>
           </div>
         </div>
