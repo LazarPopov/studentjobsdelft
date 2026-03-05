@@ -30,6 +30,11 @@ const POSTS = [
     description:
       "Shift bonuses, industries, and certifications that increase pay.",
   },
+  {
+    slug: "netherlands-news-in-english",
+    title: "Best English news platforms in the Netherlands (2026)",
+    description: "Dutch Brief explained, plus DutchNews.nl, NL Times, IamExpat, Expatica, DutchReview, and The Holland Times, with a local angle for internationals.",
+    }
 ];
 
 export const metadata: Metadata = {
