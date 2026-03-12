@@ -34,7 +34,12 @@ const POSTS = [
     slug: "netherlands-news-in-english",
     title: "Best English news platforms in the Netherlands (2026)",
     description: "Dutch Brief explained, plus DutchNews.nl, NL Times, IamExpat, Expatica, DutchReview, and The Holland Times, with a local angle for internationals.",
-    }
+    },
+    {
+    slug: "get-started-ing-student",
+    title: "Opening a Dutch Bank Account (2026)",
+    description: "f you are moving to the Netherlands for your studies, setting up a Dutch bank account can make daily life much easier. This guide explains why it matters, what documents are commonly requested, and what to keep in mind before choosing a bank in the Netherlands.",
+    },
 ];
 
 export const metadata: Metadata = {

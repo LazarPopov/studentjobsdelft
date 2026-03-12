@@ -77,12 +77,9 @@ export default function Page() {
 
   const blogPosts = [
     {
-      slug: "studenten-bijbaan-delft",
-      title:
-        "Studenten bijbaan Delft (2026) – Goed betaald, Engelstalig & weekend",
-      excerpt:
-        "De ultieme gids voor een studenten bijbaan in Delft: avond/weekend, Engelstalig, zonder ervaring. Uurloon-tabellen, contractvormen, wijken en snelle filters.",
-    },
+    slug: "get-started-ing-student",
+    title: "Opening a Dutch Bank Account (2026)",
+    excerpt: "If you are moving to the Netherlands for your studies, setting up a Dutch bank account can make daily life much easier. This guide explains why it matters." },
     {
       slug: "student-jobs-delft-complete-guide-2026",
       title: "Student Jobs in Delft — Complete Guide (2026)",
